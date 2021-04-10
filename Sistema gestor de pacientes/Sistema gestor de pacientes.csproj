@@ -46,13 +46,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forms\citas\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\citas\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\credenciales\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forms\credenciales\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\medicos\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\medicos\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\pacientes\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\pacientes\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\pruebas de laboratorio\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\pruebas de laboratorio\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\RepositorioForms.cs" />
+    <Compile Include="forms\resultados pruebas laboratorio\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\resultados pruebas laboratorio\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\usuarios\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\usuarios\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\credenciales\frmLogin.resx">
@@ -80,13 +116,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="forms\citas\" />
-    <Folder Include="forms\medicos\" />
-    <Folder Include="forms\pacientes\" />
-    <Folder Include="forms\pruebas de laboratorio\" />
-    <Folder Include="forms\resultados pruebas laboratorio\" />
-    <Folder Include="forms\usuarios\" />
+    <ProjectReference Include="..\DataBase\DataBase.csproj">
+      <Project>{6871010e-76bb-4a54-b03f-e7f9f1ac25e4}</Project>
+      <Name>DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicLayer\LogicLayer.csproj">
+      <Project>{4f49d004-9e3e-49e9-8e44-6086aa065d66}</Project>
+      <Name>LogicLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -41,17 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB\citas\Class1.cs" />
+    <Compile Include="DB\credenciales\Class1.cs" />
+    <Compile Include="DB\medicos\Class1.cs" />
+    <Compile Include="DB\models\Class1.cs" />
+    <Compile Include="DB\pacientes\Class1.cs" />
+    <Compile Include="DB\pruebas de laboratorio\Class1.cs" />
+    <Compile Include="DB\resultados pruebas de laboratorio\Class1.cs" />
+    <Compile Include="DB\usuarios\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DB\citas\" />
-    <Folder Include="DB\credenciales\" />
-    <Folder Include="DB\medicos\" />
-    <Folder Include="DB\models\" />
-    <Folder Include="DB\pacientes\" />
-    <Folder Include="DB\pruebas de laboratorio\" />
-    <Folder Include="DB\resultados pruebas de laboratorio\" />
-    <Folder Include="DB\usuarios\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
