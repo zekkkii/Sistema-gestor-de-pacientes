@@ -1,0 +1,10 @@
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\bin\Debug\Sistema gestor de pacientes.exe.config
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\bin\Debug\Sistema gestor de pacientes.exe
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\bin\Debug\Sistema gestor de pacientes.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.csprojAssemblyReference.cache
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.Properties.Resources.resources
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.csproj.GenerateResource.cache
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.csproj.CoreCompileInputs.cache
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.exe
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.credenciales.frmLogin.resources
