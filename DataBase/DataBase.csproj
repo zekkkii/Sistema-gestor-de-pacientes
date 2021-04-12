@@ -44,7 +44,11 @@
     <Compile Include="DB\citas\Class1.cs" />
     <Compile Include="DB\credenciales\Class1.cs" />
     <Compile Include="DB\medicos\Class1.cs" />
-    <Compile Include="DB\models\Class1.cs" />
+    <Compile Include="DB\models\Cita.cs" />
+    <Compile Include="DB\models\Medico.cs" />
+    <Compile Include="DB\models\Paciente.cs" />
+    <Compile Include="DB\models\PruebaLaboratorio.cs" />
+    <Compile Include="DB\models\Usuario.cs" />
     <Compile Include="DB\pacientes\Class1.cs" />
     <Compile Include="DB\pruebas de laboratorio\Class1.cs" />
     <Compile Include="DB\resultados pruebas de laboratorio\Class1.cs" />

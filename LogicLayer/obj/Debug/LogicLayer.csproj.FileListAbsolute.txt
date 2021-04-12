@@ -1,0 +1,9 @@
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\obj\Debug\LogicLayer.csprojAssemblyReference.cache
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\bin\Debug\DataBase.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\bin\Debug\DataBase.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\obj\Debug\LogicLayer.csproj.CopyComplete
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\obj\Debug\LogicLayer.pdb

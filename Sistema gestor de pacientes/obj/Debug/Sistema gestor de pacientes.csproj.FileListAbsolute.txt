@@ -8,3 +8,8 @@ C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gesto
 C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.exe
 C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.pdb
 C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.credenciales.frmLogin.resources
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\bin\Debug\DataBase.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\bin\Debug\LogicLayer.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\bin\Debug\DataBase.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\bin\Debug\LogicLayer.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.csproj.CopyComplete
