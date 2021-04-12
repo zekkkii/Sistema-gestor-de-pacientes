@@ -3,3 +3,5 @@ Notas:
 -En las citas se debe cargar un combobox con los doctores que esten en la db y asignar el id al objeto de la cita ese id, lo mismo con el id del paciente, tomar datos desde db.
 -Usar checkbox para para la parte del paciente si es fumador.
 -Usar un dateTime tipo fecha para las fechas y un dateTime picker tipo time para el tomar el tiempo.
+
+-Al trabajar con el login se debe usar un modelo usuario, seteando todos los campos en null y el ultimo en un entero(0). Solo se deben rellenar los campos de usuario y password. Ejemplo: Usuario(null, null, null,usuario, password, 0)
