@@ -42,7 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB\citas\Class1.cs" />
-    <Compile Include="DB\credenciales\Class1.cs" />
+    <Compile Include="DB\credenciales\Loguear.cs" />
+    <Compile Include="DB\credenciales\Registrar.cs" />
     <Compile Include="DB\medicos\Class1.cs" />
     <Compile Include="DB\models\Cita.cs" />
     <Compile Include="DB\models\Medico.cs" />

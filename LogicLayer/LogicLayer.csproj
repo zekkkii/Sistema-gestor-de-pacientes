@@ -42,7 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="citas\Class1.cs" />
-    <Compile Include="credenciales\Class1.cs" />
+    <Compile Include="credenciales\Login.cs" />
+    <Compile Include="credenciales\Registro.cs" />
     <Compile Include="medicos\Class1.cs" />
     <Compile Include="pacientes\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
