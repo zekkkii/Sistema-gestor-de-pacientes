@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBase.DB.medicos
+namespace DataBase.DB.pruebas_de_laboratorio
 {
     public class Service_Editar
     {
@@ -17,20 +17,14 @@ namespace DataBase.DB.medicos
             this.connection = connection;
         }
 
-        public bool editar(int id,Medico user)
+        public bool editar(int id,PruebaLaboratorio user)
         {
             try
             {
                 connection.Open();
 
-                SqlCommand query = new SqlCommand("UPDATE medicos " +
-                    "SET nombre = @nombre, apellido = @apellido, correo = @correo, telefono = @telefono, cedula = @cedula, linkFoto = @linkFoto", connection);
+                SqlCommand query = new SqlCommand("UPDATE pruebas_laboratorio SET nombre = @nombre", connection);
                 query.Parameters.AddWithValue("@nombre", user.nombre);
-                query.Parameters.AddWithValue("@apellido", user.apellido);
-                query.Parameters.AddWithValue("@correo", user.correo);
-                query.Parameters.AddWithValue("@telefono", user.telefono);
-                query.Parameters.AddWithValue("@cedula", user.cedula);
-                query.Parameters.AddWithValue("@linkFoto", user.linkFoto);
 
                 query.ExecuteNonQuery();
                 connection.Close();

@@ -46,6 +46,10 @@
     <Compile Include="DB\medicos\Service_Eliminar.cs" />
     <Compile Include="DB\medicos\Service_Listar.cs" />
     <Compile Include="DB\medicos\Service_Registrar.cs" />
+    <Compile Include="DB\pruebas de laboratorio\Service_Editar.cs" />
+    <Compile Include="DB\pruebas de laboratorio\Service_Eliminar.cs" />
+    <Compile Include="DB\pruebas de laboratorio\Service_Listar.cs" />
+    <Compile Include="DB\pruebas de laboratorio\Service_Registrar.cs" />
     <Compile Include="DB\usuarios\Service_Editar.cs" />
     <Compile Include="DB\usuarios\Service_Eliminar.cs" />
     <Compile Include="DB\credenciales\Service_Login.cs" />
@@ -57,7 +61,6 @@
     <Compile Include="DB\models\PruebaLaboratorio.cs" />
     <Compile Include="DB\models\Usuario.cs" />
     <Compile Include="DB\pacientes\Class1.cs" />
-    <Compile Include="DB\pruebas de laboratorio\Class1.cs" />
     <Compile Include="DB\resultados pruebas de laboratorio\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
