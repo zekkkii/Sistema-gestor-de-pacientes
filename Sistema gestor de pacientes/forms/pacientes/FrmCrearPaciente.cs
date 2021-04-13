@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
+namespace Sistema_gestor_de_pacientes.forms.pacientes
 {
-    public partial class Form1 : Form
+    public partial class FrmCrearPaciente : Form
     {
-        public Form1()
+        public FrmCrearPaciente()
         {
             InitializeComponent();
         }

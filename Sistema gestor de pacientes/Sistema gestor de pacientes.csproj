@@ -58,11 +58,17 @@
     <Compile Include="forms\credenciales\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\medicos\Form1.cs">
+    <Compile Include="forms\medicos\FrmCrearMedico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\medicos\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="forms\medicos\FrmCrearMedico.Designer.cs">
+      <DependentUpon>FrmCrearMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\medicos\FrmMantenimientoMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\medicos\FrmMantenimientoMedicos.Designer.cs">
+      <DependentUpon>FrmMantenimientoMedicos.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\menu principal\frmMenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -70,38 +76,74 @@
     <Compile Include="forms\menu principal\frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\pacientes\Form1.cs">
+    <Compile Include="forms\pacientes\FrmCrearPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\pacientes\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="forms\pacientes\FrmCrearPaciente.Designer.cs">
+      <DependentUpon>FrmCrearPaciente.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\pruebas de laboratorio\Form1.cs">
+    <Compile Include="forms\pacientes\FrmMantenimientoPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\pruebas de laboratorio\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="forms\pacientes\FrmMantenimientoPacientes.Designer.cs">
+      <DependentUpon>FrmMantenimientoPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\pruebas de laboratorio\FrmMantenimientoDePruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\pruebas de laboratorio\FrmMantenimientoDePruebas.Designer.cs">
+      <DependentUpon>FrmMantenimientoDePruebas.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\RepositorioForms.cs" />
-    <Compile Include="forms\resultados pruebas laboratorio\Form1.cs">
+    <Compile Include="forms\resultados pruebas laboratorio\FrmMantenimientoResultadosPruebas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\resultados pruebas laboratorio\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="forms\resultados pruebas laboratorio\FrmMantenimientoResultadosPruebas.Designer.cs">
+      <DependentUpon>FrmMantenimientoResultadosPruebas.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\usuarios\Form1.cs">
+    <Compile Include="forms\usuarios\FrmCrearUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\usuarios\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="forms\usuarios\FrmCrearUsuario.Designer.cs">
+      <DependentUpon>FrmCrearUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\usuarios\FrmMantenimientoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\usuarios\FrmMantenimientoUsuario.Designer.cs">
+      <DependentUpon>FrmMantenimientoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\credenciales\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\medicos\FrmCrearMedico.resx">
+      <DependentUpon>FrmCrearMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\medicos\FrmMantenimientoMedicos.resx">
+      <DependentUpon>FrmMantenimientoMedicos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\menu principal\frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\pacientes\FrmCrearPaciente.resx">
+      <DependentUpon>FrmCrearPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\pacientes\FrmMantenimientoPacientes.resx">
+      <DependentUpon>FrmMantenimientoPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\pruebas de laboratorio\FrmMantenimientoDePruebas.resx">
+      <DependentUpon>FrmMantenimientoDePruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\resultados pruebas laboratorio\FrmMantenimientoResultadosPruebas.resx">
+      <DependentUpon>FrmMantenimientoResultadosPruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\usuarios\FrmCrearUsuario.resx">
+      <DependentUpon>FrmCrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\usuarios\FrmMantenimientoUsuario.resx">
+      <DependentUpon>FrmMantenimientoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -138,6 +180,12 @@
       <Project>{4f49d004-9e3e-49e9-8e44-6086aa065d66}</Project>
       <Name>LogicLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo 9 Gio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

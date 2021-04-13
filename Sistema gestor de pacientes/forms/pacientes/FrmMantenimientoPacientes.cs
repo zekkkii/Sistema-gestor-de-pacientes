@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_gestor_de_pacientes.forms.pacientes
 {
-    public partial class Form1 : Form
+    public partial class FrmMantenimientoPacientes : Form
     {
-        public Form1()
+        public FrmMantenimientoPacientes()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
-namespace Sistema_gestor_de_pacientes.forms.usuarios
+namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
 {
-    partial class Form1
+    partial class FrmMantenimientoResultadosPruebas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,17 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FrmMantenimientoResultadosPruebas
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "FrmMantenimientoResultadosPruebas";
+            this.Text = "Mantenimiento de Resultados de Laboratorio";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

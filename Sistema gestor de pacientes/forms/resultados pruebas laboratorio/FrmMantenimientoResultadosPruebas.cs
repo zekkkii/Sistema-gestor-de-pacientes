@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema_gestor_de_pacientes.forms.medicos
+namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
 {
-    public partial class Form1 : Form
+    public partial class FrmMantenimientoResultadosPruebas : Form
     {
-        public Form1()
+        public FrmMantenimientoResultadosPruebas()
         {
             InitializeComponent();
         }

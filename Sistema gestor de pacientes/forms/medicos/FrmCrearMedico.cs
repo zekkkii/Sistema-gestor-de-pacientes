@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema_gestor_de_pacientes.forms.usuarios
+namespace Sistema_gestor_de_pacientes.forms.medicos
 {
-    public partial class Form1 : Form
+    public partial class FrmCrearMedico : Form
     {
-        public Form1()
+        public FrmCrearMedico()
         {
             InitializeComponent();
         }
