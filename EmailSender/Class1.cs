@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBase.DB.usuarios
+namespace EmailSender
 {
-    class Class1
+    public class Class1
     {
     }
 }

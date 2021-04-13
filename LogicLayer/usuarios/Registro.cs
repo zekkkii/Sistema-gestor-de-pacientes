@@ -1,4 +1,4 @@
-﻿using DataBase.DB.credenciales;
+﻿using DataBase.DB.usuarios;
 using DataBase.DB.models;
 using System;
 using System.Collections.Generic;
@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogicLayer.credenciales
+namespace LogicLayer.usuarios
 {
     public class Registro
     {
-        public Registrar iniciarServicio { get; set; }
+        public Service_Registrar iniciarServicio { get; set; }
 
         public Registro(SqlConnection connection)
         {
-            iniciarServicio = new Registrar(connection);
+            iniciarServicio = new Service_Registrar(connection);
         }
 
 

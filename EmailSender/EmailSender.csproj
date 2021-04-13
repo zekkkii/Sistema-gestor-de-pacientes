@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6871010E-76BB-4A54-B03F-E7F9F1AC25E4}</ProjectGuid>
+    <ProjectGuid>b7ed9ee9-ee3d-46c4-8243-c4f2e9c99386</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataBase</RootNamespace>
-    <AssemblyName>DataBase</AssemblyName>
+    <RootNamespace>EmailSender</RootNamespace>
+    <AssemblyName>EmailSender</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,33 +31,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <Reference Include="System"/>
+    
+    <Reference Include="System.Core"/>
+    <Reference Include="System.Xml.Linq"/>
+    <Reference Include="System.Data.DataSetExtensions"/>
+    
+    
+    <Reference Include="Microsoft.CSharp"/>
+    
+    <Reference Include="System.Data"/>
+    
+    <Reference Include="System.Net.Http"/>
+    
+    <Reference Include="System.Xml"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB\citas\Class1.cs" />
-    <Compile Include="DB\usuarios\Service_Editar.cs" />
-    <Compile Include="DB\usuarios\Service_Eliminar.cs" />
-    <Compile Include="DB\credenciales\Service_Login.cs" />
-    <Compile Include="DB\usuarios\Service_Listar.cs" />
-    <Compile Include="DB\usuarios\Service_Registrar.cs" />
-    <Compile Include="DB\medicos\Class1.cs" />
-    <Compile Include="DB\models\Cita.cs" />
-    <Compile Include="DB\models\Medico.cs" />
-    <Compile Include="DB\models\Paciente.cs" />
-    <Compile Include="DB\models\PruebaLaboratorio.cs" />
-    <Compile Include="DB\models\Usuario.cs" />
-    <Compile Include="DB\pacientes\Class1.cs" />
-    <Compile Include="DB\pruebas de laboratorio\Class1.cs" />
-    <Compile Include="DB\resultados pruebas de laboratorio\Class1.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-</Project>
+ </Project>

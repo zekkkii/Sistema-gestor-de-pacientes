@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace DataBase.DB.credenciales
 {
-    public class Loguear
+    public class Service_Login
     {
        
         private SqlConnection connection;
 
-        public Loguear(SqlConnection connection)
+        public Service_Login(SqlConnection connection)
         {
             this.connection = connection;
         }
@@ -32,7 +32,7 @@ namespace DataBase.DB.credenciales
 
                 SqlDataReader reader = finduser.ExecuteReader();
 
-                Usuario datos = new Usuario(null, null, null,null, null, 0);
+                Usuario datos = new Usuario(null, null, null,null, null, null);
 
                 while (reader.Read())
                 {
@@ -48,7 +48,7 @@ namespace DataBase.DB.credenciales
             }
             catch
             {
-                return new Usuario(null, null, null, null, null, 0);
+                return new Usuario(null, null, null, null, null, null);
             }
         }
         

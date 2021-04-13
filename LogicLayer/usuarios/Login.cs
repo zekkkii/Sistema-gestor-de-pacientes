@@ -7,16 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LogicLayer.credenciales
+namespace LogicLayer.usuarios
 {
     public class Login
     {
        
-        public Loguear iniciarServicio { get; set; }
+        public Service_Login iniciarServicio { get; set; }
 
         public Login(SqlConnection connection)
         {
-            iniciarServicio = new Loguear(connection);
+            iniciarServicio = new Service_Login(connection);
         }
 
         public bool login(Usuario usuarioPassword)

@@ -8,7 +8,7 @@ apellido varchar(50),
 correo varchar(30),
 usuario varchar(15),
 user_password varchar(50),
-tipoUsuario tinyint
+tipoUsuario varchar(10)
 )
 
 create table medicos
@@ -57,4 +57,11 @@ estadoCita varchar(30),
 foreign key(idPaciente) references pacientes(id),
 foreign key(idDoctor) references medicos(id),
 )
+ 
+ select *from usuarios
 
+ DELETE FROM usuarios WHERE id =1
+
+ UPDATE usuarios SET nombre = @nombre, apellido = @apellido, correo = @correo, usuario = @usuario, user_password = @password, tipoUsuario = @tipoUser where id = @id
+
+ SELECT id, nombre, apellido, correo, usuario, user_password as contraseña, tipoUsuario as funcion  FROM usuarios

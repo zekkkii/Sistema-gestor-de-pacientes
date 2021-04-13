@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6871010E-76BB-4A54-B03F-E7F9F1AC25E4}</ProjectGuid>
+    <ProjectGuid>{5EE3CD19-7CF0-4C4E-837B-CCC97697AC8F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataBase</RootNamespace>
-    <AssemblyName>DataBase</AssemblyName>
+    <RootNamespace>EmailHandler</RootNamespace>
+    <AssemblyName>EmailHandler</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,23 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB\citas\Class1.cs" />
-    <Compile Include="DB\usuarios\Service_Editar.cs" />
-    <Compile Include="DB\usuarios\Service_Eliminar.cs" />
-    <Compile Include="DB\credenciales\Service_Login.cs" />
-    <Compile Include="DB\usuarios\Service_Listar.cs" />
-    <Compile Include="DB\usuarios\Service_Registrar.cs" />
-    <Compile Include="DB\medicos\Class1.cs" />
-    <Compile Include="DB\models\Cita.cs" />
-    <Compile Include="DB\models\Medico.cs" />
-    <Compile Include="DB\models\Paciente.cs" />
-    <Compile Include="DB\models\PruebaLaboratorio.cs" />
-    <Compile Include="DB\models\Usuario.cs" />
-    <Compile Include="DB\pacientes\Class1.cs" />
-    <Compile Include="DB\pruebas de laboratorio\Class1.cs" />
-    <Compile Include="DB\resultados pruebas de laboratorio\Class1.cs" />
+    <Compile Include="EmailSender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

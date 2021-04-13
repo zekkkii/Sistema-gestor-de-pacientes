@@ -13,9 +13,9 @@ namespace DataBase.DB.models
         public string correo { get; set; }
         public string usuario { get; set; }
         public string password { get; set; }
-        public int tipoUsuario { get; set; }
+        public string tipoUsuario { get; set; }
 
-        public Usuario(string nombre, string apellido, string correo, string usuario, string password, int tipoUsuario)
+        public Usuario(string nombre, string apellido, string correo, string usuario, string password, string tipoUsuario)
         {
             this.nombre = nombre;
             this.apellido = apellido;

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicLayer", "..\LogicLayer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "..\DataBase\DataBase.csproj", "{6871010E-76BB-4A54-B03F-E7F9F1AC25E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailHandler", "..\EmailHandler\EmailHandler.csproj", "{5EE3CD19-7CF0-4C4E-837B-CCC97697AC8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6871010E-76BB-4A54-B03F-E7F9F1AC25E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6871010E-76BB-4A54-B03F-E7F9F1AC25E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6871010E-76BB-4A54-B03F-E7F9F1AC25E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE3CD19-7CF0-4C4E-837B-CCC97697AC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE3CD19-7CF0-4C4E-837B-CCC97697AC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE3CD19-7CF0-4C4E-837B-CCC97697AC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE3CD19-7CF0-4C4E-837B-CCC97697AC8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

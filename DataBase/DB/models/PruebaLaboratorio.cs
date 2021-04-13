@@ -9,14 +9,12 @@ namespace DataBase.DB.models
     public class PruebaLaboratorio
     {
         public string nombre { get; set; }
-        public int idPaciente { get; set; }
-        public string cedulaPaciente { get; set; }
+       
 
-        public PruebaLaboratorio(string nombre, int idPaciente, string cedulaPaciente)
+        public PruebaLaboratorio(string nombre)
         {
             this.nombre = nombre;
-            this.idPaciente = idPaciente;
-            this.cedulaPaciente = cedulaPaciente;
+           
         }
     }
 }
