@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBase.DB.usuarios
+namespace DataBase.DB.medicos
 {
     public class Service_Registrar
     {
@@ -17,24 +17,24 @@ namespace DataBase.DB.usuarios
             this.connection = connection;
         }
 
-        public bool registrar(Usuario user)
+        public bool registrar(Medico user)
         {
 
             //inicio el comando a ejecutar, limpio el codigo para evitar injections, paso a funcion execute donde se abre conexion, corre query y cierra conexion. 
             try
             {
-                if (verificarUser(user.usuario))
+                if (verificarUser(user.cedula))
                 {
                     connection.Open();
 
                     SqlCommand query =
-                       new SqlCommand("INSERT INTO usuarios(nombre, apellido, correo, usuario, user_password, tipoUsuario) values(@nombre, @apellido, @correo, @usuario, @password, @tipoUsuario)", connection);
+                       new SqlCommand("INSERT INTO medicos(nombre, apellido, correo, telefono, cedula, linkFoto) values(@nombre, @apellido, @correo, @telefono, @cedula, @linkFoto)", connection);
                     query.Parameters.AddWithValue("@nombre", user.nombre);
                     query.Parameters.AddWithValue("@apellido", user.apellido);
-                    query.Parameters.AddWithValue("@correo", user.apellido);
-                    query.Parameters.AddWithValue("@usuario", user.usuario);
-                    query.Parameters.AddWithValue("@password", user.password);
-                    query.Parameters.AddWithValue("@tipoUsuario", user.apellido);
+                    query.Parameters.AddWithValue("@correo", user.correo);
+                    query.Parameters.AddWithValue("@telefono", user.telefono);
+                    query.Parameters.AddWithValue("@cedula", user.cedula);
+                    query.Parameters.AddWithValue("@linkFoto", user.linkFoto);
 
 
                     query.ExecuteNonQuery();
@@ -57,8 +57,8 @@ namespace DataBase.DB.usuarios
             {
                 connection.Open();
 
-                SqlCommand verificarusuario = new SqlCommand("SELECT usuario FROM usuarios WHERE usuario = @usuario", connection);
-                verificarusuario.Parameters.AddWithValue("@usuario", user);
+                SqlCommand verificarusuario = new SqlCommand("SELECT cedula FROM medicos WHERE cedula = @cedula", connection);
+                verificarusuario.Parameters.AddWithValue("@cedula", user);
                 SqlDataReader reader = verificarusuario.ExecuteReader();
 
                 while (reader.Read())

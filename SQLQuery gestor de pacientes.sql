@@ -39,10 +39,7 @@ linkFoto varchar(max)
 create table pruebas_laboratorio
 (
 id int primary key identity,
-nombre varchar(50),
-idPaciente int,
-cedulaPaciente tinyint,
-foreign key(idPaciente) references pacientes(id)
+nombre varchar(50)
 )
 
 create table citas
@@ -59,9 +56,14 @@ foreign key(idDoctor) references medicos(id),
 )
  
  select *from usuarios
+  select *from medicos
+
+  INSERT INTO medicos( nombre, apellido, correo, telefono, cedula, linkFoto) values(@nombre, @apellido, @correo, telefono, cedula, linkFoto)
 
  DELETE FROM usuarios WHERE id =1
 
  UPDATE usuarios SET nombre = @nombre, apellido = @apellido, correo = @correo, usuario = @usuario, user_password = @password, tipoUsuario = @tipoUser where id = @id
 
  SELECT id, nombre, apellido, correo, usuario, user_password as contraseña, tipoUsuario as funcion  FROM usuarios
+
+ SELECT id, nombre, apellido, correo, telefono, cedula FROM medicos
