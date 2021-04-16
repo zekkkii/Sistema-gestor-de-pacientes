@@ -5,46 +5,45 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EmailHandler;
 
-namespace DataBase.DB.usuarios
+namespace DataBase.DB.pacientes
 {
     public class Service_Registrar
     {
         private SqlConnection connection;
-        private EmailSender EmailSender;
 
         public Service_Registrar(SqlConnection connection)
         {
             this.connection = connection;
-            EmailSender = new EmailSender();
         }
 
-        public bool registrar(Usuario user)
+        public bool registrar(Paciente user)
         {
 
             //inicio el comando a ejecutar, limpio el codigo para evitar injections, paso a funcion execute donde se abre conexion, corre query y cierra conexion. 
             try
             {
-                if (verificarUser(user.usuario))
+                if (verificarUser(user.cedula))
                 {
                     connection.Open();
 
                     SqlCommand query =
-                       new SqlCommand("INSERT INTO usuarios(nombre, apellido, correo, usuario, user_password, tipoUsuario) values(@nombre, @apellido, @correo, @usuario, @password, @tipoUsuario)", connection);
+                       new SqlCommand("INSERT INTO pacientes(nombre, apellido, telefono, direccion, cedula, fechaNacimiento, fumador, alergias, linkFoto) VALUES(@nombre, @apellido, @telefono, @direccion, @cedula, @fechaNacimiento, @fumador, @alergias, @linkFoto)", connection);
                     query.Parameters.AddWithValue("@nombre", user.nombre);
                     query.Parameters.AddWithValue("@apellido", user.apellido);
-                    query.Parameters.AddWithValue("@correo", user.correo);
-                    query.Parameters.AddWithValue("@usuario", user.usuario);
-                    query.Parameters.AddWithValue("@password", user.password);
-                    query.Parameters.AddWithValue("@tipoUsuario", user.tipoUsuario);
+                    query.Parameters.AddWithValue("@telefono", user.telefono);
+                    query.Parameters.AddWithValue("@direccion", user.direccion);
+                    query.Parameters.AddWithValue("@cedula", user.cedula);
+                    query.Parameters.AddWithValue("@fechaNacimiento", user.fechaNacimiento);
+                    query.Parameters.AddWithValue("@fumador", user.fumador);
+                    query.Parameters.AddWithValue("@alergias", user.alergias);
+                    query.Parameters.AddWithValue("@linkFoto", user.linkFoto);
+     
+
 
 
                     query.ExecuteNonQuery();
                     connection.Close();
-
-                    EmailSender.sendEmail(user.correo, "Usuario creado en Gestor de pacientes", "Por este medio le notificamos que su usuario se creo" +
-                        "correctamente en la plataforma gestor de pacientes. Su usuario es: " + user.usuario); ;
                     return true;
                 }
 
@@ -63,8 +62,8 @@ namespace DataBase.DB.usuarios
             {
                 connection.Open();
 
-                SqlCommand verificarusuario = new SqlCommand("SELECT usuario FROM usuarios WHERE usuario = @usuario", connection);
-                verificarusuario.Parameters.AddWithValue("@usuario", user);
+                SqlCommand verificarusuario = new SqlCommand("SELECT cedula FROM pacientes WHERE cedula = @cedula", connection);
+                verificarusuario.Parameters.AddWithValue("@cedula", user);
                 SqlDataReader reader = verificarusuario.ExecuteReader();
 
                 while (reader.Read())
