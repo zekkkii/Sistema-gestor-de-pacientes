@@ -10,3 +10,6 @@ C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\obj\De
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.dll
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\bin\Debug\EmailHandler.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\bin\Debug\EmailHandler.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\obj\Debug\DataBase.csproj.CopyComplete

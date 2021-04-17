@@ -6,31 +6,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBase.DB.pacientes
+namespace DataBase.DB.citas
 {
-    public class Service_Listar
+    public class Service_Cambiar_Estado_Resultados_Prueba
     {
         private SqlConnection connection;
 
-        public Service_Listar(SqlConnection connection)
+        public Service_Cambiar_Estado_Resultados_Prueba(SqlConnection connection)
         {
             this.connection = connection;
         }
 
-        public DataTable listar()
+        public bool guardarResultados(int id, string resultados)
         {
-            
-            SqlDataAdapter query =
-                new SqlDataAdapter("SELECT id, nombre, apellido, telefono, direccion,cedula,fechaNacimiento as 'Fecha de nacimiento',fumador, alergias FROM pacientes", connection);
+            try
+            {
+                connection.Open();
 
-            DataTable data = new DataTable();
+                SqlCommand query =
+                   new SqlCommand("UPDATE resultados_pruebas_laboratorio SET resultados = @resultados, estado = 'completado' where id = @id", connection);
+                query.Parameters.AddWithValue("@id", id);
+                query.Parameters.AddWithValue("@resultados", resultados);
 
-            connection.Open();
-            query.Fill(data);
-            connection.Close();
-
-            return data;
-
+                query.ExecuteNonQuery();
+                connection.Close();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

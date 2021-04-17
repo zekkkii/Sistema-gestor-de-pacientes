@@ -6,20 +6,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBase.DB.pacientes
+namespace DataBase.DB.citas
 {
-    public class Service_Listar
+    public class Service_Listar_Pacientes
     {
         private SqlConnection connection;
 
-        public Service_Listar(SqlConnection connection)
+        public Service_Listar_Pacientes(SqlConnection connection)
         {
             this.connection = connection;
         }
 
         public DataTable listar()
         {
-            
+
             SqlDataAdapter query =
                 new SqlDataAdapter("SELECT id, nombre, apellido, telefono, direccion,cedula,fechaNacimiento as 'Fecha de nacimiento',fumador, alergias FROM pacientes", connection);
 

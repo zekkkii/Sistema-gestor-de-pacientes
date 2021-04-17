@@ -29,3 +29,5 @@ C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\Sistema gestor 
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.exe
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.pdb
 C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.menu_principal.frmMenuPrincipal.resources
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\bin\Debug\EmailHandler.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\Sistema gestor de pacientes\bin\Debug\EmailHandler.pdb

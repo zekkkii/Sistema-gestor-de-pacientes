@@ -6,22 +6,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBase.DB.pacientes
+namespace DataBase.DB.citas
 {
-    public class Service_Listar
+    public class Service_Buscar_pacientes
     {
         private SqlConnection connection;
 
-        public Service_Listar(SqlConnection connection)
+        public Service_Buscar_pacientes(SqlConnection connection)
         {
             this.connection = connection;
         }
 
         public DataTable listar()
         {
-            
+
             SqlDataAdapter query =
-                new SqlDataAdapter("SELECT id, nombre, apellido, telefono, direccion,cedula,fechaNacimiento as 'Fecha de nacimiento',fumador, alergias FROM pacientes", connection);
+                new SqlDataAdapter("SELECT id, nombre, apellido, telefono, direccion,cedula,fechaNacimiento as 'Fecha de nacimiento',fumador, alergias FROM pacientes WHERE cedula = @cedula", connection);
 
             DataTable data = new DataTable();
 

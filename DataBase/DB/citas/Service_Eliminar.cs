@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBase.DB.pacientes
+namespace DataBase.DB.citas
 {
     public class Service_Eliminar
     {
@@ -24,7 +24,7 @@ namespace DataBase.DB.pacientes
                     connection.Open();
 
                     SqlCommand query =
-                       new SqlCommand("DELETE FROM pacientes WHERE id = @id", connection);
+                       new SqlCommand("DELETE FROM citas WHERE id = @id", connection);
                     query.Parameters.AddWithValue("@id", id);
 
                     query.ExecuteNonQuery();

@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBase.DB.pacientes
+namespace DataBase.DB.citas
 {
-    public class Service_Listar
+    public class Service_Cambiar_Estado_Pueba_Lab
     {
         private SqlConnection connection;
 
-        public Service_Listar(SqlConnection connection)
+        public Service_Cambiar_Estado_Pueba_Lab(SqlConnection connection)
         {
             this.connection = connection;
         }

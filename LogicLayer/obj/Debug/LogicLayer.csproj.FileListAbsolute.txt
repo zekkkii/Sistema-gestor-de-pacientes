@@ -16,3 +16,5 @@ C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\LogicLayer\obj\
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\LogicLayer\obj\Debug\LogicLayer.csproj.CopyComplete
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\LogicLayer\obj\Debug\LogicLayer.dll
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\LogicLayer\obj\Debug\LogicLayer.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\bin\Debug\EmailHandler.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\bin\Debug\EmailHandler.pdb

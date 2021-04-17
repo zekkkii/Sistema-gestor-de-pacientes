@@ -13,7 +13,7 @@ namespace DataBase.DB.models
         public string fechaCita { get; set; }
         public string horaCita { get; set; }
         public string causaCita { get; set; }
-        public string estadoCita { get; set; }
+       
        
         public Cita(int idPaciente, int idDoctor, string fechaCita, string horaCita, string causaCita, string estadoCita)
         {
@@ -22,7 +22,7 @@ namespace DataBase.DB.models
             this.fechaCita = fechaCita;
             this.horaCita = horaCita;
             this.causaCita = causaCita;
-            this.estadoCita = estadoCita;
+            
         }
     }
 }

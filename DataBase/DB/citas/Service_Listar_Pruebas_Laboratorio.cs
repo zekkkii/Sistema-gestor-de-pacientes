@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace DataBase.DB.citas
 {
-    public class Service_Listar_Medicos
+    public class Service_Listar_Pruebas_Laboratorio
     {
         private SqlConnection connection;
 
-        public Service_Listar_Medicos(SqlConnection connection)
+        public Service_Listar_Pruebas_Laboratorio(SqlConnection connection)
         {
             this.connection = connection;
         }
@@ -21,7 +21,7 @@ namespace DataBase.DB.citas
         {
 
             SqlDataAdapter query =
-                new SqlDataAdapter("SELECT id, nombre, apellido, correo, telefono, cedula FROM medicos", connection);
+                new SqlDataAdapter("SELECT * FROM pruebas_laboratorio", connection);
 
             DataTable data = new DataTable();
 

@@ -1,0 +1,6 @@
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\EmailHandler\bin\Debug\EmailHandler.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\EmailHandler\bin\Debug\EmailHandler.pdb
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\EmailHandler\obj\Debug\EmailHandler.csprojAssemblyReference.cache
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\EmailHandler\obj\Debug\EmailHandler.csproj.CoreCompileInputs.cache
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\EmailHandler\obj\Debug\EmailHandler.dll
+C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\EmailHandler\obj\Debug\EmailHandler.pdb
