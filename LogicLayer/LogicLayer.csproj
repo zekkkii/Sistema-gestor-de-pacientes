@@ -46,16 +46,18 @@
     <Compile Include="medicos\Eliminar.cs" />
     <Compile Include="medicos\Registro.cs" />
     <Compile Include="medicos\VerListado.cs" />
+    <Compile Include="pruebas de laboratorio\Editar.cs" />
+    <Compile Include="pruebas de laboratorio\Eliminar.cs" />
+    <Compile Include="pruebas de laboratorio\Registro.cs" />
+    <Compile Include="pruebas de laboratorio\VerListado.cs" />
     <Compile Include="usuarios\Editar.cs" />
     <Compile Include="usuarios\Eliminar.cs" />
     <Compile Include="usuarios\Login.cs" />
     <Compile Include="usuarios\Verificar_tipo_User.cs" />
     <Compile Include="usuarios\VerListado.cs" />
     <Compile Include="usuarios\Registro.cs" />
-    <Compile Include="medicos\Class1.cs" />
     <Compile Include="pacientes\Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="pruebas de laboratorio\Class1.cs" />
     <Compile Include="resultado pruebas de laboratorio\Class1.cs" />
   </ItemGroup>
   <ItemGroup />
