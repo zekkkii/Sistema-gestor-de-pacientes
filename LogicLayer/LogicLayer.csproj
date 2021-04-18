@@ -54,6 +54,9 @@
     <Compile Include="pruebas de laboratorio\Eliminar.cs" />
     <Compile Include="pruebas de laboratorio\Registro.cs" />
     <Compile Include="pruebas de laboratorio\VerListado.cs" />
+    <Compile Include="resultado pruebas de laboratorio\Llenar_Resultados.cs" />
+    <Compile Include="resultado pruebas de laboratorio\Buscar.cs" />
+    <Compile Include="resultado pruebas de laboratorio\VerListado.cs" />
     <Compile Include="usuarios\Editar.cs" />
     <Compile Include="usuarios\Eliminar.cs" />
     <Compile Include="usuarios\Login.cs" />
@@ -61,7 +64,6 @@
     <Compile Include="usuarios\VerListado.cs" />
     <Compile Include="usuarios\Registro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="resultado pruebas de laboratorio\Class1.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
