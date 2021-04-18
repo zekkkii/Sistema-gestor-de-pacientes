@@ -1,11 +1,6 @@
 create database  Gestor_de_pacientes
 
-create table admins
-(
-id int primary key identity,
-usuario varchar(50),
-user_password varchar(50),
-)
+
 
 create table usuarios
 (
@@ -54,8 +49,7 @@ create table citas
 id int primary key identity,
 idPaciente int,
 idDoctor int,
-fechaCita varchar(12),
-horaCita varchar(12),
+fechaHoraCita varchar(30),
 causaCita varchar(max),
 estadoCita varchar(30),
 foreign key(idPaciente) references pacientes(id),
@@ -64,18 +58,22 @@ foreign key(idDoctor) references medicos(id),
 
 
 
-
 create table resultados_pruebas_laboratorio
 (
 id int primary key identity,
 idPaciente int,
-cedula varchar(12),
+idCita int,
 idPrueba_lab int,
+idDoctor int,
 resultados varchar(max),
 estado  varchar(25),
 foreign key(idPaciente) references pacientes(id),
-foreign key(idPrueba_lab) references pruebas_laboratorio(id)
+foreign key(idCita) references citas(id),
+foreign key(idPrueba_lab) references pruebas_laboratorio(id),
+foreign key(idDoctor) references medicos(id)
 )
+
+
 
 
  
@@ -137,11 +135,11 @@ INNER JOIN pruebas_laboratorio pl on r.idPrueba_lab = pl.id
 WHERE r.resultados = 'pendiente'
 
 
-SELECT r.id, p.nombre, p.apellido, r.cedula, pl.nombre, r.resultados, r.estado
+SELECT r.id, p.nombre, p.apellido, p.cedula, pl.nombre, r.resultados, r.estado
 from resultados_pruebas_laboratorio r
 INNER JOIN pacientes p on r.idPaciente = p.id
 INNER JOIN pruebas_laboratorio pl on r.idPrueba_lab = pl.id
-WHERE r.cedula = '0123456789'
+WHERE p.cedula = '0123456789'
 
 
 
@@ -158,3 +156,38 @@ SELECT id, nombre, apellido, telefono, direccion,cedula,fechaNacimiento as 'Fech
 insert into pacientes(nombre, apellido) values('juan','perez')
 insert into resultados_pruebas_laboratorio(idPaciente,cedula,idPrueba_lab, resultados) values(2,'0123456789',1,'completados')
 
+
+
+SELECT c.id, p.nombre, p.apellido, m.nombre, c.fechaHoraCita, c.causaCita, c.estadoCita from citas c
+                INNER JOIN pacientes p on c.idPaciente = p.id
+                INNER JOIN medicos m on c.idDoctor = m.id
+
+SELECT id, nombre, apellido, correo, telefono, cedula FROM medicos
+SELECT id, nombre, apellido, telefono, direccion,cedula,fechaNacimiento as 'Fecha de nacimiento',fumador, alergias FROM pacientes
+
+INSERT INTO resultados_pruebas_laboratorio(idPaciente, idCita, idPrueba_lab, idDoctor, resultados, estado)	values(@idPaciente, @idCita, @idPrueba_lab, @idDoctor, @resultados, 'pendiente')
+UPDATE citas SET estadoCita = 'pendiente de resultados' WHERE id =1
+
+
+
+
+SELECT r.id, p.nombre, p.apellido, p.cedula, pl.nombre, r.resultados, r.estado from resultados_pruebas_laboratorio r 
+                INNER JOIN pacientes p on r.idPaciente = p.id
+                INNER JOIN pruebas_laboratorio pl on r.idPrueba_lab = pl.id
+                WHERE r.resultados = 'pendiente' and r.idPaciente = @id
+
+
+
+				SELECT r.id, p.nombre, p.apellido, p.cedula, pl.nombre, r.resultados, r.estado from resultados_pruebas_laboratorio r 
+                INNER JOIN pacientes p on r.idPaciente = p.id
+                INNER JOIN pruebas_laboratorio pl on r.idPrueba_lab = pl.id
+                WHERE r.resultados = 'completado'
+
+				SELECT r.id, p.nombre, p.apellido, p.cedula, pl.nombre, r.resultados, r.estado from resultados_pruebas_laboratorio r 
+                INNER JOIN pacientes p on r.idPaciente = p.id
+                INNER JOIN pruebas_laboratorio pl on r.idPrueba_lab = pl.id
+                WHERE r.resultados = 'completado'
+				
+
+
+	SELECT tipoUsuario FROM usuarios WHERE usuario = @usuario  AND user_password =@password

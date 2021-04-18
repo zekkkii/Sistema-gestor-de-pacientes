@@ -41,16 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB\citas\Class1.cs" />
     <Compile Include="DB\citas\Service_Buscar_pacientes.cs" />
     <Compile Include="DB\citas\Service_Buscar_Medicos.cs" />
-    <Compile Include="DB\citas\Service_Cambiar_Estado_Resultados_Prueba.cs" />
-    <Compile Include="DB\citas\Service_Cambiar_Estado_Pueba_Lab.cs" />
+    <Compile Include="DB\citas\Service_Cambiar_Estado_Cita_Completada.cs" />
     <Compile Include="DB\citas\Service_Eliminar.cs" />
     <Compile Include="DB\citas\Service_Listar_Resultado_Puebas_paciente.cs" />
     <Compile Include="DB\citas\Service_Listar_Resultados_Pruebas_completados.cs" />
     <Compile Include="DB\citas\Service_Listar_Medicos.cs" />
-    <Compile Include="DB\citas\Service_Listar_Resultado_Puebas.cs" />
     <Compile Include="DB\citas\Service_Listar_Pruebas_Laboratorio.cs" />
     <Compile Include="DB\citas\Service_Listar_Pacientes.cs" />
     <Compile Include="DB\citas\Service_Listar.cs" />
@@ -74,14 +71,15 @@
     <Compile Include="DB\resultados pruebas de laboratorio\Service_Listar.cs" />
     <Compile Include="DB\usuarios\Service_Editar.cs" />
     <Compile Include="DB\usuarios\Service_Eliminar.cs" />
-    <Compile Include="DB\credenciales\Service_Login.cs" />
     <Compile Include="DB\usuarios\Service_Listar.cs" />
+    <Compile Include="DB\usuarios\Service_Login.cs" />
     <Compile Include="DB\usuarios\Service_Registrar.cs" />
     <Compile Include="DB\models\Cita.cs" />
     <Compile Include="DB\models\Medico.cs" />
     <Compile Include="DB\models\Paciente.cs" />
     <Compile Include="DB\models\PruebaLaboratorio.cs" />
     <Compile Include="DB\models\Usuario.cs" />
+    <Compile Include="DB\usuarios\Service_Verificar_Tipo_User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

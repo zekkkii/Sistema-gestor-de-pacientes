@@ -10,17 +10,15 @@ namespace DataBase.DB.models
     {
         public int idPaciente { get; set; }
         public int idDoctor { get; set; }
-        public string fechaCita { get; set; }
-        public string horaCita { get; set; }
+        public string fechaHoraCita { get; set; }
         public string causaCita { get; set; }
        
        
-        public Cita(int idPaciente, int idDoctor, string fechaCita, string horaCita, string causaCita, string estadoCita)
+        public Cita(int idPaciente, int idDoctor, string fechaHoraCita, string causaCita)
         {
             this.idPaciente = idPaciente;
             this.idDoctor = idDoctor;
-            this.fechaCita = fechaCita;
-            this.horaCita = horaCita;
+            this.fechaHoraCita = fechaHoraCita;
             this.causaCita = causaCita;
             
         }

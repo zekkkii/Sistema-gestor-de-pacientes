@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="citas\Class1.cs" />
+    <Compile Include="usuarios\Editar.cs" />
     <Compile Include="usuarios\Eliminar.cs" />
-    <Compile Include="usuarios\VerListado.cs" />
     <Compile Include="usuarios\Login.cs" />
+    <Compile Include="usuarios\Verificar_tipo_User.cs" />
+    <Compile Include="usuarios\VerListado.cs" />
     <Compile Include="usuarios\Registro.cs" />
     <Compile Include="medicos\Class1.cs" />
     <Compile Include="pacientes\Class1.cs" />
@@ -52,9 +54,7 @@
     <Compile Include="pruebas de laboratorio\Class1.cs" />
     <Compile Include="resultado pruebas de laboratorio\Class1.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="credenciales\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\DataBase\DataBase.csproj">
       <Project>{6871010e-76bb-4a54-b03f-e7f9f1ac25e4}</Project>

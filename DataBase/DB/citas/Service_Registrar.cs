@@ -26,11 +26,10 @@ namespace DataBase.DB.citas
                     connection.Open();
 
                     SqlCommand query =
-                       new SqlCommand("INSERT INTO citas(idPaciente, idDoctor, fechaCita, horaCita, causaCita, estadoCita) VALUES(@idPaciente, @idDoctor, @fechaCita, @horaCita, @causaCita, 'pendiente de consulta')", connection);
+                       new SqlCommand("INSERT INTO citas(idPaciente, idDoctor, fechaHoraCita, causaCita, estadoCita) VALUES(@idPaciente, @idDoctor, @fechaHoraCita, @causaCita, 'pendiente de consulta')", connection);
                     query.Parameters.AddWithValue("@idPaciente", user.idPaciente);
                     query.Parameters.AddWithValue("@idDoctor", user.idDoctor);
-                    query.Parameters.AddWithValue("@fechaCita", user.fechaCita);
-                    query.Parameters.AddWithValue("@horaCita", user.horaCita);
+                    query.Parameters.AddWithValue("@fechaHoraCita", user.fechaHoraCita);
                     query.Parameters.AddWithValue("@causaCita", user.causaCita);
                    
           

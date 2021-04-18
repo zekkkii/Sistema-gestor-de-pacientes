@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataBase.DB.credenciales
+namespace DataBase.DB.usuarios
 {
     public class Service_Login
     {

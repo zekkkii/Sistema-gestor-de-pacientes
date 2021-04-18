@@ -26,7 +26,7 @@ namespace DataBase.DB.citas
                     connection.Open();
 
                     SqlCommand query =
-                       new SqlCommand("INSERT INTO resultados_pruebas_laboratorio(idPaciente, cedula, idPrueba_lab, resultados, estado)	values(@idPaciente, @cedula, @idPrueba_lab, @resultados, 'pendiente')", connection);
+                       new SqlCommand("INSERT INTO resultados_pruebas_laboratorio(idPaciente, idCita, idPrueba_lab, idDoctor, resultados, estado)	values(@idPaciente, @idCita, @idPrueba_lab, @idDoctor, @resultados, 'pendiente')", connection);
                     query.Parameters.AddWithValue("@idPaciente", data.idPaciente);
                     query.Parameters.AddWithValue("@cedula", data.cedula);
                     query.Parameters.AddWithValue("@idPrueba_lab", data.idPrueba_lab);

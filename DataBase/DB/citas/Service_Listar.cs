@@ -21,7 +21,7 @@ namespace DataBase.DB.citas
         {
             
             SqlDataAdapter query =
-                new SqlDataAdapter("SELECT c.id, p.nombre, p.apellido, m.nombre, c.fechaCita, c.horaCita, c.causaCita, c.estadoCita from citas c" +
+                new SqlDataAdapter("SELECT c.id, p.nombre, p.apellido, m.nombre, c.fechaHoraCita, c.causaCita, c.estadoCita from citas c" +
                 "INNER JOIN pacientes p on c.idPaciente = p.id" +
                 "INNER JOIN medicos m on c.idDoctor = m.id", connection);
 
