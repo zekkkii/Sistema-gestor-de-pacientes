@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB\citas\Service_Buscar_pacientes.cs" />
+    <Compile Include="DB\citas\Service_Buscar_Pacientes.cs" />
     <Compile Include="DB\citas\Service_Buscar_Medicos.cs" />
     <Compile Include="DB\citas\Service_Cambiar_Estado_Cita_Completada.cs" />
     <Compile Include="DB\citas\Service_Eliminar.cs" />

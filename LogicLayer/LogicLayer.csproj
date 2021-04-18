@@ -41,7 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="citas\Class1.cs" />
+    <Compile Include="citas\Buscar_Paciente.cs" />
+    <Compile Include="citas\Buscar_Medico.cs" />
+    <Compile Include="citas\Cambiar_Estado_Cita_Completada.cs" />
+    <Compile Include="citas\Eliminar.cs" />
+    <Compile Include="citas\Registrar_Resultados_Puebas.cs" />
+    <Compile Include="citas\Registro.cs" />
+    <Compile Include="citas\VerListado_Resultados_Pruebas_completados.cs" />
+    <Compile Include="citas\VerListado_Resultado_Puebas_paciente.cs" />
+    <Compile Include="citas\VerListado_Pruebas_Laboratorio.cs" />
+    <Compile Include="citas\VerListado_Pacientes.cs" />
+    <Compile Include="citas\VerListado_Medicos.cs" />
+    <Compile Include="citas\VerListado.cs" />
     <Compile Include="medicos\Editar.cs" />
     <Compile Include="medicos\Eliminar.cs" />
     <Compile Include="medicos\Registro.cs" />

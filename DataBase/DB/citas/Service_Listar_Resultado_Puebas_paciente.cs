@@ -17,7 +17,7 @@ namespace DataBase.DB.citas
             this.connection = connection;
         }
 
-        public DataTable listar()
+        public DataTable listar(int id)
         {
 
             SqlDataAdapter query =
@@ -25,6 +25,7 @@ namespace DataBase.DB.citas
                 "INNER JOIN pacientes p on r.idPaciente = p.id" +
                 "INNER JOIN pruebas_laboratorio pl on r.idPrueba_lab = pl.id" +
                 "WHERE r.resultados = 'pendiente' AND r.idPaciente = @id", connection);
+            query.SelectCommand.Parameters.AddWithValue("@id", id);
 
             DataTable data = new DataTable();
 

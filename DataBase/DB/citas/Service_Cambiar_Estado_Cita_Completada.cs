@@ -17,7 +17,7 @@ namespace DataBase.DB.citas
             this.connection = connection;
         }
 
-        public bool listar(int idCita)
+        public bool cambiar(int idCita)
         {
             try
             {

@@ -17,11 +17,12 @@ namespace DataBase.DB.citas
             this.connection = connection;
         }
 
-        public DataTable listar()
+        public DataTable listar(string cedula)
         {
 
             SqlDataAdapter query =
                 new SqlDataAdapter("SELECT id, nombre, apellido, correo, telefono, cedula FROM medicos WHERE cedula = @cedula", connection);
+            query.SelectCommand.Parameters.AddWithValue("@cedula",cedula);
 
             DataTable data = new DataTable();
 
