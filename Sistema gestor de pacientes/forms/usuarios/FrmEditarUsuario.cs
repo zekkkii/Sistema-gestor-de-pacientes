@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema_gestor_de_pacientes.forms.pacientes
+namespace Sistema_gestor_de_pacientes.forms.usuarios
 {
-    public partial class FrmCrearPaciente : Form
+    public partial class FrmEditarUsuario : Form
     {
-        public FrmCrearPaciente()
+        public FrmEditarUsuario()
         {
             InitializeComponent();
         }
