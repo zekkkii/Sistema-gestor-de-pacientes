@@ -58,6 +58,18 @@
     <Compile Include="forms\credenciales\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\medicos\FrmCrearMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\medicos\FrmCrearMedico.Designer.cs">
+      <DependentUpon>FrmCrearMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\medicos\FrmEditarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\medicos\FrmEditarMedico.Designer.cs">
+      <DependentUpon>FrmEditarMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\medicos\FrmMantenimientoMedicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +123,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\credenciales\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\medicos\FrmCrearMedico.resx">
+      <DependentUpon>FrmCrearMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\medicos\FrmEditarMedico.resx">
+      <DependentUpon>FrmEditarMedico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\medicos\FrmMantenimientoMedicos.resx">
       <DependentUpon>FrmMantenimientoMedicos.cs</DependentUpon>
