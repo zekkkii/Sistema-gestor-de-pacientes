@@ -70,6 +70,18 @@
     <Compile Include="forms\menu principal\frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\pacientes\FrmCrearPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\pacientes\FrmCrearPaciente.Designer.cs">
+      <DependentUpon>FrmCrearPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\pacientes\FrmEditarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\pacientes\FrmEditarPaciente.Designer.cs">
+      <DependentUpon>FrmEditarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\pacientes\FrmMantenimientoPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +117,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\menu principal\frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\pacientes\FrmCrearPaciente.resx">
+      <DependentUpon>FrmCrearPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\pacientes\FrmEditarPaciente.resx">
+      <DependentUpon>FrmEditarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\pacientes\FrmMantenimientoPacientes.resx">
       <DependentUpon>FrmMantenimientoPacientes.cs</DependentUpon>
