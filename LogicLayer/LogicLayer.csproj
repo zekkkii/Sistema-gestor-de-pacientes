@@ -42,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="citas\Class1.cs" />
+    <Compile Include="medicos\Editar.cs" />
+    <Compile Include="medicos\Eliminar.cs" />
+    <Compile Include="medicos\Registro.cs" />
+    <Compile Include="medicos\VerListado.cs" />
     <Compile Include="usuarios\Editar.cs" />
     <Compile Include="usuarios\Eliminar.cs" />
     <Compile Include="usuarios\Login.cs" />
