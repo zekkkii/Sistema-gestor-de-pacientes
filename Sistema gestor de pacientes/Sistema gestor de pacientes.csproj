@@ -100,6 +100,24 @@
     <Compile Include="forms\pacientes\FrmMantenimientoPacientes.Designer.cs">
       <DependentUpon>FrmMantenimientoPacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\pruebas de laboratorio\FrmCrearPruebaLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\pruebas de laboratorio\FrmCrearPruebaLab.Designer.cs">
+      <DependentUpon>FrmCrearPruebaLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\pruebas de laboratorio\FrmEditarPruebaLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\pruebas de laboratorio\FrmEditarPruebaLab.Designer.cs">
+      <DependentUpon>FrmEditarPruebaLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\pruebas de laboratorio\FrmMantenimientoPruebasLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\pruebas de laboratorio\FrmMantenimientoPruebasLab.Designer.cs">
+      <DependentUpon>FrmMantenimientoPruebasLab.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\RepositorioForms.cs" />
     <Compile Include="forms\usuarios\FrmCrearUsuario.cs">
       <SubType>Form</SubType>
@@ -144,6 +162,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\pacientes\FrmMantenimientoPacientes.resx">
       <DependentUpon>FrmMantenimientoPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\pruebas de laboratorio\FrmCrearPruebaLab.resx">
+      <DependentUpon>FrmCrearPruebaLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\pruebas de laboratorio\FrmEditarPruebaLab.resx">
+      <DependentUpon>FrmEditarPruebaLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\pruebas de laboratorio\FrmMantenimientoPruebasLab.resx">
+      <DependentUpon>FrmMantenimientoPruebasLab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\usuarios\FrmCrearUsuario.resx">
       <DependentUpon>FrmCrearUsuario.cs</DependentUpon>
@@ -203,7 +230,6 @@
     <None Include="Resources\Programacion 2.0.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="forms\pruebas de laboratorio\" />
     <Folder Include="forms\resultados pruebas laboratorio\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
