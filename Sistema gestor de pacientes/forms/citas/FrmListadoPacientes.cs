@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_gestor_de_pacientes.forms.citas
 {
-    public partial class Form1 : Form
+    public partial class FrmListadoPacientes : Form
     {
-        public Form1()
+        public FrmListadoPacientes()
         {
             InitializeComponent();
         }

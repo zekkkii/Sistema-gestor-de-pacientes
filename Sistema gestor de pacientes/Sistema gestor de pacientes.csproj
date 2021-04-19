@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="forms\citas\Form1.cs">
+    <Compile Include="forms\citas\FrmDetallesCitas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\citas\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="forms\citas\FrmDetallesCitas.Designer.cs">
+      <DependentUpon>FrmDetallesCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoMedicos.Designer.cs">
+      <DependentUpon>FrmListadoMedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoPacientes.Designer.cs">
+      <DependentUpon>FrmListadoPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\citas\FrmMantenimientoCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\citas\FrmMantenimientoCitas.Designer.cs">
+      <DependentUpon>FrmMantenimientoCitas.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\credenciales\frmLogin.cs">
       <SubType>Form</SubType>
@@ -151,6 +169,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forms\citas\FrmDetallesCitas.resx">
+      <DependentUpon>FrmDetallesCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\citas\FrmListadoMedicos.resx">
+      <DependentUpon>FrmListadoMedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\citas\FrmListadoPacientes.resx">
+      <DependentUpon>FrmListadoPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\citas\FrmMantenimientoCitas.resx">
+      <DependentUpon>FrmMantenimientoCitas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\credenciales\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
