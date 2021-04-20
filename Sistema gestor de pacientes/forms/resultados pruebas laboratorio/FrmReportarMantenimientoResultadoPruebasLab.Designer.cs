@@ -31,11 +31,11 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.LblReportarMantenimientoResultadoPruebasLab = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.LblInfo = new System.Windows.Forms.Label();
             this.BtnFinalizar = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.LblReportarMantenimientoResultadoPruebasLab = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -79,35 +79,6 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.tableLayoutPanel2.Size = new System.Drawing.Size(260, 328);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // tableLayoutPanel3
-            // 
-            this.tableLayoutPanel3.ColumnCount = 1;
-            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 3);
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Controls.Add(this.LblReportarMantenimientoResultadoPruebasLab, 0, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 51);
-            this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // LblReportarMantenimientoResultadoPruebasLab
-            // 
-            this.LblReportarMantenimientoResultadoPruebasLab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblReportarMantenimientoResultadoPruebasLab.AutoSize = true;
-            this.LblReportarMantenimientoResultadoPruebasLab.Font = new System.Drawing.Font("Neozoic Trial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblReportarMantenimientoResultadoPruebasLab.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblReportarMantenimientoResultadoPruebasLab.Location = new System.Drawing.Point(3, 9);
-            this.LblReportarMantenimientoResultadoPruebasLab.Name = "LblReportarMantenimientoResultadoPruebasLab";
-            this.LblReportarMantenimientoResultadoPruebasLab.Size = new System.Drawing.Size(788, 33);
-            this.LblReportarMantenimientoResultadoPruebasLab.TabIndex = 0;
-            this.LblReportarMantenimientoResultadoPruebasLab.Text = "Reportar Resultados";
-            this.LblReportarMantenimientoResultadoPruebasLab.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -145,6 +116,35 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.BtnFinalizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnFinalizar.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 3);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.LblReportarMantenimientoResultadoPruebasLab, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 51);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // LblReportarMantenimientoResultadoPruebasLab
+            // 
+            this.LblReportarMantenimientoResultadoPruebasLab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblReportarMantenimientoResultadoPruebasLab.AutoSize = true;
+            this.LblReportarMantenimientoResultadoPruebasLab.Font = new System.Drawing.Font("Neozoic Trial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblReportarMantenimientoResultadoPruebasLab.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LblReportarMantenimientoResultadoPruebasLab.Location = new System.Drawing.Point(3, 9);
+            this.LblReportarMantenimientoResultadoPruebasLab.Name = "LblReportarMantenimientoResultadoPruebasLab";
+            this.LblReportarMantenimientoResultadoPruebasLab.Size = new System.Drawing.Size(788, 33);
+            this.LblReportarMantenimientoResultadoPruebasLab.TabIndex = 0;
+            this.LblReportarMantenimientoResultadoPruebasLab.Text = "Reportar Resultados";
+            this.LblReportarMantenimientoResultadoPruebasLab.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // FrmReportarMantenimientoResultadoPruebasLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -153,6 +153,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmReportarMantenimientoResultadoPruebasLab";
             this.Text = "Reportar Resultados de Pruebas de Laboratorio";
+            this.Load += new System.EventHandler(this.FrmReportarMantenimientoResultadoPruebasLab_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

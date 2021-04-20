@@ -297,6 +297,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmCrearMedico";
             this.Text = "Crear Medico";
+            this.Load += new System.EventHandler(this.FrmCrearMedico_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

@@ -96,7 +96,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.LblEditNombrePruebaLab.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.LblEditNombrePruebaLab.AutoSize = true;
             this.LblEditNombrePruebaLab.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEditNombrePruebaLab.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LblEditNombrePruebaLab.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.LblEditNombrePruebaLab.Location = new System.Drawing.Point(60, 30);
             this.LblEditNombrePruebaLab.Name = "LblEditNombrePruebaLab";
             this.LblEditNombrePruebaLab.Size = new System.Drawing.Size(139, 17);
@@ -149,6 +149,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmEditarPruebaLab";
             this.Text = "FrmEditarPruebaLab";
+            this.Load += new System.EventHandler(this.FrmEditarPruebaLab_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

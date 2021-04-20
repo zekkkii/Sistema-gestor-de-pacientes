@@ -181,6 +181,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmMantenimientoMedicos";
             this.Text = "Mantenimiento de Medicos";
+            this.Load += new System.EventHandler(this.FrmMantenimientoMedicos_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();

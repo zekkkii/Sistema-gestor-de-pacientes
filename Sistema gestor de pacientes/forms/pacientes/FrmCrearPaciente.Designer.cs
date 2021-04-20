@@ -384,6 +384,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmCrearPaciente";
             this.Text = "Crear Paciente";
+            this.Load += new System.EventHandler(this.FrmCrearPaciente_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

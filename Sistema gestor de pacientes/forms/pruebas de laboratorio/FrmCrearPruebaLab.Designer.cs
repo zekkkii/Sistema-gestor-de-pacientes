@@ -149,6 +149,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmCrearPruebaLab";
             this.Text = "Crear Prueba";
+            this.Load += new System.EventHandler(this.FrmCrearPruebaLab_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

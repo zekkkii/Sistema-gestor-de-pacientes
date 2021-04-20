@@ -170,6 +170,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmListadoPacientes";
             this.Text = "FrmListadoPacientes";
+            this.Load += new System.EventHandler(this.FrmListadoPacientes_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvListadoPacientes)).EndInit();

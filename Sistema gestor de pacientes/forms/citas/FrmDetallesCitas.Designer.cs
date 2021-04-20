@@ -258,6 +258,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmDetallesCitas";
             this.Text = "FrmDetallesCitas";
+            this.Load += new System.EventHandler(this.FrmDetallesCitas_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

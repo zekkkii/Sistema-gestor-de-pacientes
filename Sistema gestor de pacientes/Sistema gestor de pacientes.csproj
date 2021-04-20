@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,6 +52,24 @@
     </Compile>
     <Compile Include="forms\citas\FrmDetallesCitas.Designer.cs">
       <DependentUpon>FrmDetallesCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoDePruebasPendienteConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoDePruebasPendienteConsulta.Designer.cs">
+      <DependentUpon>FrmListadoDePruebasPendienteConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoDePruebasPendienteResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoDePruebasPendienteResultados.Designer.cs">
+      <DependentUpon>FrmListadoDePruebasPendienteResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoDePruebasPendientesCompleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\citas\FrmListadoDePruebasPendientesCompleta.Designer.cs">
+      <DependentUpon>FrmListadoDePruebasPendientesCompleta.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\citas\FrmListadoMedicos.cs">
       <SubType>Form</SubType>
@@ -70,10 +89,10 @@
     <Compile Include="forms\citas\FrmMantenimientoCitas.Designer.cs">
       <DependentUpon>FrmMantenimientoCitas.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\credenciales\frmLogin.cs">
+    <Compile Include="forms\usuarios\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\credenciales\frmLogin.Designer.cs">
+    <Compile Include="forms\usuarios\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\medicos\FrmCrearMedico.cs">
@@ -172,6 +191,15 @@
     <EmbeddedResource Include="forms\citas\FrmDetallesCitas.resx">
       <DependentUpon>FrmDetallesCitas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\citas\FrmListadoDePruebasPendienteConsulta.resx">
+      <DependentUpon>FrmListadoDePruebasPendienteConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\citas\FrmListadoDePruebasPendienteResultados.resx">
+      <DependentUpon>FrmListadoDePruebasPendienteResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\citas\FrmListadoDePruebasPendientesCompleta.resx">
+      <DependentUpon>FrmListadoDePruebasPendientesCompleta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\citas\FrmListadoMedicos.resx">
       <DependentUpon>FrmListadoMedicos.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,7 +209,7 @@
     <EmbeddedResource Include="forms\citas\FrmMantenimientoCitas.resx">
       <DependentUpon>FrmMantenimientoCitas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\credenciales\frmLogin.resx">
+    <EmbeddedResource Include="forms\usuarios\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\medicos\FrmCrearMedico.resx">
@@ -277,6 +305,8 @@
   <ItemGroup>
     <None Include="Resources\Programacion 2.0.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="forms\credenciales\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

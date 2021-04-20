@@ -28,3 +28,29 @@ C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\Sistema gestor 
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.csproj.CopyComplete
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.exe
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.pdb
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.csprojAssemblyReference.cache
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.citas.FrmDetallesCitas.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.citas.FrmListadoMedicos.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.citas.FrmListadoPacientes.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.citas.FrmMantenimientoCitas.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.credenciales.frmLogin.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.medicos.FrmCrearMedico.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.medicos.FrmEditarMedico.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.medicos.FrmMantenimientoMedicos.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.menu_principal.frmMenuPrincipal.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.pacientes.FrmCrearPaciente.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.pacientes.FrmEditarPaciente.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.pacientes.FrmMantenimientoPacientes.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio.FrmCrearPruebaLab.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio.FrmEditarPruebaLab.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio.FrmMantenimientoPruebasLab.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio.FrmMantenimientoResultadoPruebasLab.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio.FrmReportarMantenimientoResultadoPruebasLab.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.usuarios.FrmCrearUsuario.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.usuarios.FrmEditarUsuario.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.forms.usuarios.FrmMantenimientoUsuario.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema_gestor_de_pacientes.Properties.Resources.resources
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.csproj.GenerateResource.cache
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.csproj.CoreCompileInputs.cache
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.exe
+C:\Users\JDerek\Desktop\Proyecto final\Sistema gestor de pacientes\obj\Debug\Sistema gestor de pacientes.pdb

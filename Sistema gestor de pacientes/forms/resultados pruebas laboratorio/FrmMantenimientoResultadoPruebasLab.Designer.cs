@@ -205,6 +205,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmMantenimientoResultadoPruebasLab";
             this.Text = "Mantenimiento de Resultados de Pruebas de Laboratorio";
+            this.Load += new System.EventHandler(this.FrmMantenimientoResultadoPruebasLab_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

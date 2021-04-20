@@ -322,6 +322,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmCrearUsuario";
             this.Text = "Crear Usuario";
+            this.Load += new System.EventHandler(this.FrmCrearUsuario_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

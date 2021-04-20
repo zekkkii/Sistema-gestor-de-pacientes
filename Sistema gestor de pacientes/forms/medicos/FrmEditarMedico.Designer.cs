@@ -30,6 +30,8 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
         private void InitializeComponent()
         {
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.PbxEditSubirFotoMedico = new System.Windows.Forms.PictureBox();
+            this.BtnEditSubirFotoMedico = new System.Windows.Forms.Button();
             this.TxtEditCedulaMedico = new System.Windows.Forms.TextBox();
             this.LblEditCedulaMedico = new System.Windows.Forms.Label();
             this.TxtEditTelefonoMedico = new System.Windows.Forms.TextBox();
@@ -44,14 +46,12 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.LblNewCrearMedico = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.PbxEditSubirFotoMedico = new System.Windows.Forms.PictureBox();
-            this.BtnEditSubirFotoMedico = new System.Windows.Forms.Button();
             this.BtnEditMedico = new System.Windows.Forms.Button();
             this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PbxEditSubirFotoMedico)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PbxEditSubirFotoMedico)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel4
@@ -71,6 +71,28 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(260, 358);
             this.tableLayoutPanel4.TabIndex = 2;
+            // 
+            // PbxEditSubirFotoMedico
+            // 
+            this.PbxEditSubirFotoMedico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.PbxEditSubirFotoMedico.Location = new System.Drawing.Point(72, 3);
+            this.PbxEditSubirFotoMedico.Name = "PbxEditSubirFotoMedico";
+            this.PbxEditSubirFotoMedico.Size = new System.Drawing.Size(120, 113);
+            this.PbxEditSubirFotoMedico.TabIndex = 0;
+            this.PbxEditSubirFotoMedico.TabStop = false;
+            // 
+            // BtnEditSubirFotoMedico
+            // 
+            this.BtnEditSubirFotoMedico.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnEditSubirFotoMedico.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditSubirFotoMedico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnEditSubirFotoMedico.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnEditSubirFotoMedico.Location = new System.Drawing.Point(72, 122);
+            this.BtnEditSubirFotoMedico.Name = "BtnEditSubirFotoMedico";
+            this.BtnEditSubirFotoMedico.Size = new System.Drawing.Size(120, 26);
+            this.BtnEditSubirFotoMedico.TabIndex = 1;
+            this.BtnEditSubirFotoMedico.Text = "Subir Foto";
+            this.BtnEditSubirFotoMedico.UseVisualStyleBackColor = true;
             // 
             // TxtEditCedulaMedico
             // 
@@ -253,28 +275,6 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // PbxEditSubirFotoMedico
-            // 
-            this.PbxEditSubirFotoMedico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.PbxEditSubirFotoMedico.Location = new System.Drawing.Point(72, 3);
-            this.PbxEditSubirFotoMedico.Name = "PbxEditSubirFotoMedico";
-            this.PbxEditSubirFotoMedico.Size = new System.Drawing.Size(120, 113);
-            this.PbxEditSubirFotoMedico.TabIndex = 0;
-            this.PbxEditSubirFotoMedico.TabStop = false;
-            // 
-            // BtnEditSubirFotoMedico
-            // 
-            this.BtnEditSubirFotoMedico.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BtnEditSubirFotoMedico.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEditSubirFotoMedico.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnEditSubirFotoMedico.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
-            this.BtnEditSubirFotoMedico.Location = new System.Drawing.Point(72, 122);
-            this.BtnEditSubirFotoMedico.Name = "BtnEditSubirFotoMedico";
-            this.BtnEditSubirFotoMedico.Size = new System.Drawing.Size(120, 26);
-            this.BtnEditSubirFotoMedico.TabIndex = 1;
-            this.BtnEditSubirFotoMedico.Text = "Subir Foto";
-            this.BtnEditSubirFotoMedico.UseVisualStyleBackColor = true;
-            // 
             // BtnEditMedico
             // 
             this.BtnEditMedico.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -297,13 +297,14 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmEditarMedico";
             this.Text = "Editar Medico";
+            this.Load += new System.EventHandler(this.FrmEditarMedico_Load);
             this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PbxEditSubirFotoMedico)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PbxEditSubirFotoMedico)).EndInit();
             this.ResumeLayout(false);
 
         }

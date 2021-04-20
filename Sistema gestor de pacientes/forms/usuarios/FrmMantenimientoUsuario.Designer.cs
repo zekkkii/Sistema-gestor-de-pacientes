@@ -35,8 +35,8 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.DgvMantenimientoUsuario = new System.Windows.Forms.DataGridView();
             this.BtnCrearUsuario = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnEditarUsuario = new System.Windows.Forms.Button();
             this.BtnEliminarUsuario = new System.Windows.Forms.Button();
+            this.BtnEditarUsuario = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMantenimientoUsuario)).BeginInit();
@@ -129,18 +129,6 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.tableLayoutPanel3.Size = new System.Drawing.Size(382, 59);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // BtnEditarUsuario
-            // 
-            this.BtnEditarUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnEditarUsuario.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEditarUsuario.Location = new System.Drawing.Point(74, 3);
-            this.BtnEditarUsuario.Name = "BtnEditarUsuario";
-            this.BtnEditarUsuario.Size = new System.Drawing.Size(114, 23);
-            this.BtnEditarUsuario.TabIndex = 0;
-            this.BtnEditarUsuario.Text = "Editar Usuario";
-            this.BtnEditarUsuario.UseVisualStyleBackColor = true;
-            // 
             // BtnEliminarUsuario
             // 
             this.BtnEliminarUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -153,6 +141,18 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnEliminarUsuario.Text = "Eliminar Usuario";
             this.BtnEliminarUsuario.UseVisualStyleBackColor = true;
             // 
+            // BtnEditarUsuario
+            // 
+            this.BtnEditarUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnEditarUsuario.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEditarUsuario.Location = new System.Drawing.Point(74, 3);
+            this.BtnEditarUsuario.Name = "BtnEditarUsuario";
+            this.BtnEditarUsuario.Size = new System.Drawing.Size(114, 23);
+            this.BtnEditarUsuario.TabIndex = 0;
+            this.BtnEditarUsuario.Text = "Editar Usuario";
+            this.BtnEditarUsuario.UseVisualStyleBackColor = true;
+            // 
             // FrmMantenimientoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,6 +162,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmMantenimientoUsuario";
             this.Text = "Mantenimiento de Usuarios";
+            this.Load += new System.EventHandler(this.FrmMantenimientoUsuario_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

@@ -1,5 +1,5 @@
 ﻿
-namespace Sistema_gestor_de_pacientes.forms.credenciales
+namespace Sistema_gestor_de_pacientes.forms.usuarios
 {
     partial class frmLogin
     {

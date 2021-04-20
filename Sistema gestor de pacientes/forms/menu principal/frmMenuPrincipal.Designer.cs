@@ -31,13 +31,13 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.LblMenuPrincipal = new System.Windows.Forms.Label();
-            this.BtnMantenimientoUsuarios = new System.Windows.Forms.Button();
-            this.BtnMantenimientoMedicos = new System.Windows.Forms.Button();
-            this.BtnMantenimientoPruebasLab = new System.Windows.Forms.Button();
-            this.BtnMantenimientoPacientes = new System.Windows.Forms.Button();
-            this.BtnMantenimientoCitas = new System.Windows.Forms.Button();
             this.BtnMantenimientoResultadosPruebasLab = new System.Windows.Forms.Button();
+            this.BtnMantenimientoCitas = new System.Windows.Forms.Button();
+            this.BtnMantenimientoPacientes = new System.Windows.Forms.Button();
+            this.BtnMantenimientoPruebasLab = new System.Windows.Forms.Button();
+            this.BtnMantenimientoMedicos = new System.Windows.Forms.Button();
+            this.BtnMantenimientoUsuarios = new System.Windows.Forms.Button();
+            this.LblMenuPrincipal = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -85,6 +85,72 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
             this.tableLayoutPanel2.Size = new System.Drawing.Size(380, 329);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // BtnMantenimientoResultadosPruebasLab
+            // 
+            this.BtnMantenimientoResultadosPruebasLab.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnMantenimientoResultadosPruebasLab.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMantenimientoResultadosPruebasLab.Location = new System.Drawing.Point(3, 299);
+            this.BtnMantenimientoResultadosPruebasLab.Name = "BtnMantenimientoResultadosPruebasLab";
+            this.BtnMantenimientoResultadosPruebasLab.Size = new System.Drawing.Size(374, 27);
+            this.BtnMantenimientoResultadosPruebasLab.TabIndex = 5;
+            this.BtnMantenimientoResultadosPruebasLab.Text = "Mantenimiento de Resultados de Pruebas de Laboratorio";
+            this.BtnMantenimientoResultadosPruebasLab.UseVisualStyleBackColor = true;
+            // 
+            // BtnMantenimientoCitas
+            // 
+            this.BtnMantenimientoCitas.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnMantenimientoCitas.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMantenimientoCitas.Location = new System.Drawing.Point(3, 237);
+            this.BtnMantenimientoCitas.Name = "BtnMantenimientoCitas";
+            this.BtnMantenimientoCitas.Size = new System.Drawing.Size(374, 30);
+            this.BtnMantenimientoCitas.TabIndex = 4;
+            this.BtnMantenimientoCitas.Text = "Mantenimiento de Citas";
+            this.BtnMantenimientoCitas.UseVisualStyleBackColor = true;
+            // 
+            // BtnMantenimientoPacientes
+            // 
+            this.BtnMantenimientoPacientes.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnMantenimientoPacientes.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMantenimientoPacientes.Location = new System.Drawing.Point(3, 185);
+            this.BtnMantenimientoPacientes.Name = "BtnMantenimientoPacientes";
+            this.BtnMantenimientoPacientes.Size = new System.Drawing.Size(374, 28);
+            this.BtnMantenimientoPacientes.TabIndex = 3;
+            this.BtnMantenimientoPacientes.Text = "Mantenimiento de Pacientes";
+            this.BtnMantenimientoPacientes.UseVisualStyleBackColor = true;
+            // 
+            // BtnMantenimientoPruebasLab
+            // 
+            this.BtnMantenimientoPruebasLab.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnMantenimientoPruebasLab.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMantenimientoPruebasLab.Location = new System.Drawing.Point(3, 131);
+            this.BtnMantenimientoPruebasLab.Name = "BtnMantenimientoPruebasLab";
+            this.BtnMantenimientoPruebasLab.Size = new System.Drawing.Size(374, 28);
+            this.BtnMantenimientoPruebasLab.TabIndex = 2;
+            this.BtnMantenimientoPruebasLab.Text = "Mantenimiento de Pruebas de Laboratorio";
+            this.BtnMantenimientoPruebasLab.UseVisualStyleBackColor = true;
+            // 
+            // BtnMantenimientoMedicos
+            // 
+            this.BtnMantenimientoMedicos.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnMantenimientoMedicos.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMantenimientoMedicos.Location = new System.Drawing.Point(3, 78);
+            this.BtnMantenimientoMedicos.Name = "BtnMantenimientoMedicos";
+            this.BtnMantenimientoMedicos.Size = new System.Drawing.Size(374, 27);
+            this.BtnMantenimientoMedicos.TabIndex = 1;
+            this.BtnMantenimientoMedicos.Text = "Mantenimiento de Medicos";
+            this.BtnMantenimientoMedicos.UseVisualStyleBackColor = true;
+            // 
+            // BtnMantenimientoUsuarios
+            // 
+            this.BtnMantenimientoUsuarios.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnMantenimientoUsuarios.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMantenimientoUsuarios.Location = new System.Drawing.Point(3, 23);
+            this.BtnMantenimientoUsuarios.Name = "BtnMantenimientoUsuarios";
+            this.BtnMantenimientoUsuarios.Size = new System.Drawing.Size(374, 28);
+            this.BtnMantenimientoUsuarios.TabIndex = 0;
+            this.BtnMantenimientoUsuarios.Text = "Mantenimiento de Usuarios";
+            this.BtnMantenimientoUsuarios.UseVisualStyleBackColor = true;
+            // 
             // LblMenuPrincipal
             // 
             this.LblMenuPrincipal.AutoSize = true;
@@ -99,72 +165,6 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
             this.LblMenuPrincipal.Text = "Menu Principal";
             this.LblMenuPrincipal.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // BtnMantenimientoUsuarios
-            // 
-            this.BtnMantenimientoUsuarios.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BtnMantenimientoUsuarios.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMantenimientoUsuarios.Location = new System.Drawing.Point(3, 23);
-            this.BtnMantenimientoUsuarios.Name = "BtnMantenimientoUsuarios";
-            this.BtnMantenimientoUsuarios.Size = new System.Drawing.Size(374, 28);
-            this.BtnMantenimientoUsuarios.TabIndex = 0;
-            this.BtnMantenimientoUsuarios.Text = "Mantenimiento de Usuarios";
-            this.BtnMantenimientoUsuarios.UseVisualStyleBackColor = true;
-            // 
-            // BtnMantenimientoMedicos
-            // 
-            this.BtnMantenimientoMedicos.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BtnMantenimientoMedicos.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMantenimientoMedicos.Location = new System.Drawing.Point(3, 78);
-            this.BtnMantenimientoMedicos.Name = "BtnMantenimientoMedicos";
-            this.BtnMantenimientoMedicos.Size = new System.Drawing.Size(374, 27);
-            this.BtnMantenimientoMedicos.TabIndex = 1;
-            this.BtnMantenimientoMedicos.Text = "Mantenimiento de Medicos";
-            this.BtnMantenimientoMedicos.UseVisualStyleBackColor = true;
-            // 
-            // BtnMantenimientoPruebasLab
-            // 
-            this.BtnMantenimientoPruebasLab.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BtnMantenimientoPruebasLab.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMantenimientoPruebasLab.Location = new System.Drawing.Point(3, 131);
-            this.BtnMantenimientoPruebasLab.Name = "BtnMantenimientoPruebasLab";
-            this.BtnMantenimientoPruebasLab.Size = new System.Drawing.Size(374, 28);
-            this.BtnMantenimientoPruebasLab.TabIndex = 2;
-            this.BtnMantenimientoPruebasLab.Text = "Mantenimiento de Pruebas de Laboratorio";
-            this.BtnMantenimientoPruebasLab.UseVisualStyleBackColor = true;
-            // 
-            // BtnMantenimientoPacientes
-            // 
-            this.BtnMantenimientoPacientes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BtnMantenimientoPacientes.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMantenimientoPacientes.Location = new System.Drawing.Point(3, 185);
-            this.BtnMantenimientoPacientes.Name = "BtnMantenimientoPacientes";
-            this.BtnMantenimientoPacientes.Size = new System.Drawing.Size(374, 28);
-            this.BtnMantenimientoPacientes.TabIndex = 3;
-            this.BtnMantenimientoPacientes.Text = "Mantenimiento de Pacientes";
-            this.BtnMantenimientoPacientes.UseVisualStyleBackColor = true;
-            // 
-            // BtnMantenimientoCitas
-            // 
-            this.BtnMantenimientoCitas.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BtnMantenimientoCitas.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMantenimientoCitas.Location = new System.Drawing.Point(3, 237);
-            this.BtnMantenimientoCitas.Name = "BtnMantenimientoCitas";
-            this.BtnMantenimientoCitas.Size = new System.Drawing.Size(374, 30);
-            this.BtnMantenimientoCitas.TabIndex = 4;
-            this.BtnMantenimientoCitas.Text = "Mantenimiento de Citas";
-            this.BtnMantenimientoCitas.UseVisualStyleBackColor = true;
-            // 
-            // BtnMantenimientoResultadosPruebasLab
-            // 
-            this.BtnMantenimientoResultadosPruebasLab.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.BtnMantenimientoResultadosPruebasLab.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMantenimientoResultadosPruebasLab.Location = new System.Drawing.Point(3, 299);
-            this.BtnMantenimientoResultadosPruebasLab.Name = "BtnMantenimientoResultadosPruebasLab";
-            this.BtnMantenimientoResultadosPruebasLab.Size = new System.Drawing.Size(374, 27);
-            this.BtnMantenimientoResultadosPruebasLab.TabIndex = 5;
-            this.BtnMantenimientoResultadosPruebasLab.Text = "Mantenimiento de Resultados de Pruebas de Laboratorio";
-            this.BtnMantenimientoResultadosPruebasLab.UseVisualStyleBackColor = true;
-            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +174,7 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmMenuPrincipal";
             this.Text = "MenuPrincipal";
+            this.Load += new System.EventHandler(this.frmMenuPrincipal_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

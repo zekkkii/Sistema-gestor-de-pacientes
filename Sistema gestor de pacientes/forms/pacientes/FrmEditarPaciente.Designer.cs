@@ -385,6 +385,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmEditarPaciente";
             this.Text = "Editar Paciente";
+            this.Load += new System.EventHandler(this.FrmEditarPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbxEditSubirFotoPaciente)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
