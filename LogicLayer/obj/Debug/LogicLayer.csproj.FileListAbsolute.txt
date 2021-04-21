@@ -16,5 +16,17 @@ C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\LogicLayer\obj\
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\LogicLayer\obj\Debug\LogicLayer.csproj.CopyComplete
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\LogicLayer\obj\Debug\LogicLayer.dll
 C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\LogicLayer\obj\Debug\LogicLayer.pdb
+<<<<<<< HEAD
 C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\bin\Debug\EmailHandler.dll
 C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\LogicLayer\bin\Debug\EmailHandler.pdb
+=======
+C:\Users\JDerek\Desktop\Proyecto final\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\JDerek\Desktop\Proyecto final\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\JDerek\Desktop\Proyecto final\LogicLayer\bin\Debug\DataBase.dll
+C:\Users\JDerek\Desktop\Proyecto final\LogicLayer\bin\Debug\DataBase.pdb
+C:\Users\JDerek\Desktop\Proyecto final\LogicLayer\obj\Debug\LogicLayer.csprojAssemblyReference.cache
+C:\Users\JDerek\Desktop\Proyecto final\LogicLayer\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\JDerek\Desktop\Proyecto final\LogicLayer\obj\Debug\LogicLayer.csproj.CopyComplete
+C:\Users\JDerek\Desktop\Proyecto final\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\JDerek\Desktop\Proyecto final\LogicLayer\obj\Debug\LogicLayer.pdb
+>>>>>>> jerahmeel_branch
