@@ -35,7 +35,6 @@ namespace DataBase.DB.citas
                 SqlCommand actualizarEstadoCita = new SqlCommand("UPDATE citas SET estadoCita = 'pendiente de resultados' WHERE id =@id", connection);
                 actualizarEstadoCita.Parameters.AddWithValue("@id", idCita);
 
-
                 query.ExecuteNonQuery();
                 actualizarEstadoCita.ExecuteNonQuery();
                     connection.Close();
@@ -46,8 +45,6 @@ namespace DataBase.DB.citas
             {
                 return false;
             }
-        }
-     
-
+        }    
     }
 }
