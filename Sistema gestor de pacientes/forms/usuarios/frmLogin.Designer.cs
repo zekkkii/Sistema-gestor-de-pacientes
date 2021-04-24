@@ -29,21 +29,22 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.LblNombreUsuario = new System.Windows.Forms.Label();
             this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.LblContraseña = new System.Windows.Forms.Label();
             this.TxtContraseña = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnIniciarSesion = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.LblIniciarSesion = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnIniciarSesion = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -87,6 +88,71 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.tableLayoutPanel2.Size = new System.Drawing.Size(342, 258);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
+            // LblNombreUsuario
+            // 
+            this.LblNombreUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblNombreUsuario.AutoSize = true;
+            this.LblNombreUsuario.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNombreUsuario.Location = new System.Drawing.Point(96, 86);
+            this.LblNombreUsuario.Name = "LblNombreUsuario";
+            this.LblNombreUsuario.Size = new System.Drawing.Size(72, 19);
+            this.LblNombreUsuario.TabIndex = 0;
+            this.LblNombreUsuario.Text = "Usuario:";
+            // 
+            // TxtUsuario
+            // 
+            this.TxtUsuario.Location = new System.Drawing.Point(174, 89);
+            this.TxtUsuario.Name = "TxtUsuario";
+            this.TxtUsuario.Size = new System.Drawing.Size(165, 20);
+            this.TxtUsuario.TabIndex = 1;
+            // 
+            // LblContraseña
+            // 
+            this.LblContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblContraseña.AutoSize = true;
+            this.LblContraseña.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblContraseña.Location = new System.Drawing.Point(69, 172);
+            this.LblContraseña.Name = "LblContraseña";
+            this.LblContraseña.Size = new System.Drawing.Size(99, 19);
+            this.LblContraseña.TabIndex = 2;
+            this.LblContraseña.Text = "Contraseña:";
+            // 
+            // TxtContraseña
+            // 
+            this.TxtContraseña.Location = new System.Drawing.Point(174, 175);
+            this.TxtContraseña.Name = "TxtContraseña";
+            this.TxtContraseña.Size = new System.Drawing.Size(165, 20);
+            this.TxtContraseña.TabIndex = 3;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel6, 2);
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel6.Controls.Add(this.LblIniciarSesion, 0, 0);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 1;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(336, 80);
+            this.tableLayoutPanel6.TabIndex = 5;
+            // 
+            // LblIniciarSesion
+            // 
+            this.LblIniciarSesion.AutoSize = true;
+            this.LblIniciarSesion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LblIniciarSesion.Font = new System.Drawing.Font("Neozoic Trial", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblIniciarSesion.ForeColor = System.Drawing.Color.Teal;
+            this.LblIniciarSesion.Location = new System.Drawing.Point(3, 0);
+            this.LblIniciarSesion.Name = "LblIniciarSesion";
+            this.LblIniciarSesion.Size = new System.Drawing.Size(330, 42);
+            this.LblIniciarSesion.TabIndex = 0;
+            this.LblIniciarSesion.Text = "INICIAR SESION";
+            this.LblIniciarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -100,42 +166,6 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 71);
             this.tableLayoutPanel3.TabIndex = 1;
-            // 
-            // LblNombreUsuario
-            // 
-            this.LblNombreUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblNombreUsuario.AutoSize = true;
-            this.LblNombreUsuario.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombreUsuario.Location = new System.Drawing.Point(96, 85);
-            this.LblNombreUsuario.Name = "LblNombreUsuario";
-            this.LblNombreUsuario.Size = new System.Drawing.Size(72, 19);
-            this.LblNombreUsuario.TabIndex = 0;
-            this.LblNombreUsuario.Text = "Usuario:";
-            // 
-            // TxtUsuario
-            // 
-            this.TxtUsuario.Location = new System.Drawing.Point(174, 88);
-            this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(165, 20);
-            this.TxtUsuario.TabIndex = 1;
-            // 
-            // LblContraseña
-            // 
-            this.LblContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblContraseña.AutoSize = true;
-            this.LblContraseña.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblContraseña.Location = new System.Drawing.Point(69, 170);
-            this.LblContraseña.Name = "LblContraseña";
-            this.LblContraseña.Size = new System.Drawing.Size(99, 19);
-            this.LblContraseña.TabIndex = 2;
-            this.LblContraseña.Text = "Contraseña:";
-            // 
-            // TxtContraseña
-            // 
-            this.TxtContraseña.Location = new System.Drawing.Point(174, 173);
-            this.TxtContraseña.Name = "TxtContraseña";
-            this.TxtContraseña.Size = new System.Drawing.Size(165, 20);
-            this.TxtContraseña.TabIndex = 3;
             // 
             // tableLayoutPanel4
             // 
@@ -162,35 +192,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnIniciarSesion.TabIndex = 0;
             this.BtnIniciarSesion.Text = "Iniciar sesion";
             this.BtnIniciarSesion.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel6, 2);
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Controls.Add(this.LblIniciarSesion, 0, 0);
-            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 1;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(336, 79);
-            this.tableLayoutPanel6.TabIndex = 5;
-            // 
-            // LblIniciarSesion
-            // 
-            this.LblIniciarSesion.AutoSize = true;
-            this.LblIniciarSesion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LblIniciarSesion.Font = new System.Drawing.Font("Neozoic Trial", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblIniciarSesion.ForeColor = System.Drawing.Color.Teal;
-            this.LblIniciarSesion.Location = new System.Drawing.Point(3, 0);
-            this.LblIniciarSesion.Name = "LblIniciarSesion";
-            this.LblIniciarSesion.Size = new System.Drawing.Size(330, 42);
-            this.LblIniciarSesion.TabIndex = 0;
-            this.LblIniciarSesion.Text = "INICIAR SESION";
-            this.LblIniciarSesion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BtnIniciarSesion.Click += new System.EventHandler(this.BtnIniciarSesion_Click);
             // 
             // frmLogin
             // 
@@ -199,17 +201,18 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BackgroundImage = global::Sistema_gestor_de_pacientes.Properties.Resources.ProgramacionMC;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLogin";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -305,8 +305,6 @@
   <ItemGroup>
     <None Include="Resources\Programacion 2.0.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="forms\credenciales\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

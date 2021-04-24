@@ -273,6 +273,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnNewCrearUsuario.Text = "Crear Usuario";
             this.BtnNewCrearUsuario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnNewCrearUsuario.UseVisualStyleBackColor = true;
+            this.BtnNewCrearUsuario.Click += new System.EventHandler(this.BtnNewCrearUsuario_Click);
             // 
             // tableLayoutPanel4
             // 

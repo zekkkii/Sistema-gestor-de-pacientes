@@ -15,7 +15,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
 {
     public partial class FrmListadoMedicos : Form
     {
-        public Servicio iniciarServicio { get; set; }
+        public VerListado_Medicos iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
         public FrmListadoMedicos()
@@ -23,7 +23,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
-            iniciarServicio = new Servicio(connection);
+            iniciarServicio = new VerListado_Medicos(connection);
         }
 
         private void FrmListadoMedicos_Load(object sender, EventArgs e)
@@ -32,9 +32,4 @@ namespace Sistema_gestor_de_pacientes.forms.citas
         }
     }
 
-    private void FrmListadoMedicos_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
 }

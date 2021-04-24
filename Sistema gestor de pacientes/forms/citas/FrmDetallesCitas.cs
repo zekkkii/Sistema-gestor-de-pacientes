@@ -15,7 +15,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
 {
     public partial class FrmDetallesCitas : Form
     {
-        public Servicio iniciarServicio { get; set; }
+        public Registro iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
         public FrmDetallesCitas()
@@ -24,7 +24,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
 
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
-            iniciarServicio = new Servicio(connection);
+            iniciarServicio = new Registro(connection);
         }
 
         private void FrmDetallesCitas_Load(object sender, EventArgs e)

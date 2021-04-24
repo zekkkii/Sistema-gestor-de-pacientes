@@ -15,7 +15,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
 {
     public partial class FrmReportarMantenimientoResultadoPruebasLab : Form
     {
-        public Servicio iniciarServicio { get; set; }
+        public Llenar_Resultados iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
 
@@ -24,7 +24,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
-            iniciarServicio = new Servicio(connection);
+            iniciarServicio = new Llenar_Resultados(connection);
 
         }
 

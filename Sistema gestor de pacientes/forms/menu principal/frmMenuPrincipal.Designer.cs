@@ -95,6 +95,7 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
             this.BtnMantenimientoResultadosPruebasLab.TabIndex = 5;
             this.BtnMantenimientoResultadosPruebasLab.Text = "Mantenimiento de Resultados de Pruebas de Laboratorio";
             this.BtnMantenimientoResultadosPruebasLab.UseVisualStyleBackColor = true;
+            this.BtnMantenimientoResultadosPruebasLab.Click += new System.EventHandler(this.BtnMantenimientoResultadosPruebasLab_Click);
             // 
             // BtnMantenimientoCitas
             // 
@@ -106,6 +107,7 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
             this.BtnMantenimientoCitas.TabIndex = 4;
             this.BtnMantenimientoCitas.Text = "Mantenimiento de Citas";
             this.BtnMantenimientoCitas.UseVisualStyleBackColor = true;
+            this.BtnMantenimientoCitas.Click += new System.EventHandler(this.BtnMantenimientoCitas_Click);
             // 
             // BtnMantenimientoPacientes
             // 
@@ -117,6 +119,7 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
             this.BtnMantenimientoPacientes.TabIndex = 3;
             this.BtnMantenimientoPacientes.Text = "Mantenimiento de Pacientes";
             this.BtnMantenimientoPacientes.UseVisualStyleBackColor = true;
+            this.BtnMantenimientoPacientes.Click += new System.EventHandler(this.BtnMantenimientoPacientes_Click);
             // 
             // BtnMantenimientoPruebasLab
             // 
@@ -128,6 +131,7 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
             this.BtnMantenimientoPruebasLab.TabIndex = 2;
             this.BtnMantenimientoPruebasLab.Text = "Mantenimiento de Pruebas de Laboratorio";
             this.BtnMantenimientoPruebasLab.UseVisualStyleBackColor = true;
+            this.BtnMantenimientoPruebasLab.Click += new System.EventHandler(this.BtnMantenimientoPruebasLab_Click);
             // 
             // BtnMantenimientoMedicos
             // 
@@ -139,6 +143,7 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
             this.BtnMantenimientoMedicos.TabIndex = 1;
             this.BtnMantenimientoMedicos.Text = "Mantenimiento de Medicos";
             this.BtnMantenimientoMedicos.UseVisualStyleBackColor = true;
+            this.BtnMantenimientoMedicos.Click += new System.EventHandler(this.BtnMantenimientoMedicos_Click);
             // 
             // BtnMantenimientoUsuarios
             // 
@@ -150,6 +155,7 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
             this.BtnMantenimientoUsuarios.TabIndex = 0;
             this.BtnMantenimientoUsuarios.Text = "Mantenimiento de Usuarios";
             this.BtnMantenimientoUsuarios.UseVisualStyleBackColor = true;
+            this.BtnMantenimientoUsuarios.Click += new System.EventHandler(this.BtnMantenimientoUsuarios_Click);
             // 
             // LblMenuPrincipal
             // 

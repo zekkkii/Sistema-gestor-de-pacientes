@@ -15,7 +15,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
 {
     public partial class FrmMantenimientoPruebasLab : Form
     {
-        public Servicio iniciarServicio { get; set; }
+        public VerListado iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
 
@@ -24,7 +24,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
-            iniciarServicio = new Servicio(connection);
+            iniciarServicio = new VerListado(connection);
 
         }
 

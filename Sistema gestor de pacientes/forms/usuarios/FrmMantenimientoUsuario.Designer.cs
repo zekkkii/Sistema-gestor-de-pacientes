@@ -101,6 +101,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.DgvMantenimientoUsuario.Name = "DgvMantenimientoUsuario";
             this.DgvMantenimientoUsuario.Size = new System.Drawing.Size(382, 281);
             this.DgvMantenimientoUsuario.TabIndex = 1;
+            this.DgvMantenimientoUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMantenimientoUsuario_CellContentClick);
             // 
             // BtnCrearUsuario
             // 
@@ -112,6 +113,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnCrearUsuario.TabIndex = 2;
             this.BtnCrearUsuario.Text = "Crear Nuevo Usuario";
             this.BtnCrearUsuario.UseVisualStyleBackColor = true;
+            this.BtnCrearUsuario.Click += new System.EventHandler(this.BtnCrearUsuario_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -140,6 +142,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnEliminarUsuario.TabIndex = 1;
             this.BtnEliminarUsuario.Text = "Eliminar Usuario";
             this.BtnEliminarUsuario.UseVisualStyleBackColor = true;
+            this.BtnEliminarUsuario.Click += new System.EventHandler(this.BtnEliminarUsuario_Click);
             // 
             // BtnEditarUsuario
             // 
@@ -152,6 +155,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnEditarUsuario.TabIndex = 0;
             this.BtnEditarUsuario.Text = "Editar Usuario";
             this.BtnEditarUsuario.UseVisualStyleBackColor = true;
+            this.BtnEditarUsuario.Click += new System.EventHandler(this.BtnEditarUsuario_Click);
             // 
             // FrmMantenimientoUsuario
             // 

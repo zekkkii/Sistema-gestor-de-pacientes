@@ -31,16 +31,16 @@ namespace Sistema_gestor_de_pacientes.forms.citas
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.TxtDetallesNombreMedicoCita = new System.Windows.Forms.TextBox();
+            this.LblDetallesNombreMedicoCita = new System.Windows.Forms.Label();
+            this.TxtDetallesNombrePacienteCita = new System.Windows.Forms.TextBox();
+            this.LblDetallesNombrePacienteCita = new System.Windows.Forms.Label();
             this.DtpDetallesHoraCita = new System.Windows.Forms.DateTimePicker();
             this.LblDetallesHoraCita = new System.Windows.Forms.Label();
             this.LblFechaDetallesCita = new System.Windows.Forms.Label();
             this.DtpFechaDetallesCitas = new System.Windows.Forms.DateTimePicker();
             this.LblDetallesCausaCita = new System.Windows.Forms.Label();
             this.TbxDetallesCausaCita = new System.Windows.Forms.TextBox();
-            this.LblDetallesNombrePacienteCita = new System.Windows.Forms.Label();
-            this.TxtDetallesNombrePacienteCita = new System.Windows.Forms.TextBox();
-            this.LblDetallesNombreMedicoCita = new System.Windows.Forms.Label();
-            this.TxtDetallesNombreMedicoCita = new System.Windows.Forms.TextBox();
             this.BtnCrearCita = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.LblDetallesCrearCita = new System.Windows.Forms.Label();
@@ -99,6 +99,52 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(260, 326);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // TxtDetallesNombreMedicoCita
+            // 
+            this.TxtDetallesNombreMedicoCita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TxtDetallesNombreMedicoCita.Location = new System.Drawing.Point(3, 291);
+            this.TxtDetallesNombreMedicoCita.Name = "TxtDetallesNombreMedicoCita";
+            this.TxtDetallesNombreMedicoCita.ReadOnly = true;
+            this.TxtDetallesNombreMedicoCita.Size = new System.Drawing.Size(254, 20);
+            this.TxtDetallesNombreMedicoCita.TabIndex = 9;
+            this.TxtDetallesNombreMedicoCita.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // LblDetallesNombreMedicoCita
+            // 
+            this.LblDetallesNombreMedicoCita.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.LblDetallesNombreMedicoCita.AutoSize = true;
+            this.LblDetallesNombreMedicoCita.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDetallesNombreMedicoCita.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LblDetallesNombreMedicoCita.Location = new System.Drawing.Point(65, 271);
+            this.LblDetallesNombreMedicoCita.Name = "LblDetallesNombreMedicoCita";
+            this.LblDetallesNombreMedicoCita.Size = new System.Drawing.Size(130, 17);
+            this.LblDetallesNombreMedicoCita.TabIndex = 8;
+            this.LblDetallesNombreMedicoCita.Text = "Nombre del Medico";
+            this.LblDetallesNombreMedicoCita.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // TxtDetallesNombrePacienteCita
+            // 
+            this.TxtDetallesNombrePacienteCita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TxtDetallesNombrePacienteCita.Location = new System.Drawing.Point(3, 227);
+            this.TxtDetallesNombrePacienteCita.Name = "TxtDetallesNombrePacienteCita";
+            this.TxtDetallesNombrePacienteCita.ReadOnly = true;
+            this.TxtDetallesNombrePacienteCita.Size = new System.Drawing.Size(254, 20);
+            this.TxtDetallesNombrePacienteCita.TabIndex = 7;
+            this.TxtDetallesNombrePacienteCita.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // LblDetallesNombrePacienteCita
+            // 
+            this.LblDetallesNombrePacienteCita.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.LblDetallesNombrePacienteCita.AutoSize = true;
+            this.LblDetallesNombrePacienteCita.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDetallesNombrePacienteCita.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LblDetallesNombrePacienteCita.Location = new System.Drawing.Point(61, 207);
+            this.LblDetallesNombrePacienteCita.Name = "LblDetallesNombrePacienteCita";
+            this.LblDetallesNombrePacienteCita.Size = new System.Drawing.Size(137, 17);
+            this.LblDetallesNombrePacienteCita.TabIndex = 6;
+            this.LblDetallesNombrePacienteCita.Text = "Nombre del Paciente";
+            this.LblDetallesNombrePacienteCita.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // DtpDetallesHoraCita
             // 
@@ -165,48 +211,6 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.TbxDetallesCausaCita.Size = new System.Drawing.Size(254, 20);
             this.TbxDetallesCausaCita.TabIndex = 5;
             // 
-            // LblDetallesNombrePacienteCita
-            // 
-            this.LblDetallesNombrePacienteCita.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.LblDetallesNombrePacienteCita.AutoSize = true;
-            this.LblDetallesNombrePacienteCita.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDetallesNombrePacienteCita.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblDetallesNombrePacienteCita.Location = new System.Drawing.Point(61, 207);
-            this.LblDetallesNombrePacienteCita.Name = "LblDetallesNombrePacienteCita";
-            this.LblDetallesNombrePacienteCita.Size = new System.Drawing.Size(137, 17);
-            this.LblDetallesNombrePacienteCita.TabIndex = 6;
-            this.LblDetallesNombrePacienteCita.Text = "Nombre del Paciente";
-            this.LblDetallesNombrePacienteCita.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // TxtDetallesNombrePacienteCita
-            // 
-            this.TxtDetallesNombrePacienteCita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TxtDetallesNombrePacienteCita.Location = new System.Drawing.Point(3, 227);
-            this.TxtDetallesNombrePacienteCita.Name = "TxtDetallesNombrePacienteCita";
-            this.TxtDetallesNombrePacienteCita.Size = new System.Drawing.Size(254, 20);
-            this.TxtDetallesNombrePacienteCita.TabIndex = 7;
-            // 
-            // LblDetallesNombreMedicoCita
-            // 
-            this.LblDetallesNombreMedicoCita.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.LblDetallesNombreMedicoCita.AutoSize = true;
-            this.LblDetallesNombreMedicoCita.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDetallesNombreMedicoCita.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblDetallesNombreMedicoCita.Location = new System.Drawing.Point(65, 271);
-            this.LblDetallesNombreMedicoCita.Name = "LblDetallesNombreMedicoCita";
-            this.LblDetallesNombreMedicoCita.Size = new System.Drawing.Size(130, 17);
-            this.LblDetallesNombreMedicoCita.TabIndex = 8;
-            this.LblDetallesNombreMedicoCita.Text = "Nombre del Medico";
-            this.LblDetallesNombreMedicoCita.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // TxtDetallesNombreMedicoCita
-            // 
-            this.TxtDetallesNombreMedicoCita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TxtDetallesNombreMedicoCita.Location = new System.Drawing.Point(3, 291);
-            this.TxtDetallesNombreMedicoCita.Name = "TxtDetallesNombreMedicoCita";
-            this.TxtDetallesNombreMedicoCita.Size = new System.Drawing.Size(254, 20);
-            this.TxtDetallesNombreMedicoCita.TabIndex = 9;
-            // 
             // BtnCrearCita
             // 
             this.BtnCrearCita.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -232,7 +236,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 57);
             this.tableLayoutPanel3.TabIndex = 2;
             // 

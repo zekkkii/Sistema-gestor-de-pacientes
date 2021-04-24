@@ -9,13 +9,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataBase.DB.models;
 using LogicLayer.usuarios;
+using Sistema_gestor_de_pacientes.forms.menu_principal;
+
 
 namespace Sistema_gestor_de_pacientes.forms.usuarios
 {
     public partial class frmLogin : Form
     {
-        public Servicio iniciarServicio { get; set; }
+        public Login iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
 
@@ -24,13 +27,54 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
-            iniciarServicio = new Servicio(connection);
+            iniciarServicio = new Login(connection);
 
         }
 
+        #region Eventos
         private void frmLogin_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void BtnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            if (TxtUsuario.Text != "" && TxtContraseña.Text != "")
+            {
+                IniciarSesion();
+            }
+            else
+            {
+                MessageBox.Show("Debes completar todos los campos");
+            }
+        }
+
+        #endregion
+
+        #region Metodos
+
+        private void IniciarSesion()
+        {
+            Usuario Persona = new Usuario(null, null, null,  TxtUsuario.Text,  TxtContraseña.Text, null);
+
+             bool data = iniciarServicio.login(Persona);
+
+            if (data) 
+            {
+                frmMenuPrincipal menuPrincipal = new frmMenuPrincipal();
+                menuPrincipal.Show();
+                this.Hide();
+            }
+            else 
+            {
+                MessageBox.Show("Si es tu primera vez iniciando sesion, utiliza la cuenta por defecto, Datos incorrectos");
+            }
+
+        }
+
+
+        #endregion
+
+       
     }
 }

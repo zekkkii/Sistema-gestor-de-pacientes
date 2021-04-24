@@ -15,7 +15,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
 {
     public partial class FrmListadoDePruebasPendienteConsulta : Form
     {
-        public Servicio iniciarServicio { get; set; }
+        public VerListado_Pruebas_Laboratorio iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
         public FrmListadoDePruebasPendienteConsulta()
@@ -23,7 +23,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
-            iniciarServicio = new Servicio(connection);
+            iniciarServicio = new VerListado_Pruebas_Laboratorio(connection);
         }
 
         private void FrmListadoDePruebasPendienteConsulta_Load(object sender, EventArgs e)

@@ -15,7 +15,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
 {
     public partial class FrmCrearPaciente : Form
     {
-        public Servicio iniciarServicio { get; set; }
+        public Registro iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
 
@@ -24,7 +24,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
-            iniciarServicio = new Servicio(connection);
+            iniciarServicio = new Registro(connection);
 
         }
 

@@ -15,7 +15,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
 {
     public partial class FrmMantenimientoMedicos : Form
     {
-        public Servicio iniciarServicio { get; set; }
+        public VerListado iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
 
@@ -24,7 +24,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             InitializeComponent();
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
-            iniciarServicio = new Servicio(connection);
+            iniciarServicio = new VerListado(connection);
 
         }
 
