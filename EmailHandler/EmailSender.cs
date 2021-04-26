@@ -15,15 +15,15 @@ namespace EmailHandler
             try
             {
                 MailMessage mail = new MailMessage();
-                SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
+                SmtpClient smtpServer = new SmtpClient(EmailSettings.Default.SmtpServer);
 
-                mail.From = new MailAddress("noreplay.gestorpacientes@gmail.com");
+                mail.From = new MailAddress(EmailSettings.Default.From);
                 mail.To.Add(to);
                 mail.Subject = subject;
                 mail.Body = body;
 
-                smtpServer.Port = 465;
-                smtpServer.Credentials = new NetworkCredential("noreplay.gestorpacientes@gmail.com", "#Querty123");
+                smtpServer.Port = EmailSettings.Default.Port;
+                smtpServer.Credentials = new NetworkCredential(EmailSettings.Default.From, EmailSettings.Default.Password);
                 smtpServer.EnableSsl = true;
 
                 smtpServer.Send(mail);
