@@ -25,6 +25,7 @@ namespace DataBase.DB.usuarios
 
                 SqlCommand query = new SqlCommand("UPDATE usuarios " +
                     "SET nombre = @nombre, apellido = @apellido, correo = @correo, usuario = @usuario, user_password = @password, tipoUsuario = @tipoUsuario where id = @id", connection);
+                query.Parameters.AddWithValue("@id", id);
                 query.Parameters.AddWithValue("@nombre", user.nombre);
                 query.Parameters.AddWithValue("@apellido", user.apellido);
                 query.Parameters.AddWithValue("@correo", user.apellido);
