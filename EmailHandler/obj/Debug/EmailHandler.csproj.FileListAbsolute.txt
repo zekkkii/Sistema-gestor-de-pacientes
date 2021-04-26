@@ -11,3 +11,10 @@ C:\Users\Ezequiel Vasquez\Desktop\Sistema-gestor-de-pacientes\EmailHandler\obj\D
 C:\Users\Ezequiel Vasquez\Desktop\Sistema-gestor-de-pacientes\EmailHandler\obj\Debug\EmailHandler.dll
 C:\Users\Ezequiel Vasquez\Desktop\Sistema-gestor-de-pacientes\EmailHandler\obj\Debug\EmailHandler.pdb
 C:\Users\Ezequiel Vasquez\Desktop\Sistema-gestor-de-pacientes\EmailHandler\bin\Debug\EmailHandler.dll.config
+C:\Users\JDerek\Desktop\Proyecto_Final 3.0\Sistema-gestor-de-pacientes\EmailHandler\bin\Debug\EmailHandler.dll.config
+C:\Users\JDerek\Desktop\Proyecto_Final 3.0\Sistema-gestor-de-pacientes\EmailHandler\bin\Debug\EmailHandler.dll
+C:\Users\JDerek\Desktop\Proyecto_Final 3.0\Sistema-gestor-de-pacientes\EmailHandler\bin\Debug\EmailHandler.pdb
+C:\Users\JDerek\Desktop\Proyecto_Final 3.0\Sistema-gestor-de-pacientes\EmailHandler\obj\Debug\EmailHandler.csprojAssemblyReference.cache
+C:\Users\JDerek\Desktop\Proyecto_Final 3.0\Sistema-gestor-de-pacientes\EmailHandler\obj\Debug\EmailHandler.csproj.CoreCompileInputs.cache
+C:\Users\JDerek\Desktop\Proyecto_Final 3.0\Sistema-gestor-de-pacientes\EmailHandler\obj\Debug\EmailHandler.dll
+C:\Users\JDerek\Desktop\Proyecto_Final 3.0\Sistema-gestor-de-pacientes\EmailHandler\obj\Debug\EmailHandler.pdb
