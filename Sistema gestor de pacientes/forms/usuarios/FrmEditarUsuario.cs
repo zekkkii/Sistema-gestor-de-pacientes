@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataBase.DB.models;
 using LogicLayer.usuarios;
 
 namespace Sistema_gestor_de_pacientes.forms.usuarios
@@ -50,35 +51,60 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             actualizar.CargarDgv();
         }
 
-
+        private void BtnEditUsuario_Click(object sender, EventArgs e)
+        {
+            if (TxtEditNombre.Text != "" && TxtEditApellidoUsuario.Text != "" &&
+               TxtEditNombreUsuario.Text != "" && TxtEditContraseña.Text != "" &&
+               TxtEditConfirmarContraseña.Text != "")
+            {
+                if (TxtEditContraseña.Text == TxtEditConfirmarContraseña.Text)
+                {
+                    editar();
+                }
+                else
+                {
+                    MessageBox.Show("Las Contraseñas no coinciden", "Notificacion");
+                }
+            }
+            else { MessageBox.Show("Debes rellenar Todos los campos", "Notificacion"); }
+        }
         #endregion
 
 
 
         #region Metodos
-        //public void editar()
-        //{
-        //    if (RepositorioForms.Instancia.IndexSeleccionado >= 0)
-        //    {
-        
+        public void editar()
+        {
+            if (RepositorioForms.Instancia.IndexSeleccionado >= 0)
+            {
 
+                ComboBox_Tipo_Usuario tipoUsuario = CbxEditTipoUsuario.SelectedItem as ComboBox_Tipo_Usuario;
+                Usuario usuario = new Usuario
+                (
+                    TxtEditNombre.Text,
+                    TxtEditApellidoUsuario.Text,
+                    TxtEditCorreoUsuario.Text,
+                    TxtEditNombreUsuario.Text,
+                    TxtEditContraseña.Text,
+                    tipoUsuario.Value
+                );
 
-        //        bool Confirmado = iniciarServicio.editar(RepositorioForms.Instancia.IndexSeleccionado,);
-        //            if (Confirmado)
-        //            {
-        //                MessageBox.Show("Usuario Editado Satisfactoriamente", "Notificacion");
-        //                actualizar.CargarDgv();
-        //                actualizar.Show();
+                bool Confirmado = iniciarServicio.editar(RepositorioForms.Instancia.IndexSeleccionado,usuario);
+                    if (Confirmado)
+                    {
+                        MessageBox.Show("Usuario Editado Satisfactoriamente", "Notificacion");
+                        actualizar.CargarDgv();
+                        actualizar.Show();
 
-        //                RepositorioForms.Instancia.IndexSeleccionado = -1;
-        //            }
+                        RepositorioForms.Instancia.IndexSeleccionado = -1;
+                    }
+            }
+            else
+            {
+                MessageBox.Show("Debes seleccionar un Usuario", "Notificacion");
+            }
+        }
 
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Debes seleccionar un Usuario", "Notificacion");
-        //    }
-        //}
         private void LoadCbxTipoUsuario()
         {
             ComboBox_Tipo_Usuario Tipo_Admin = new ComboBox_Tipo_Usuario
@@ -98,5 +124,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             CbxEditTipoUsuario.SelectedItem = Tipo_Admin;
         }
         #endregion
+
+     
     }
 }

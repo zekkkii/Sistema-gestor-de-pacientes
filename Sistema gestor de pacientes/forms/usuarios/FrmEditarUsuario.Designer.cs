@@ -77,6 +77,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnEditUsuario.Text = "Editar Usuario";
             this.BtnEditUsuario.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnEditUsuario.UseVisualStyleBackColor = true;
+            this.BtnEditUsuario.Click += new System.EventHandler(this.BtnEditUsuario_Click);
             // 
             // tableLayoutPanel4
             // 

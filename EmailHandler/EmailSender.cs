@@ -22,8 +22,13 @@ namespace EmailHandler
                 mail.Subject = subject;
                 mail.Body = body;
 
+<<<<<<< HEAD
                 smtpServer.Port = EmailSettings.Default.Port;
                 smtpServer.Credentials = new NetworkCredential(EmailSettings.Default.From, EmailSettings.Default.Password);
+=======
+                smtpServer.Port = 587;
+                smtpServer.Credentials = new NetworkCredential("noreplay.gestorpacientes@gmail.com", "#Querty123");
+>>>>>>> fda47849fffc958000428e716186262c5d67a63b
                 smtpServer.EnableSsl = true;
 
                 smtpServer.Send(mail);
