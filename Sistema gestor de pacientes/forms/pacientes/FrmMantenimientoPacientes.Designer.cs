@@ -99,6 +99,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.DgvMantenimientoPaciente.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvMantenimientoPaciente.Location = new System.Drawing.Point(3, 95);
             this.DgvMantenimientoPaciente.Name = "DgvMantenimientoPaciente";
+            this.DgvMantenimientoPaciente.ReadOnly = true;
             this.DgvMantenimientoPaciente.Size = new System.Drawing.Size(382, 281);
             this.DgvMantenimientoPaciente.TabIndex = 1;
             // 

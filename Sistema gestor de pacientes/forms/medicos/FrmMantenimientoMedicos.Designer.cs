@@ -71,6 +71,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BtnCrearMedico.TabIndex = 2;
             this.BtnCrearMedico.Text = "Crear Nuevo Medico";
             this.BtnCrearMedico.UseVisualStyleBackColor = true;
+            this.BtnCrearMedico.Click += new System.EventHandler(this.BtnCrearMedico_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -128,6 +129,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.DgvMantenimientoMedicos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvMantenimientoMedicos.Location = new System.Drawing.Point(3, 95);
             this.DgvMantenimientoMedicos.Name = "DgvMantenimientoMedicos";
+            this.DgvMantenimientoMedicos.ReadOnly = true;
             this.DgvMantenimientoMedicos.Size = new System.Drawing.Size(382, 281);
             this.DgvMantenimientoMedicos.TabIndex = 1;
             // 
@@ -158,6 +160,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BtnEliminarMedico.TabIndex = 1;
             this.BtnEliminarMedico.Text = "Eliminar Medico";
             this.BtnEliminarMedico.UseVisualStyleBackColor = true;
+            this.BtnEliminarMedico.Click += new System.EventHandler(this.BtnEliminarMedico_Click);
             // 
             // BtnEditarMedico
             // 
@@ -170,6 +173,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BtnEditarMedico.TabIndex = 0;
             this.BtnEditarMedico.Text = "Editar Medico";
             this.BtnEditarMedico.UseVisualStyleBackColor = true;
+            this.BtnEditarMedico.Click += new System.EventHandler(this.BtnEditarMedico_Click);
             // 
             // FrmMantenimientoMedicos
             // 

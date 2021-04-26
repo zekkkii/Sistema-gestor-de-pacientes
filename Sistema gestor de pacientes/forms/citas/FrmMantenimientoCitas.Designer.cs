@@ -36,9 +36,9 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.LblMantenimientoCitar = new System.Windows.Forms.Label();
             this.BtnNewCrearCita = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnVerResultados = new System.Windows.Forms.Button();
-            this.BtnConsultar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.BtnConsultar = new System.Windows.Forms.Button();
+            this.BtnVerResultados = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMantenimientoCitas)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -85,6 +85,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.DgvMantenimientoCitas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvMantenimientoCitas.Location = new System.Drawing.Point(28, 92);
             this.DgvMantenimientoCitas.Name = "DgvMantenimientoCitas";
+            this.DgvMantenimientoCitas.ReadOnly = true;
             this.DgvMantenimientoCitas.Size = new System.Drawing.Size(355, 276);
             this.DgvMantenimientoCitas.TabIndex = 0;
             // 
@@ -111,9 +112,9 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.LblMantenimientoCitar.AutoSize = true;
             this.LblMantenimientoCitar.Font = new System.Drawing.Font("Neozoic Trial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMantenimientoCitar.ForeColor = System.Drawing.Color.Teal;
-            this.LblMantenimientoCitar.Location = new System.Drawing.Point(25, 4);
+            this.LblMantenimientoCitar.Location = new System.Drawing.Point(26, 4);
             this.LblMantenimientoCitar.Name = "LblMantenimientoCitar";
-            this.LblMantenimientoCitar.Size = new System.Drawing.Size(352, 33);
+            this.LblMantenimientoCitar.Size = new System.Drawing.Size(351, 33);
             this.LblMantenimientoCitar.TabIndex = 0;
             this.LblMantenimientoCitar.Text = "Mantenimiento de Citas";
             this.LblMantenimientoCitar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -124,7 +125,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.BtnNewCrearCita.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNewCrearCita.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnNewCrearCita.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
-            this.BtnNewCrearCita.Location = new System.Drawing.Point(74, 53);
+            this.BtnNewCrearCita.Location = new System.Drawing.Point(75, 53);
             this.BtnNewCrearCita.Name = "BtnNewCrearCita";
             this.BtnNewCrearCita.Size = new System.Drawing.Size(253, 27);
             this.BtnNewCrearCita.TabIndex = 1;
@@ -149,19 +150,18 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.tableLayoutPanel3.Size = new System.Drawing.Size(408, 84);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // BtnVerResultados
+            // button1
             // 
-            this.BtnVerResultados.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnVerResultados.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVerResultados.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnVerResultados.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
-            this.BtnVerResultados.Location = new System.Drawing.Point(207, 3);
-            this.BtnVerResultados.Name = "BtnVerResultados";
-            this.BtnVerResultados.Size = new System.Drawing.Size(198, 27);
-            this.BtnVerResultados.TabIndex = 1;
-            this.BtnVerResultados.Text = "Ver Resultados";
-            this.BtnVerResultados.UseVisualStyleBackColor = true;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.button1.Location = new System.Drawing.Point(3, 45);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(198, 27);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Consultar Resultados";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // BtnConsultar
             // 
@@ -176,18 +176,19 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.BtnConsultar.Text = "Consultar";
             this.BtnConsultar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // BtnVerResultados
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
-            this.button1.Location = new System.Drawing.Point(3, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 27);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Consultar Resultados";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnVerResultados.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnVerResultados.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVerResultados.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVerResultados.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnVerResultados.Location = new System.Drawing.Point(207, 3);
+            this.BtnVerResultados.Name = "BtnVerResultados";
+            this.BtnVerResultados.Size = new System.Drawing.Size(198, 27);
+            this.BtnVerResultados.TabIndex = 1;
+            this.BtnVerResultados.Text = "Ver Resultados";
+            this.BtnVerResultados.UseVisualStyleBackColor = true;
             // 
             // FrmMantenimientoCitas
             // 

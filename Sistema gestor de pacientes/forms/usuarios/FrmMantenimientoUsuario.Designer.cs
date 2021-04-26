@@ -37,10 +37,13 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnEliminarUsuario = new System.Windows.Forms.Button();
             this.BtnEditarUsuario = new System.Windows.Forms.Button();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMantenimientoUsuario)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -50,6 +53,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.75F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -99,6 +103,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.DgvMantenimientoUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvMantenimientoUsuario.Location = new System.Drawing.Point(3, 95);
             this.DgvMantenimientoUsuario.Name = "DgvMantenimientoUsuario";
+            this.DgvMantenimientoUsuario.ReadOnly = true;
             this.DgvMantenimientoUsuario.Size = new System.Drawing.Size(382, 281);
             this.DgvMantenimientoUsuario.TabIndex = 1;
             this.DgvMantenimientoUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMantenimientoUsuario_CellContentClick);
@@ -157,6 +162,35 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnEditarUsuario.UseVisualStyleBackColor = true;
             this.BtnEditarUsuario.Click += new System.EventHandler(this.BtnEditarUsuario_Click);
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Controls.Add(this.BtnVolver, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(397, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(400, 100);
+            this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnVolver.Location = new System.Drawing.Point(156, 18);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(88, 29);
+            this.BtnVolver.TabIndex = 0;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = true;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
+            // 
             // FrmMantenimientoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +206,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMantenimientoUsuario)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -186,5 +221,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button BtnEliminarUsuario;
         private System.Windows.Forms.Button BtnEditarUsuario;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button BtnVolver;
     }
 }

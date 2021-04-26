@@ -60,6 +60,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
                 if (TxtEditContraseña.Text == TxtEditConfirmarContraseña.Text)
                 {
                     editar();
+                    
                 }
                 else
                 {
@@ -67,6 +68,11 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
                 }
             }
             else { MessageBox.Show("Debes rellenar Todos los campos", "Notificacion"); }
+        }
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+            actualizar.Show();
+            this.Close();
         }
         #endregion
 
@@ -94,7 +100,8 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
                     {
                         MessageBox.Show("Usuario Editado Satisfactoriamente", "Notificacion");
                         actualizar.CargarDgv();
-                        actualizar.Show();
+
+                        
 
                         RepositorioForms.Instancia.IndexSeleccionado = -1;
                     }
@@ -123,8 +130,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             CbxEditTipoUsuario.Items.Add(Tipo_Medico);
             CbxEditTipoUsuario.SelectedItem = Tipo_Admin;
         }
-        #endregion
 
-     
+        #endregion
     }
 }

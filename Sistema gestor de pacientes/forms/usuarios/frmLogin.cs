@@ -71,7 +71,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
         }
 
-        private void LimpiarTxts()
+        public void LimpiarTxts()
         {
             TxtContraseña.Clear();
             TxtUsuario.Clear();
