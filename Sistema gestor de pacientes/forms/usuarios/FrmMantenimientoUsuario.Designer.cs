@@ -198,6 +198,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BackgroundImage = global::Sistema_gestor_de_pacientes.Properties.Resources.ProgramacionMC;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MaximizeBox = false;
             this.Name = "FrmMantenimientoUsuario";
             this.Text = "Mantenimiento de Usuarios";
             this.Load += new System.EventHandler(this.FrmMantenimientoUsuario_Load);

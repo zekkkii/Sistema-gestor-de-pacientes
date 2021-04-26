@@ -103,6 +103,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.DgvListadoMedicos.Name = "DgvListadoMedicos";
             this.DgvListadoMedicos.Size = new System.Drawing.Size(254, 265);
             this.DgvListadoMedicos.TabIndex = 0;
+            this.DgvListadoMedicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListadoMedicos_CellContentClick);
             // 
             // flowLayoutPanel1
             // 
@@ -131,6 +132,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.BtnBuscarListadoMedicos.TabIndex = 1;
             this.BtnBuscarListadoMedicos.Text = "🔎";
             this.BtnBuscarListadoMedicos.UseVisualStyleBackColor = true;
+            this.BtnBuscarListadoMedicos.Click += new System.EventHandler(this.BtnBuscarListadoMedicos_Click);
             // 
             // BtnSiguientePaso
             // 
@@ -144,6 +146,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.BtnSiguientePaso.TabIndex = 2;
             this.BtnSiguientePaso.Text = "Siguiente Paso";
             this.BtnSiguientePaso.UseVisualStyleBackColor = true;
+            this.BtnSiguientePaso.Click += new System.EventHandler(this.BtnSiguientePaso_Click);
             // 
             // tableLayoutPanel3
             // 

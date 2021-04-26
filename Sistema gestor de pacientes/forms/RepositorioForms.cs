@@ -21,8 +21,8 @@ namespace Sistema_gestor_de_pacientes.forms
 
         public int IndexSeleccionado { get; set; }
 
-        public string UserDefault { get; set; } = "admin";
+        public int IndexPacienteSeleccionado { get; set; }
 
-        public string UserPasswordDefault { get; set; } = "admin";
+        public int IndexMedicoSeleccionado { get; set; }
     }
 }

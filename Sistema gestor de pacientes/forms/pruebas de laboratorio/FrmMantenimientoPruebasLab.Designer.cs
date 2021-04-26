@@ -185,6 +185,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.BackgroundImage = global::Sistema_gestor_de_pacientes.Properties.Resources.ProgramacionMC;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MaximizeBox = false;
             this.Name = "FrmMantenimientoPruebasLab";
             this.Text = "Mantenimiento Pruebas Laboratorio";
             this.Load += new System.EventHandler(this.FrmMantenimientoPruebasLab_Load);

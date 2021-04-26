@@ -15,6 +15,21 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
 {
     public partial class FrmReportarMantenimientoResultadoPruebasLab : Form
     {
+
+        #region desactivar boton cerrar
+        private const int CP_NOCLOSE_BUTTON = 0x200;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE_BUTTON;
+                return myCp;
+            }
+        }
+        #endregion
+
+
         public Llenar_Resultados iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
         public FrmReportarMantenimientoResultadoPruebasLab actualizar { get; set; }

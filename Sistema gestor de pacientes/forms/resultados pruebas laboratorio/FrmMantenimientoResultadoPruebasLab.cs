@@ -16,6 +16,20 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
 {
     public partial class FrmMantenimientoResultadoPruebasLab : Form
     {
+
+        #region desactivar boton cerrar
+        private const int CP_NOCLOSE_BUTTON = 0x200;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams myCp = base.CreateParams;
+                myCp.ClassStyle = myCp.ClassStyle | CP_NOCLOSE_BUTTON;
+                return myCp;
+            }
+        }
+        #endregion
+
         public VerListado iniciarServicioListar { get; set; }
         public SqlConnection connection { get; set; }
         public frmMenuPrincipal VolverAlMenu { get; set; }
@@ -87,6 +101,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.Close();
         }
 
+
         public void CargarDgv()
         {
             DataTable data = iniciarServicioListar.listar();
@@ -95,6 +110,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
 
         }
 
+        //metodo para buscar
         public void BusquedaFiltrada(string datos)
         {
             DataTable data = buscar.listar(datos);
@@ -104,5 +120,6 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
 
         #endregion
 
+     
     }
 }

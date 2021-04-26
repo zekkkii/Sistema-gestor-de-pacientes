@@ -44,11 +44,11 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.LblNewEditarMedico = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.TxtEditTelefonoMedico = new System.Windows.Forms.MaskedTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnEditMedico = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnVolver = new System.Windows.Forms.Button();
-            this.TxtEditTelefonoMedico = new System.Windows.Forms.MaskedTextBox();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbxEditSubirFotoMedico)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -81,6 +81,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.PbxEditSubirFotoMedico.Location = new System.Drawing.Point(72, 3);
             this.PbxEditSubirFotoMedico.Name = "PbxEditSubirFotoMedico";
             this.PbxEditSubirFotoMedico.Size = new System.Drawing.Size(120, 113);
+            this.PbxEditSubirFotoMedico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PbxEditSubirFotoMedico.TabIndex = 0;
             this.PbxEditSubirFotoMedico.TabStop = false;
             // 
@@ -250,6 +251,15 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel3.Size = new System.Drawing.Size(260, 358);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
+            // TxtEditTelefonoMedico
+            // 
+            this.TxtEditTelefonoMedico.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtEditTelefonoMedico.Location = new System.Drawing.Point(3, 248);
+            this.TxtEditTelefonoMedico.Mask = "000-000-0000";
+            this.TxtEditTelefonoMedico.Name = "TxtEditTelefonoMedico";
+            this.TxtEditTelefonoMedico.Size = new System.Drawing.Size(254, 20);
+            this.TxtEditTelefonoMedico.TabIndex = 10;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
@@ -315,15 +325,6 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BtnVolver.UseVisualStyleBackColor = true;
             this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
             // 
-            // TxtEditTelefonoMedico
-            // 
-            this.TxtEditTelefonoMedico.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtEditTelefonoMedico.Location = new System.Drawing.Point(3, 248);
-            this.TxtEditTelefonoMedico.Mask = "000-000-0000";
-            this.TxtEditTelefonoMedico.Name = "TxtEditTelefonoMedico";
-            this.TxtEditTelefonoMedico.Size = new System.Drawing.Size(254, 20);
-            this.TxtEditTelefonoMedico.TabIndex = 10;
-            // 
             // FrmEditarMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,6 +332,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BackgroundImage = global::Sistema_gestor_de_pacientes.Properties.Resources.Programacion_21;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MaximizeBox = false;
             this.Name = "FrmEditarMedico";
             this.Text = "Editar Medico";
             this.Load += new System.EventHandler(this.FrmEditarMedico_Load);

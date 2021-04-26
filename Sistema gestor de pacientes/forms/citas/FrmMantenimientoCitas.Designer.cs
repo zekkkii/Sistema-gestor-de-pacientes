@@ -36,13 +36,16 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.LblMantenimientoCitar = new System.Windows.Forms.Label();
             this.BtnNewCrearCita = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnConsultarResultados = new System.Windows.Forms.Button();
             this.BtnConsultar = new System.Windows.Forms.Button();
             this.BtnVerResultados = new System.Windows.Forms.Button();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMantenimientoCitas)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -56,6 +59,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.tableLayoutPanel1.Controls.Add(this.DgvMantenimientoCitas, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -88,6 +92,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.DgvMantenimientoCitas.ReadOnly = true;
             this.DgvMantenimientoCitas.Size = new System.Drawing.Size(355, 276);
             this.DgvMantenimientoCitas.TabIndex = 0;
+            this.DgvMantenimientoCitas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMantenimientoCitas_CellContentClick);
             // 
             // tableLayoutPanel2
             // 
@@ -131,6 +136,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.BtnNewCrearCita.TabIndex = 1;
             this.BtnNewCrearCita.Text = "Crear cita";
             this.BtnNewCrearCita.UseVisualStyleBackColor = true;
+            this.BtnNewCrearCita.Click += new System.EventHandler(this.BtnNewCrearCita_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -139,7 +145,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Controls.Add(this.button1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.BtnConsultarResultados, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.BtnConsultar, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.BtnVerResultados, 1, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(389, 92);
@@ -150,18 +156,18 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.tableLayoutPanel3.Size = new System.Drawing.Size(408, 84);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // button1
+            // BtnConsultarResultados
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
-            this.button1.Location = new System.Drawing.Point(3, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 27);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Consultar Resultados";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnConsultarResultados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnConsultarResultados.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConsultarResultados.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnConsultarResultados.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnConsultarResultados.Location = new System.Drawing.Point(3, 45);
+            this.BtnConsultarResultados.Name = "BtnConsultarResultados";
+            this.BtnConsultarResultados.Size = new System.Drawing.Size(198, 27);
+            this.BtnConsultarResultados.TabIndex = 2;
+            this.BtnConsultarResultados.Text = "Consultar Resultados";
+            this.BtnConsultarResultados.UseVisualStyleBackColor = true;
             // 
             // BtnConsultar
             // 
@@ -190,6 +196,35 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.BtnVerResultados.Text = "Ver Resultados";
             this.BtnVerResultados.UseVisualStyleBackColor = true;
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Controls.Add(this.BtnVolver, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(389, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(408, 83);
+            this.tableLayoutPanel4.TabIndex = 4;
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnVolver.Location = new System.Drawing.Point(161, 9);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(86, 29);
+            this.BtnVolver.TabIndex = 0;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = true;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
+            // 
             // FrmMantenimientoCitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,6 +232,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.BackgroundImage = global::Sistema_gestor_de_pacientes.Properties.Resources.ProgramacionMC;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MaximizeBox = false;
             this.Name = "FrmMantenimientoCitas";
             this.Text = "Mantenimiento Citas";
             this.Load += new System.EventHandler(this.FrmMantenimientoCitas_Load);
@@ -205,6 +241,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -220,6 +257,8 @@ namespace Sistema_gestor_de_pacientes.forms.citas
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button BtnConsultar;
         private System.Windows.Forms.Button BtnVerResultados;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnConsultarResultados;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button BtnVolver;
     }
 }

@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\EmailHandler",
-    "\\LogicLayer",
+    "\\Sistema gestor de pacientes",
     "\\Sistema gestor de pacientes\\forms",
     "\\Sistema gestor de pacientes\\forms\\usuarios"
   ],
-  "SelectedNode": "\\LogicLayer",
+  "SelectedNode": "\\Sistema gestor de pacientes\\Sistema gestor de pacientes.sln",
   "PreviewInSolutionExplorer": false
 }

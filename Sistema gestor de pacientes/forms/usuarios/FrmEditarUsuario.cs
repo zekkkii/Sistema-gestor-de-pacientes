@@ -99,7 +99,9 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
                     if (Confirmado)
                     {
                         MessageBox.Show("Usuario Editado Satisfactoriamente", "Notificacion");
+                        ClearTxts();
                         actualizar.CargarDgv();
+                        actualizar.Show();
 
                         
 
@@ -131,6 +133,16 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             CbxEditTipoUsuario.SelectedItem = Tipo_Admin;
         }
 
+        private void ClearTxts()
+        {
+            TxtEditNombre.Text = "";
+            TxtEditNombreUsuario.Text = "";
+            TxtEditCorreoUsuario.Text = "";
+            TxtEditContraseña.Text = "";
+            TxtEditConfirmarContraseña.Text = "";
+            TxtEditApellidoUsuario.Text = "";
+
+        }
         #endregion
     }
 }

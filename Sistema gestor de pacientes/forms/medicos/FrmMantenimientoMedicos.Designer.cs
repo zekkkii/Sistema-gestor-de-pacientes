@@ -217,6 +217,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MaximizeBox = false;
             this.Name = "FrmMantenimientoMedicos";
             this.Text = "Mantenimiento de Medicos";
             this.Load += new System.EventHandler(this.FrmMantenimientoMedicos_Load);

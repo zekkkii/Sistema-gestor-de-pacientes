@@ -33,7 +33,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.DgvListadoPacientes = new System.Windows.Forms.DataGridView();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtListadoPacientes = new System.Windows.Forms.TextBox();
             this.BtnBuscarListadoPacientes = new System.Windows.Forms.Button();
             this.BtnSiguientePaso = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -90,10 +90,11 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.DgvListadoPacientes.Name = "DgvListadoPacientes";
             this.DgvListadoPacientes.Size = new System.Drawing.Size(254, 265);
             this.DgvListadoPacientes.TabIndex = 0;
+            this.DgvListadoPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListadoPacientes_CellContentClick);
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.textBox1);
+            this.flowLayoutPanel1.Controls.Add(this.TxtListadoPacientes);
             this.flowLayoutPanel1.Controls.Add(this.BtnBuscarListadoPacientes);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
@@ -101,12 +102,12 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.flowLayoutPanel1.Size = new System.Drawing.Size(254, 27);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // textBox1
+            // TxtListadoPacientes
             // 
-            this.textBox1.Location = new System.Drawing.Point(3, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 20);
-            this.textBox1.TabIndex = 0;
+            this.TxtListadoPacientes.Location = new System.Drawing.Point(3, 3);
+            this.TxtListadoPacientes.Name = "TxtListadoPacientes";
+            this.TxtListadoPacientes.Size = new System.Drawing.Size(211, 20);
+            this.TxtListadoPacientes.TabIndex = 0;
             // 
             // BtnBuscarListadoPacientes
             // 
@@ -118,6 +119,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.BtnBuscarListadoPacientes.TabIndex = 1;
             this.BtnBuscarListadoPacientes.Text = "🔎";
             this.BtnBuscarListadoPacientes.UseVisualStyleBackColor = true;
+            this.BtnBuscarListadoPacientes.Click += new System.EventHandler(this.BtnBuscarListadoPacientes_Click);
             // 
             // BtnSiguientePaso
             // 
@@ -131,6 +133,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
             this.BtnSiguientePaso.TabIndex = 2;
             this.BtnSiguientePaso.Text = "Siguiente Paso";
             this.BtnSiguientePaso.UseVisualStyleBackColor = true;
+            this.BtnSiguientePaso.Click += new System.EventHandler(this.BtnSiguientePaso_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -188,7 +191,7 @@ namespace Sistema_gestor_de_pacientes.forms.citas
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.DataGridView DgvListadoPacientes;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtListadoPacientes;
         private System.Windows.Forms.Button BtnBuscarListadoPacientes;
         private System.Windows.Forms.Button BtnSiguientePaso;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
