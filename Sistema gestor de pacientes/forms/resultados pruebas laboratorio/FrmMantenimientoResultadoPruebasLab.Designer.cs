@@ -106,7 +106,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             // 
             this.LblMantenimientoResultadosPruebasLab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblMantenimientoResultadosPruebasLab.AutoSize = true;
-            this.LblMantenimientoResultadosPruebasLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMantenimientoResultadosPruebasLab.Font = new System.Drawing.Font("Neozoic Trial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMantenimientoResultadosPruebasLab.ForeColor = System.Drawing.Color.Teal;
             this.LblMantenimientoResultadosPruebasLab.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.LblMantenimientoResultadosPruebasLab.Location = new System.Drawing.Point(29, 2);

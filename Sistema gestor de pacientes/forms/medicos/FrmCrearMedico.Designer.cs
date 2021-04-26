@@ -35,7 +35,6 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.TxtNewCedulaMedico = new System.Windows.Forms.TextBox();
             this.LblNewCedulaMedico = new System.Windows.Forms.Label();
-            this.TxtNewTelefonoMedico = new System.Windows.Forms.TextBox();
             this.LblNewTelefonoMedico = new System.Windows.Forms.Label();
             this.TxtNewCorreoMedico = new System.Windows.Forms.TextBox();
             this.LblNewCorreoMedico = new System.Windows.Forms.Label();
@@ -47,11 +46,15 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.PbxNewSubirFotoMedico = new System.Windows.Forms.PictureBox();
             this.BtnNewSubirFotoMedico = new System.Windows.Forms.Button();
             this.BtnNewCrearMedico = new System.Windows.Forms.Button();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnVolver = new System.Windows.Forms.Button();
+            this.TxtNewTelefonoMedico = new System.Windows.Forms.MaskedTextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbxNewSubirFotoMedico)).BeginInit();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -65,6 +68,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.BtnNewCrearMedico, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -110,7 +114,6 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.TxtNewCedulaMedico, 0, 9);
             this.tableLayoutPanel3.Controls.Add(this.LblNewCedulaMedico, 0, 8);
-            this.tableLayoutPanel3.Controls.Add(this.TxtNewTelefonoMedico, 0, 7);
             this.tableLayoutPanel3.Controls.Add(this.LblNewTelefonoMedico, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.TxtNewCorreoMedico, 0, 5);
             this.tableLayoutPanel3.Controls.Add(this.LblNewCorreoMedico, 0, 4);
@@ -118,6 +121,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel3.Controls.Add(this.LblNewApellidoMedico, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.LblNewNombreMedico, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.TxtNewNombreMedico, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.TxtNewTelefonoMedico, 0, 7);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(269, 47);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -154,14 +158,6 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.LblNewCedulaMedico.Size = new System.Drawing.Size(50, 17);
             this.LblNewCedulaMedico.TabIndex = 8;
             this.LblNewCedulaMedico.Text = "Cedula";
-            // 
-            // TxtNewTelefonoMedico
-            // 
-            this.TxtNewTelefonoMedico.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtNewTelefonoMedico.Location = new System.Drawing.Point(3, 248);
-            this.TxtNewTelefonoMedico.Name = "TxtNewTelefonoMedico";
-            this.TxtNewTelefonoMedico.Size = new System.Drawing.Size(254, 20);
-            this.TxtNewTelefonoMedico.TabIndex = 7;
             // 
             // LblNewTelefonoMedico
             // 
@@ -290,6 +286,44 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BtnNewCrearMedico.UseVisualStyleBackColor = true;
             this.BtnNewCrearMedico.Click += new System.EventHandler(this.BtnNewCrearMedico_Click);
             // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Controls.Add(this.btnVolver, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(535, 47);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(262, 100);
+            this.tableLayoutPanel5.TabIndex = 4;
+            // 
+            // btnVolver
+            // 
+            this.btnVolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.btnVolver.Location = new System.Drawing.Point(93, 18);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 29);
+            this.btnVolver.TabIndex = 0;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // TxtNewTelefonoMedico
+            // 
+            this.TxtNewTelefonoMedico.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtNewTelefonoMedico.Location = new System.Drawing.Point(3, 248);
+            this.TxtNewTelefonoMedico.Mask = "000-000-0000";
+            this.TxtNewTelefonoMedico.Name = "TxtNewTelefonoMedico";
+            this.TxtNewTelefonoMedico.Size = new System.Drawing.Size(254, 20);
+            this.TxtNewTelefonoMedico.TabIndex = 10;
+            // 
             // FrmCrearMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,6 +341,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PbxNewSubirFotoMedico)).EndInit();
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -319,7 +354,6 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TextBox TxtNewCedulaMedico;
         private System.Windows.Forms.Label LblNewCedulaMedico;
-        private System.Windows.Forms.TextBox TxtNewTelefonoMedico;
         private System.Windows.Forms.Label LblNewTelefonoMedico;
         private System.Windows.Forms.TextBox TxtNewCorreoMedico;
         private System.Windows.Forms.Label LblNewCorreoMedico;
@@ -331,5 +365,8 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
         private System.Windows.Forms.PictureBox PbxNewSubirFotoMedico;
         private System.Windows.Forms.Button BtnNewSubirFotoMedico;
         private System.Windows.Forms.Button BtnNewCrearMedico;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.MaskedTextBox TxtNewTelefonoMedico;
     }
 }

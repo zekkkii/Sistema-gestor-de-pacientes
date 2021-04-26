@@ -33,6 +33,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnEditUsuario = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.LblEditTipoUsuario = new System.Windows.Forms.Label();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.TxtEditConfirmarContraseña = new System.Windows.Forms.TextBox();
             this.LblEditConfirmarContraseña = new System.Windows.Forms.Label();
             this.TxtEditContraseña = new System.Windows.Forms.TextBox();
@@ -49,7 +50,6 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.LblEditUsuario = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.BtnVolver = new System.Windows.Forms.Button();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -110,6 +110,20 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.LblEditTipoUsuario.Size = new System.Drawing.Size(94, 16);
             this.LblEditTipoUsuario.TabIndex = 0;
             this.LblEditTipoUsuario.Text = "Tipo de Usuario";
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnVolver.Location = new System.Drawing.Point(92, 337);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(75, 23);
+            this.BtnVolver.TabIndex = 2;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = true;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
             // 
             // TxtEditConfirmarContraseña
             // 
@@ -315,22 +329,6 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.44444F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // BtnVolver
-            // 
-            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
-            this.BtnVolver.Location = new System.Drawing.Point(92, 337);
-            this.BtnVolver.Name = "BtnVolver";
-            this.BtnVolver.Size = new System.Drawing.Size(75, 23);
-            this.BtnVolver.TabIndex = 2;
-            this.BtnVolver.Text = "Volver";
-            this.BtnVolver.UseVisualStyleBackColor = true;
-
-            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
-
             // 
             // FrmEditarUsuario
             // 

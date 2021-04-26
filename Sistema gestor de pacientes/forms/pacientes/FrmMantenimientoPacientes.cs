@@ -63,12 +63,12 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
 
         private void BtnEditarPaciente_Click(object sender, EventArgs e)
         {
-            LoadFrmEditarPaciente();
+            LoadFrmEditar();
         }
 
         private void BtnCrearPaciente_Click(object sender, EventArgs e)
         {
-            LoadFrmCrearPaciente();
+            LoadFrmCrear();
         }
         private void BtnVolver_Click(object sender, EventArgs e)
         {
@@ -81,14 +81,14 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
 
 
         #region Metodos
-        private void LoadFrmCrearPaciente()
+        private void LoadFrmCrear()
         {
             FrmCrearPaciente crearUsuario = new FrmCrearPaciente();
             crearUsuario.Show();
             this.Close();
         }
 
-        private void LoadFrmEditarPaciente()
+        private void LoadFrmEditar()
         {
             FrmEditarPaciente editarUsuario = new FrmEditarPaciente();
             editarUsuario.Show();
@@ -110,7 +110,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             if (RepositorioForms.Instancia.IndexSeleccionado >= 0)
             {
 
-                DialogResult respuesta = MessageBox.Show("Esta seguro que desea eliminar este usuario?", "Confirmacion", MessageBoxButtons.OKCancel);
+                DialogResult respuesta = MessageBox.Show("Esta seguro que desea eliminar este Paciente?", "Confirmacion", MessageBoxButtons.OKCancel);
 
                 if (respuesta == DialogResult.OK)
                 {
@@ -118,14 +118,14 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
                     bool Confirmado = iniciarServicioEliminar.eliminar(RepositorioForms.Instancia.IndexSeleccionado);
                     if (Confirmado)
                     {
-                        MessageBox.Show("Usuario Eliminado Satisfactoriamente", "Notificacion");
+                        MessageBox.Show("Paciente Eliminado Satisfactoriamente", "Notificacion");
                         CargarDgv();
 
                         RepositorioForms.Instancia.IndexSeleccionado = -1;
                     }
                     else
                     {
-                        MessageBox.Show("Aparentemente ocurrio un error Usuario no eliminado", "Notificacion");
+                        MessageBox.Show("Aparentemente ocurrio un error Paciente no eliminado", "Notificacion");
                     }
                 }
                 else
@@ -136,7 +136,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             }
             else
             {
-                MessageBox.Show("Debes seleccionar un Usuario", "Notificacion");
+                MessageBox.Show("Debes seleccionar un Paciente", "Notificacion");
             }
         }
 

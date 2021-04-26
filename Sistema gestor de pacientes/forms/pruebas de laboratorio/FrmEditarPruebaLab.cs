@@ -54,7 +54,15 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
 
         private void BtnEditPruebaLab_Click(object sender, EventArgs e)
         {
-            editar();
+            if (TxtEditPruebaLab.Text != "") 
+            {
+                editar();
+            }
+            else 
+            { 
+                MessageBox.Show("Debes llenar todos los campos", "Notificacion"); 
+            }
+            
         }
         private void BtnVolver_Click(object sender, EventArgs e)
         {
@@ -78,9 +86,8 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
                 bool Confirmado = iniciarServicio.editar(RepositorioForms.Instancia.IndexSeleccionado, prueba);
                 if (Confirmado)
                 {
-                    MessageBox.Show("Usuario Editado Satisfactoriamente", "Notificacion");
+                    MessageBox.Show("Prueba editada Satisfactoriamente", "Notificacion");
                     actualizar.CargarDgv();
-                    TxtEditPruebaLab.Clear();
                     actualizar.Show();
                     this.Close();
 
@@ -89,7 +96,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             }
             else
             {
-                MessageBox.Show("Debes seleccionar un Usuario", "Notificacion");
+                MessageBox.Show("Debes seleccionar una Prueba", "Notificacion");
             }
         }
         #endregion

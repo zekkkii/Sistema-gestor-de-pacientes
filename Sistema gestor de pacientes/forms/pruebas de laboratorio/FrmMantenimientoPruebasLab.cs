@@ -45,6 +45,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             connection = new SqlConnection(connectionString);
             iniciarServicioListar = new VerListado(connection);
             VolverAlMenu = new frmMenuPrincipal();
+            iniciarServicioEliminar = new Eliminar(connection);
         }
 
         #region Eventos

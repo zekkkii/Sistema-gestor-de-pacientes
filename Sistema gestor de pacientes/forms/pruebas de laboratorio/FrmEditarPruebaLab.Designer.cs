@@ -182,7 +182,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmEditarPruebaLab";
-            this.Text = "FrmEditarPruebaLab";
+            this.Text = "Editar Prueba de Laboratorio";
             this.Load += new System.EventHandler(this.FrmEditarPruebaLab_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

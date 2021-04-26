@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataBase.DB.models;
 using LogicLayer.pacientes;
 
 namespace Sistema_gestor_de_pacientes.forms.pacientes
@@ -18,6 +19,8 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
         public Registro iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
+        public FrmMantenimientoPacientes actualizar { get; set; }
+
         //terminar
 
         public FrmCrearPaciente()
@@ -26,12 +29,13 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
             iniciarServicio = new Registro(connection);
-
+            actualizar = new FrmMantenimientoPacientes();
         }
 
+        #region Eventos
         private void FrmCrearPaciente_Load(object sender, EventArgs e)
         {
-
+     
         }
 
         private void BtnCrearNewPaciente_Click(object sender, EventArgs e)
@@ -41,7 +45,13 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
 
         private void BtnSubirFotoPaciente_Click(object sender, EventArgs e)
         {
-
+           
         }
+        #endregion
+
+
+        #region Metodos
+       
+        #endregion
     }
 }

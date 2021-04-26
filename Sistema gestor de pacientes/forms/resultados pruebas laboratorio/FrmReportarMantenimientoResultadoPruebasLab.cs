@@ -17,7 +17,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
     {
         public Llenar_Resultados iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
-        public FrmReportarMantenimientoResultadoPruebasLab retornar { get; set; }
+        public FrmReportarMantenimientoResultadoPruebasLab actualizar { get; set; }
 
 
         public FrmReportarMantenimientoResultadoPruebasLab()
@@ -26,17 +26,29 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
             iniciarServicio = new Llenar_Resultados(connection);
-            retornar = new FrmReportarMantenimientoResultadoPruebasLab();
+            actualizar = new FrmReportarMantenimientoResultadoPruebasLab();
 
         }
-        #region evento
+        #region Eventos
+        private void FrmReportarMantenimientoResultadoPruebasLab_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void BtnFinalizar_Click(object sender, EventArgs e)
         {
             GuardarDatos();
         }
+
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+            actualizar.Show();
+            this.Close();
+        }
+
         #endregion
 
-        #region metodo
+        #region Metodos
 
         private void GuardarDatos()
         {
@@ -46,16 +58,19 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             if (guardar)
             {
                 MessageBox.Show("Reporte creado Satisfactoriamente", "Notificacion");
-                retornar.Show();
+                actualizar.Show();
 
                 RepositorioForms.Instancia.IndexSeleccionado = -1;
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Al parecer existe ya un usuario con este nombre...\npruebe con otro", "Notificacion");
+                MessageBox.Show("Al parecer existe ya un Reporte con este nombre...\npruebe con otro", "Notificacion");
             }
         }
         #endregion
+
+
+  
     }
 }

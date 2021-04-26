@@ -361,7 +361,6 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.BtnSubirFotoPaciente.TabIndex = 1;
             this.BtnSubirFotoPaciente.Text = "Subir Foto";
             this.BtnSubirFotoPaciente.UseVisualStyleBackColor = true;
-            this.BtnSubirFotoPaciente.Click += new System.EventHandler(this.BtnSubirFotoPaciente_Click);
             // 
             // BtnCrearNewPaciente
             // 
@@ -375,7 +374,6 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.BtnCrearNewPaciente.TabIndex = 4;
             this.BtnCrearNewPaciente.Text = "Crear Paciente";
             this.BtnCrearNewPaciente.UseVisualStyleBackColor = true;
-            this.BtnCrearNewPaciente.Click += new System.EventHandler(this.BtnCrearNewPaciente_Click);
             // 
             // FrmCrearPaciente
             // 

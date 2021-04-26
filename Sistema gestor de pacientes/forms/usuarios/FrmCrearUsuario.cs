@@ -95,14 +95,14 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
                 tipoUsuario.Value
             ) ;
 
-           
-
             bool confirmacion = iniciarServicio.registro(usuario);
 
             if (confirmacion)
             {
                 MessageBox.Show("Usuario creado Satisfactoriamente", "Notificacion");
                 actualizar.CargarDgv();
+                actualizar.Show();
+                this.Close();
             }
             else
             {
