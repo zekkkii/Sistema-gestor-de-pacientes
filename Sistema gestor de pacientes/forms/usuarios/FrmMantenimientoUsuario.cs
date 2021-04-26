@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using LogicLayer.usuarios;
+using Sistema_gestor_de_pacientes.forms.menu_principal;
 
 
 namespace Sistema_gestor_de_pacientes.forms.usuarios
@@ -35,6 +36,8 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
         public Eliminar iniciarServicioEliminar { get; set; }
 
+        public frmMenuPrincipal VolverAlMenu { get; set; }
+
 
         public FrmMantenimientoUsuario()
         {
@@ -43,6 +46,10 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             connection = new SqlConnection(connectionString);
             iniciarServicioListar = new VerListado(connection);
             iniciarServicioEliminar = new Eliminar(connection);
+<<<<<<< HEAD
+=======
+            VolverAlMenu = new frmMenuPrincipal();
+>>>>>>> 7ee591738466402ee1646e37c5d0e204addbc1e3
         }
 
         #region Eventos
@@ -74,6 +81,11 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
                 BtnEditarUsuario.Visible = true;
                 BtnEliminarUsuario.Visible = true;
             }
+        }
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+            VolverAlMenu.Show();
+            this.Close();
         }
         #endregion
 
@@ -138,7 +150,9 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
                 MessageBox.Show("Debes seleccionar un Usuario","Notificacion");
             }
         }
-        
-#endregion
+
+        #endregion
+
+    
     }
 }

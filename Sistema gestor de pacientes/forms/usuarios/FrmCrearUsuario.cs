@@ -75,7 +75,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
         private void BtnVolver_Click(object sender, EventArgs e)
         {
-            RepositorioForms.Instancia.login.Show();
+            actualizar.Show();
             this.Close();
         }
         #endregion

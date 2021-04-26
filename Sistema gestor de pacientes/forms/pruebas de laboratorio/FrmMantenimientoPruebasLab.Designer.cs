@@ -130,7 +130,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.BtnEditarPrueba.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
             this.BtnEditarPrueba.Location = new System.Drawing.Point(181, 3);
             this.BtnEditarPrueba.Name = "BtnEditarPrueba";
-            this.BtnEditarPrueba.Size = new System.Drawing.Size(110, 25);
+            this.BtnEditarPrueba.Size = new System.Drawing.Size(110, 24);
             this.BtnEditarPrueba.TabIndex = 1;
             this.BtnEditarPrueba.Text = "Editar Prueba";
             this.BtnEditarPrueba.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.BtnEliminarPruebas.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
             this.BtnEliminarPruebas.Location = new System.Drawing.Point(65, 3);
             this.BtnEliminarPruebas.Name = "BtnEliminarPruebas";
-            this.BtnEliminarPruebas.Size = new System.Drawing.Size(110, 25);
+            this.BtnEliminarPruebas.Size = new System.Drawing.Size(110, 24);
             this.BtnEliminarPruebas.TabIndex = 0;
             this.BtnEliminarPruebas.Text = "Eliminar Prueba";
             this.BtnEliminarPruebas.UseVisualStyleBackColor = true;
@@ -154,6 +154,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(36, 92);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(356, 290);
             this.dataGridView1.TabIndex = 2;
             // 
