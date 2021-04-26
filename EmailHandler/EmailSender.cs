@@ -22,7 +22,7 @@ namespace EmailHandler
                 mail.Subject = subject;
                 mail.Body = body;
 
-                smtpServer.Port = 465;
+                smtpServer.Port = 587;
                 smtpServer.Credentials = new NetworkCredential("noreplay.gestorpacientes@gmail.com", "#Querty123");
                 smtpServer.EnableSsl = true;
 
