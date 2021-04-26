@@ -42,6 +42,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
             iniciarServicioListar = new VerListado(connection);
+            iniciarServicioEliminar = new Eliminar(connection);
         }
 
         #region Eventos
@@ -107,14 +108,13 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
         {
             if(RepositorioForms.Instancia.IndexSeleccionado >= 0)
             {
-                int index = RepositorioForms.Instancia.IndexSeleccionado;
 
                 DialogResult respuesta = MessageBox.Show("Esta seguro que desea eliminar este usuario?","Confirmacion", MessageBoxButtons.OKCancel);
                 
                 if(respuesta == DialogResult.OK)
                 {
                    
-                    bool Confirmado = iniciarServicioEliminar.eliminar(index);
+                    bool Confirmado = iniciarServicioEliminar.eliminar(RepositorioForms.Instancia.IndexSeleccionado);
                     if (Confirmado) 
                     {
                         MessageBox.Show("Usuario Eliminado Satisfactoriamente","Notificacion");

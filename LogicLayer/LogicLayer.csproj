@@ -61,6 +61,7 @@
     <Compile Include="pacientes\Eliminar.cs" />
     <Compile Include="pacientes\Registro.cs" />
     <Compile Include="pacientes\VerListado.cs" />
+    <Compile Include="persistenthelper\Serializercs.cs" />
     <Compile Include="pruebas de laboratorio\Editar.cs" />
     <Compile Include="pruebas de laboratorio\Eliminar.cs" />
     <Compile Include="pruebas de laboratorio\Registro.cs" />

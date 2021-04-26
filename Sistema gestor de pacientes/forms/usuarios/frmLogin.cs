@@ -34,7 +34,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
         #region Eventos
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            LimpiarTxts();
         }
 
         private void BtnIniciarSesion_Click(object sender, EventArgs e)
@@ -71,7 +71,11 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
         }
 
-  
+        private void LimpiarTxts()
+        {
+            TxtContraseña.Clear();
+            TxtUsuario.Clear();
+        }
 
         #endregion
 
