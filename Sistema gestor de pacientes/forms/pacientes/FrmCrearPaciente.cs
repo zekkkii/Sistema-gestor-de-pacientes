@@ -18,6 +18,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
         public Registro iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
+        //terminar
 
         public FrmCrearPaciente()
         {
@@ -29,6 +30,16 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
         }
 
         private void FrmCrearPaciente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCrearNewPaciente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnSubirFotoPaciente_Click(object sender, EventArgs e)
         {
 
         }

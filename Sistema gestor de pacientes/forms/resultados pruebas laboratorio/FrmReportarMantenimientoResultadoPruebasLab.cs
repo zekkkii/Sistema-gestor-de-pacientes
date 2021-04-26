@@ -17,6 +17,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
     {
         public Llenar_Resultados iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
+        public FrmReportarMantenimientoResultadoPruebasLab retornar { get; set; }
 
 
         public FrmReportarMantenimientoResultadoPruebasLab()
@@ -25,12 +26,36 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
             iniciarServicio = new Llenar_Resultados(connection);
+            retornar = new FrmReportarMantenimientoResultadoPruebasLab();
 
         }
+        #region evento
+        private void BtnFinalizar_Click(object sender, EventArgs e)
+        {
+            GuardarDatos();
+        }
+        #endregion
 
-        private void FrmReportarMantenimientoResultadoPruebasLab_Load(object sender, EventArgs e)
+        #region metodo
+
+        private void GuardarDatos()
         {
 
+            bool guardar = iniciarServicio.llenar(RepositorioForms.Instancia.IndexSeleccionado, richTextBox1.Text);
+
+            if (guardar)
+            {
+                MessageBox.Show("Reporte creado Satisfactoriamente", "Notificacion");
+                retornar.Show();
+
+                RepositorioForms.Instancia.IndexSeleccionado = -1;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Al parecer existe ya un usuario con este nombre...\npruebe con otro", "Notificacion");
+            }
         }
+        #endregion
     }
 }

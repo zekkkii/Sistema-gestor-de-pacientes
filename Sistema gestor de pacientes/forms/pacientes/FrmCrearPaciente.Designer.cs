@@ -103,11 +103,11 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             // 
             this.LblCrearPacientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblCrearPacientes.AutoSize = true;
-            this.LblCrearPacientes.Font = new System.Drawing.Font("Neozoic Trial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCrearPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCrearPacientes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblCrearPacientes.Location = new System.Drawing.Point(3, 2);
+            this.LblCrearPacientes.Location = new System.Drawing.Point(3, 3);
             this.LblCrearPacientes.Name = "LblCrearPacientes";
-            this.LblCrearPacientes.Size = new System.Drawing.Size(788, 33);
+            this.LblCrearPacientes.Size = new System.Drawing.Size(788, 31);
             this.LblCrearPacientes.TabIndex = 0;
             this.LblCrearPacientes.Text = "Crear Pacientes";
             this.LblCrearPacientes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -361,6 +361,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.BtnSubirFotoPaciente.TabIndex = 1;
             this.BtnSubirFotoPaciente.Text = "Subir Foto";
             this.BtnSubirFotoPaciente.UseVisualStyleBackColor = true;
+            this.BtnSubirFotoPaciente.Click += new System.EventHandler(this.BtnSubirFotoPaciente_Click);
             // 
             // BtnCrearNewPaciente
             // 
@@ -374,6 +375,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.BtnCrearNewPaciente.TabIndex = 4;
             this.BtnCrearNewPaciente.Text = "Crear Paciente";
             this.BtnCrearNewPaciente.UseVisualStyleBackColor = true;
+            this.BtnCrearNewPaciente.Click += new System.EventHandler(this.BtnCrearNewPaciente_Click);
             // 
             // FrmCrearPaciente
             // 

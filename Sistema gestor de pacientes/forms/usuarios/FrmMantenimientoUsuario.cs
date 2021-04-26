@@ -46,10 +46,9 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             connection = new SqlConnection(connectionString);
             iniciarServicioListar = new VerListado(connection);
             iniciarServicioEliminar = new Eliminar(connection);
-<<<<<<< HEAD
-=======
+
             VolverAlMenu = new frmMenuPrincipal();
->>>>>>> 7ee591738466402ee1646e37c5d0e204addbc1e3
+
         }
 
         #region Eventos
@@ -76,7 +75,6 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             if (e.RowIndex >= 0)
             {
                 RepositorioForms.Instancia.IndexSeleccionado = Convert.ToInt32(DgvMantenimientoUsuario.Rows[e.RowIndex].Cells[0].Value.ToString());
-
 
                 BtnEditarUsuario.Visible = true;
                 BtnEliminarUsuario.Visible = true;

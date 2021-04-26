@@ -328,10 +328,9 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             this.BtnVolver.TabIndex = 2;
             this.BtnVolver.Text = "Volver";
             this.BtnVolver.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
-=======
+
             this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
->>>>>>> 7ee591738466402ee1646e37c5d0e204addbc1e3
+
             // 
             // FrmEditarUsuario
             // 

@@ -71,11 +71,10 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
         }
 
-<<<<<<< HEAD
-        private void LimpiarTxts()
-=======
+
+
         public void LimpiarTxts()
->>>>>>> 7ee591738466402ee1646e37c5d0e204addbc1e3
+
         {
             TxtContraseña.Clear();
             TxtUsuario.Clear();

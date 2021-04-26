@@ -30,6 +30,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.LblMantenimientoResultadosPruebasLab = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -56,6 +57,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.625F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.375F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.BtnVolver, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.BtnReportarResultadoPruebasLab, 1, 2);
@@ -69,6 +71,20 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.22222F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnVolver.Location = new System.Drawing.Point(556, 8);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(88, 29);
+            this.BtnVolver.TabIndex = 1;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = true;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -90,7 +106,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             // 
             this.LblMantenimientoResultadosPruebasLab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblMantenimientoResultadosPruebasLab.AutoSize = true;
-            this.LblMantenimientoResultadosPruebasLab.Font = new System.Drawing.Font("Neozoic Trial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMantenimientoResultadosPruebasLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMantenimientoResultadosPruebasLab.ForeColor = System.Drawing.Color.Teal;
             this.LblMantenimientoResultadosPruebasLab.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.LblMantenimientoResultadosPruebasLab.Location = new System.Drawing.Point(29, 2);
@@ -124,6 +140,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.DgvMantenimientoResultadoPruebasLab.Name = "DgvMantenimientoResultadoPruebasLab";
             this.DgvMantenimientoResultadoPruebasLab.Size = new System.Drawing.Size(359, 311);
             this.DgvMantenimientoResultadoPruebasLab.TabIndex = 0;
+            this.DgvMantenimientoResultadoPruebasLab.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMantenimientoResultadoPruebasLab_CellContentClick);
             // 
             // BtnReportarResultadoPruebasLab
             // 
@@ -137,6 +154,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.BtnReportarResultadoPruebasLab.TabIndex = 2;
             this.BtnReportarResultadoPruebasLab.Text = "Reportar Resultados";
             this.BtnReportarResultadoPruebasLab.UseVisualStyleBackColor = true;
+            this.BtnReportarResultadoPruebasLab.Click += new System.EventHandler(this.BtnReportarResultadoPruebasLab_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -195,6 +213,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.BtnBuscarMantenimientoResultadoPruebasLab.TabIndex = 1;
             this.BtnBuscarMantenimientoResultadoPruebasLab.Text = "🔎";
             this.BtnBuscarMantenimientoResultadoPruebasLab.UseVisualStyleBackColor = true;
+            this.BtnBuscarMantenimientoResultadoPruebasLab.Click += new System.EventHandler(this.BtnBuscarMantenimientoResultadoPruebasLab_Click);
             // 
             // FrmMantenimientoResultadoPruebasLab
             // 
@@ -232,5 +251,6 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.TextBox TxtBuscarMantenimientoResultadoPruebasLab;
         private System.Windows.Forms.Button BtnBuscarMantenimientoResultadoPruebasLab;
+        private System.Windows.Forms.Button BtnVolver;
     }
 }

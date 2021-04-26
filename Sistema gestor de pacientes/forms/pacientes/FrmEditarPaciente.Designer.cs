@@ -300,11 +300,11 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             // 
             this.LblEditPacientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblEditPacientes.AutoSize = true;
-            this.LblEditPacientes.Font = new System.Drawing.Font("Neozoic Trial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEditPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEditPacientes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LblEditPacientes.Location = new System.Drawing.Point(3, 2);
+            this.LblEditPacientes.Location = new System.Drawing.Point(3, 3);
             this.LblEditPacientes.Name = "LblEditPacientes";
-            this.LblEditPacientes.Size = new System.Drawing.Size(788, 33);
+            this.LblEditPacientes.Size = new System.Drawing.Size(788, 31);
             this.LblEditPacientes.TabIndex = 0;
             this.LblEditPacientes.Text = "Editar Pacientes";
             this.LblEditPacientes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
