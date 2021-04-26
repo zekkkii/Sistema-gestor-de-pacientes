@@ -47,7 +47,7 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
         #region Eventos
         private void frmMenuPrincipal_Load(object sender, EventArgs e)
         {
-            Load_frmMedicos();
+            
         }
 
         private void BtnMantenimientoUsuarios_Click(object sender, EventArgs e)
@@ -79,6 +79,10 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
         {
             Load_frmResultadosPruebasLab();
         }
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cerrar_Sesion();
+        }
         #endregion
 
 
@@ -88,7 +92,7 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
         {
             FrmMantenimientoUsuario mantenimientoUsuario = new FrmMantenimientoUsuario();
             mantenimientoUsuario.Show();
-            this.Hide();
+            this.Close();
         }
 
 
@@ -96,37 +100,46 @@ namespace Sistema_gestor_de_pacientes.forms.menu_principal
         {
             FrmMantenimientoPacientes mantenimientoPacientes = new FrmMantenimientoPacientes();
             mantenimientoPacientes.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Load_frmMedicos()
         {
             FrmMantenimientoMedicos mantenimientoMedicos = new FrmMantenimientoMedicos();
             mantenimientoMedicos.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Load_frmPruebasLab()
         {
             FrmMantenimientoPruebasLab mantenimientoPruebasLab = new FrmMantenimientoPruebasLab();
             mantenimientoPruebasLab.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Load_frmResultadosPruebasLab()
         {
             FrmMantenimientoResultadoPruebasLab mantenimientoResultadoPruebasLab = new FrmMantenimientoResultadoPruebasLab();
             mantenimientoResultadoPruebasLab.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Load_frmCitas()
         {
             FrmMantenimientoCitas mantenimientoCitas = new FrmMantenimientoCitas();
             mantenimientoCitas.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void Cerrar_Sesion()
+        {
+            RepositorioForms.Instancia.login.Show();
+            this.Close();
+
         }
 
         #endregion
+
+
     }
 }

@@ -121,6 +121,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             // 
             this.TxtContraseña.Location = new System.Drawing.Point(174, 175);
             this.TxtContraseña.Name = "TxtContraseña";
+            this.TxtContraseña.PasswordChar = '*';
             this.TxtContraseña.Size = new System.Drawing.Size(165, 20);
             this.TxtContraseña.TabIndex = 3;
             // 

@@ -17,7 +17,7 @@ namespace Sistema_gestor_de_pacientes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(RepositorioForms.Instacia.login);
+            Application.Run(RepositorioForms.Instancia.login);
         }
     }
 }

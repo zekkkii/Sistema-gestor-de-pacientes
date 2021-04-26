@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComboBox_Tipo_Usuario.cs" />
     <Compile Include="forms\citas\FrmDetallesCitas.cs">
       <SubType>Form</SubType>
     </Compile>

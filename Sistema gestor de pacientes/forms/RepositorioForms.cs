@@ -15,10 +15,14 @@ namespace Sistema_gestor_de_pacientes.forms
 {
     public class RepositorioForms
     {
-        public static RepositorioForms Instacia {get; set;} = new RepositorioForms();
+        public static RepositorioForms Instancia {get; set;} = new RepositorioForms();
 
         public frmLogin login = new frmLogin();
 
         public int IndexSeleccionado { get; set; }
+
+        public string UserDefault { get; set; } = "admin";
+
+        public string UserPasswordDefault { get; set; } = "admin";
     }
 }

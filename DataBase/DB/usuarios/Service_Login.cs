@@ -32,7 +32,7 @@ namespace DataBase.DB.usuarios
 
                 SqlDataReader reader = finduser.ExecuteReader();
 
-                Usuario datos = new Usuario(null, null, null,null, null, null);
+                Usuario datos = new Usuario(null, null, null,null, null, 0);
 
                 while (reader.Read())
                 {
@@ -48,7 +48,7 @@ namespace DataBase.DB.usuarios
             }
             catch
             {
-                return new Usuario(null, null, null, null, null, null);
+                return new Usuario(null, null, null, null, null, 0);
             }
         }
         

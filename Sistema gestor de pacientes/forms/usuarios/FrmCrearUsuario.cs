@@ -32,7 +32,6 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
         public Registro iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
-
         public FrmMantenimientoUsuario actualizar { get; set; }
 
 
@@ -42,20 +41,20 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
             iniciarServicio = new Registro(connection);
-
+            actualizar = new FrmMantenimientoUsuario();
         }
 
         #region Eventos
         private void FrmCrearUsuario_Load(object sender, EventArgs e)
         {
-
+            LoadCbxTipoUsuario();
         }
 
         private void BtnNewCrearUsuario_Click(object sender, EventArgs e)
         {
             if(TxtNewNombre.Text != "" && TxtNewApellidoUsuario.Text !="" && 
                TxtNewNombreUsuario.Text !="" && TxtNewContraseña.Text !="" && 
-               TxtNewConfirmarContraseña.Text !="") 
+               TxtNewConfirmarContraseña.Text !="" && CbxNewTipoUsuario.SelectedItem != null) 
             {
                 if (TxtNewContraseña.Text == TxtNewConfirmarContraseña.Text) 
                 {
@@ -69,13 +68,23 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             else { MessageBox.Show("Debes rellenar Todos los campos","Notificacion"); }
             
         }
+        private void CbxNewTipoUsuario_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+            RepositorioForms.Instancia.login.Show();
+            this.Close();
+        }
         #endregion
 
-
+    
         #region Metodos
-
         private void CrearNewUsuario()
         {
+            ComboBox_Tipo_Usuario tipoUsuario = CbxNewTipoUsuario.SelectedItem as ComboBox_Tipo_Usuario;
             Usuario usuario = new Usuario
             (
                 TxtNewNombre.Text,
@@ -83,8 +92,10 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
                 TxtNewCorreoUsuario.Text,
                 TxtNewNombreUsuario.Text,
                 TxtNewContraseña.Text,
-                CbxNewTipoUsuario.Text
-            );
+                tipoUsuario.Value
+            ) ;
+
+           
 
             bool confirmacion = iniciarServicio.registro(usuario);
 
@@ -92,7 +103,6 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             {
                 MessageBox.Show("Usuario creado Satisfactoriamente", "Notificacion");
                 actualizar.CargarDgv();
-                actualizar.Show();
             }
             else
             {
@@ -100,9 +110,28 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             }
         }
 
+        private void LoadCbxTipoUsuario()
+        {
+          
+
+            ComboBox_Tipo_Usuario Tipo_Admin = new ComboBox_Tipo_Usuario 
+            { 
+                   Text="Administrador",
+                   Value = 0
+            };
+
+            ComboBox_Tipo_Usuario Tipo_Medico = new ComboBox_Tipo_Usuario
+            {
+                Text = "Medico",
+                Value = 1 
+            };
+
+            CbxNewTipoUsuario.Items.Add(Tipo_Admin);
+            CbxNewTipoUsuario.Items.Add(Tipo_Medico);
+            CbxNewTipoUsuario.SelectedItem = Tipo_Admin;
+        }
 
         #endregion
 
-      
     }
 }

@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Sistema gestor de pacientes"
+    "\\Sistema gestor de pacientes",
+    "\\Sistema gestor de pacientes\\forms",
+    "\\Sistema gestor de pacientes\\forms\\usuarios"
   ],
-  "SelectedNode": "\\Sistema gestor de pacientes\\forms",
+  "SelectedNode": "\\Sistema gestor de pacientes\\Sistema gestor de pacientes.sln",
   "PreviewInSolutionExplorer": false
 }

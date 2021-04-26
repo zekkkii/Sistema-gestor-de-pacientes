@@ -1,24 +1,9 @@
-C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
-C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
-C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\bin\Debug\DataBase.dll
-C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\bin\Debug\DataBase.pdb
-C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\obj\Debug\DataBase.dll
-C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\obj\Debug\DataBase.pdb
-C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\bin\Debug\DataBase.dll
-C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\bin\Debug\DataBase.pdb
-C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
-C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
-C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.dll
-C:\Users\JDerek\Source\Repos\zekkkii\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.pdb
-<<<<<<< HEAD
-C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\bin\Debug\EmailHandler.dll
-C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\bin\Debug\EmailHandler.pdb
-C:\Users\Ezequiel Vasquez\source\repos\Sistema gestor de pacientes\DataBase\obj\Debug\DataBase.csproj.CopyComplete
-=======
-C:\Users\JDerek\Desktop\Proyecto final\DataBase\bin\Debug\DataBase.dll
-C:\Users\JDerek\Desktop\Proyecto final\DataBase\bin\Debug\DataBase.pdb
-C:\Users\JDerek\Desktop\Proyecto final\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
-C:\Users\JDerek\Desktop\Proyecto final\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
-C:\Users\JDerek\Desktop\Proyecto final\DataBase\obj\Debug\DataBase.dll
-C:\Users\JDerek\Desktop\Proyecto final\DataBase\obj\Debug\DataBase.pdb
->>>>>>> jerahmeel_branch
+C:\Users\JDerek\Desktop\Proyecto Final 2.0\Sistema-gestor-de-pacientes\DataBase\bin\Debug\DataBase.dll
+C:\Users\JDerek\Desktop\Proyecto Final 2.0\Sistema-gestor-de-pacientes\DataBase\bin\Debug\DataBase.pdb
+C:\Users\JDerek\Desktop\Proyecto Final 2.0\Sistema-gestor-de-pacientes\DataBase\bin\Debug\EmailHandler.dll
+C:\Users\JDerek\Desktop\Proyecto Final 2.0\Sistema-gestor-de-pacientes\DataBase\bin\Debug\EmailHandler.pdb
+C:\Users\JDerek\Desktop\Proyecto Final 2.0\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
+C:\Users\JDerek\Desktop\Proyecto Final 2.0\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\JDerek\Desktop\Proyecto Final 2.0\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+C:\Users\JDerek\Desktop\Proyecto Final 2.0\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.dll
+C:\Users\JDerek\Desktop\Proyecto Final 2.0\Sistema-gestor-de-pacientes\DataBase\obj\Debug\DataBase.pdb

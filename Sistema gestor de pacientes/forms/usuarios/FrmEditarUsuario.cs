@@ -40,12 +40,14 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             string connectionString = ConfigurationManager.ConnectionStrings["Default"].ConnectionString;
             connection = new SqlConnection(connectionString);
             iniciarServicio = new Editar(connection);
+            actualizar = new FrmMantenimientoUsuario();
         }
 
         #region Eventos
         private void FrmEditarUsuario_Load(object sender, EventArgs e)
         {
-
+            LoadCbxTipoUsuario();
+            actualizar.CargarDgv();
         }
 
 
@@ -54,30 +56,47 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
 
         #region Metodos
-        public void editar()
+        //public void editar()
+        //{
+        //    if (RepositorioForms.Instancia.IndexSeleccionado >= 0)
+        //    {
+        
+
+
+        //        bool Confirmado = iniciarServicio.editar(RepositorioForms.Instancia.IndexSeleccionado,);
+        //            if (Confirmado)
+        //            {
+        //                MessageBox.Show("Usuario Editado Satisfactoriamente", "Notificacion");
+        //                actualizar.CargarDgv();
+        //                actualizar.Show();
+
+        //                RepositorioForms.Instancia.IndexSeleccionado = -1;
+        //            }
+
+        //    }
+        //    else
+        //    {
+        //        MessageBox.Show("Debes seleccionar un Usuario", "Notificacion");
+        //    }
+        //}
+        private void LoadCbxTipoUsuario()
         {
-            if (RepositorioForms.Instacia.IndexSeleccionado >= 0)
+            ComboBox_Tipo_Usuario Tipo_Admin = new ComboBox_Tipo_Usuario
             {
-                int index = RepositorioForms.Instacia.IndexSeleccionado;
+                Text = "Administrador",
+                Value = 0
+            };
 
-
-                    //bool Confirmado = iniciarServicio.editar(index,);
-                    //if (Confirmado)
-                    //{
-                    //    MessageBox.Show("Usuario Editado Satisfactoriamente", "Notificacion");
-                    //    actualizar.CargarDgv();
-                    //    actualizar.Show();
-
-                    //    RepositorioForms.Instacia.IndexSeleccionado = -1;
-                    //}
-
-            }
-            else
+            ComboBox_Tipo_Usuario Tipo_Medico = new ComboBox_Tipo_Usuario
             {
-                MessageBox.Show("Debes seleccionar un Usuario", "Notificacion");
-            }
+                Text = "Medico",
+                Value = 1
+            };
+
+            CbxEditTipoUsuario.Items.Add(Tipo_Admin);
+            CbxEditTipoUsuario.Items.Add(Tipo_Medico);
+            CbxEditTipoUsuario.SelectedItem = Tipo_Admin;
         }
-
         #endregion
     }
 }

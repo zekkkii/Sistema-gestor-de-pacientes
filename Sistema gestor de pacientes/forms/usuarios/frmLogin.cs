@@ -39,7 +39,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
         private void BtnIniciarSesion_Click(object sender, EventArgs e)
         {
-            if (TxtUsuario.Text != "" && TxtContraseña.Text != "")
+          if (TxtUsuario.Text != "" && TxtContraseña.Text != "")
             {
                 IniciarSesion();
             }
@@ -48,14 +48,13 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
                 MessageBox.Show("Debes completar todos los campos");
             }
         }
-
         #endregion
 
-        #region Metodos
 
+        #region Metodos
         private void IniciarSesion()
         {
-            Usuario Persona = new Usuario(null, null, null,  TxtUsuario.Text,  TxtContraseña.Text, null);
+            Usuario Persona = new Usuario(null, null, null,  TxtUsuario.Text,  TxtContraseña.Text, 0);
 
              bool data = iniciarServicio.login(Persona);
 
@@ -67,14 +66,15 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
             }
             else 
             {
-                MessageBox.Show("Si es tu primera vez iniciando sesion, utiliza la cuenta por defecto, Datos incorrectos");
+                MessageBox.Show("Si es tu primera vez iniciando sesion, crea una cuenta\no utiliza la cuenta por defecto", "Datos incorrectos");
             }
 
         }
 
+  
 
         #endregion
 
-       
+    
     }
 }
