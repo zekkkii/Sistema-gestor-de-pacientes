@@ -274,6 +274,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BtnNewSubirFotoMedico.TabIndex = 1;
             this.BtnNewSubirFotoMedico.Text = "Subir Foto";
             this.BtnNewSubirFotoMedico.UseVisualStyleBackColor = true;
+            this.BtnNewSubirFotoMedico.Click += new System.EventHandler(this.BtnNewSubirFotoMedico_Click);
             // 
             // BtnNewCrearMedico
             // 
@@ -287,6 +288,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BtnNewCrearMedico.TabIndex = 3;
             this.BtnNewCrearMedico.Text = "Crear Medico";
             this.BtnNewCrearMedico.UseVisualStyleBackColor = true;
+            this.BtnNewCrearMedico.Click += new System.EventHandler(this.BtnNewCrearMedico_Click);
             // 
             // FrmCrearMedico
             // 

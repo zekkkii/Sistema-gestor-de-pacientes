@@ -43,7 +43,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.LblEditNombreMedico = new System.Windows.Forms.Label();
             this.TxtEditNombreMedico = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.LblNewCrearMedico = new System.Windows.Forms.Label();
+            this.LblNewEditarMedico = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnEditMedico = new System.Windows.Forms.Button();
@@ -200,7 +200,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel2, 3);
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Controls.Add(this.LblNewCrearMedico, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.LblNewEditarMedico, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -209,18 +209,18 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel2.Size = new System.Drawing.Size(794, 38);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
-            // LblNewCrearMedico
+            // LblNewEditarMedico
             // 
-            this.LblNewCrearMedico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.LblNewCrearMedico.AutoSize = true;
-            this.LblNewCrearMedico.Font = new System.Drawing.Font("Neozoic Trial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewCrearMedico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LblNewCrearMedico.Location = new System.Drawing.Point(3, 2);
-            this.LblNewCrearMedico.Name = "LblNewCrearMedico";
-            this.LblNewCrearMedico.Size = new System.Drawing.Size(788, 33);
-            this.LblNewCrearMedico.TabIndex = 0;
-            this.LblNewCrearMedico.Text = "Crear Medico";
-            this.LblNewCrearMedico.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LblNewEditarMedico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.LblNewEditarMedico.AutoSize = true;
+            this.LblNewEditarMedico.Font = new System.Drawing.Font("Neozoic Trial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNewEditarMedico.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LblNewEditarMedico.Location = new System.Drawing.Point(3, 2);
+            this.LblNewEditarMedico.Name = "LblNewEditarMedico";
+            this.LblNewEditarMedico.Size = new System.Drawing.Size(788, 33);
+            this.LblNewEditarMedico.TabIndex = 0;
+            this.LblNewEditarMedico.Text = "Editar Medico";
+            this.LblNewEditarMedico.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tableLayoutPanel3
             // 
@@ -287,6 +287,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BtnEditMedico.TabIndex = 3;
             this.BtnEditMedico.Text = "Editar Medico";
             this.BtnEditMedico.UseVisualStyleBackColor = true;
+            this.BtnEditMedico.Click += new System.EventHandler(this.BtnEditMedico_Click);
             // 
             // FrmEditarMedico
             // 
@@ -328,6 +329,6 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label LblNewCrearMedico;
+        private System.Windows.Forms.Label LblNewEditarMedico;
     }
 }

@@ -36,11 +36,12 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnEditarPrueba = new System.Windows.Forms.Button();
             this.BtnEliminarPruebas = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DgvManteminimientoPruebasLab = new System.Windows.Forms.DataGridView();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvManteminimientoPruebasLab)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -52,7 +53,8 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.625F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.DgvManteminimientoPruebasLab, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.BtnVolver, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -106,6 +108,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.BtnNewCrearPrueba.TabIndex = 1;
             this.BtnNewCrearPrueba.Text = "Crear Prueba";
             this.BtnNewCrearPrueba.UseVisualStyleBackColor = true;
+            this.BtnNewCrearPrueba.Click += new System.EventHandler(this.BtnNewCrearPrueba_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -134,6 +137,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.BtnEditarPrueba.TabIndex = 1;
             this.BtnEditarPrueba.Text = "Editar Prueba";
             this.BtnEditarPrueba.UseVisualStyleBackColor = true;
+            this.BtnEditarPrueba.Click += new System.EventHandler(this.BtnEditarPrueba_Click);
             // 
             // BtnEliminarPruebas
             // 
@@ -147,16 +151,32 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.BtnEliminarPruebas.TabIndex = 0;
             this.BtnEliminarPruebas.Text = "Eliminar Prueba";
             this.BtnEliminarPruebas.UseVisualStyleBackColor = true;
+            this.BtnEliminarPruebas.Click += new System.EventHandler(this.BtnEliminarPruebas_Click);
             // 
-            // dataGridView1
+            // DgvManteminimientoPruebasLab
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 92);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(356, 290);
-            this.dataGridView1.TabIndex = 2;
+            this.DgvManteminimientoPruebasLab.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvManteminimientoPruebasLab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgvManteminimientoPruebasLab.Location = new System.Drawing.Point(36, 92);
+            this.DgvManteminimientoPruebasLab.Name = "DgvManteminimientoPruebasLab";
+            this.DgvManteminimientoPruebasLab.ReadOnly = true;
+            this.DgvManteminimientoPruebasLab.Size = new System.Drawing.Size(356, 290);
+            this.DgvManteminimientoPruebasLab.TabIndex = 2;
+            this.DgvManteminimientoPruebasLab.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvManteminimientoPruebasLab_CellContentClick);
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnVolver.Location = new System.Drawing.Point(554, 59);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(87, 27);
+            this.BtnVolver.TabIndex = 3;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = true;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
             // 
             // FrmMantenimientoPruebasLab
             // 
@@ -172,7 +192,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvManteminimientoPruebasLab)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -186,6 +206,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button BtnEditarPrueba;
         private System.Windows.Forms.Button BtnEliminarPruebas;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DgvManteminimientoPruebasLab;
+        private System.Windows.Forms.Button BtnVolver;
     }
 }

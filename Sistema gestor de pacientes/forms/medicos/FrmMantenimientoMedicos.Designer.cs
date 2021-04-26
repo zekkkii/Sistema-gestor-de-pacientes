@@ -38,10 +38,13 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnEliminarMedico = new System.Windows.Forms.Button();
             this.BtnEditarMedico = new System.Windows.Forms.Button();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMantenimientoMedicos)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -80,6 +83,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.25F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.75F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -132,6 +136,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.DgvMantenimientoMedicos.ReadOnly = true;
             this.DgvMantenimientoMedicos.Size = new System.Drawing.Size(382, 281);
             this.DgvMantenimientoMedicos.TabIndex = 1;
+            this.DgvMantenimientoMedicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMantenimientoMedicos_CellContentClick);
             // 
             // tableLayoutPanel4
             // 
@@ -175,6 +180,35 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.BtnEditarMedico.UseVisualStyleBackColor = true;
             this.BtnEditarMedico.Click += new System.EventHandler(this.BtnEditarMedico_Click);
             // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Controls.Add(this.BtnVolver, 0, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(397, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(400, 100);
+            this.tableLayoutPanel5.TabIndex = 1;
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnVolver.Location = new System.Drawing.Point(149, 18);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(101, 29);
+            this.BtnVolver.TabIndex = 0;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = true;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
+            // 
             // FrmMantenimientoMedicos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,6 +225,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMantenimientoMedicos)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -206,5 +241,7 @@ namespace Sistema_gestor_de_pacientes.forms.medicos
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button BtnEliminarMedico;
         private System.Windows.Forms.Button BtnEditarMedico;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Button BtnVolver;
     }
 }

@@ -36,9 +36,12 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.TxtEditPruebaLab = new System.Windows.Forms.TextBox();
             this.BtnEditPruebaLab = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnVolver = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblEditCrearPruebaLab
@@ -63,6 +66,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -82,13 +86,13 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.tableLayoutPanel2.Controls.Add(this.TxtEditPruebaLab, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.BtnEditPruebaLab, 0, 2);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(269, 152);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(269, 153);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(260, 143);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(260, 144);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // LblEditNombrePruebaLab
@@ -97,7 +101,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.LblEditNombrePruebaLab.AutoSize = true;
             this.LblEditNombrePruebaLab.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEditNombrePruebaLab.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LblEditNombrePruebaLab.Location = new System.Drawing.Point(60, 30);
+            this.LblEditNombrePruebaLab.Location = new System.Drawing.Point(60, 31);
             this.LblEditNombrePruebaLab.Name = "LblEditNombrePruebaLab";
             this.LblEditNombrePruebaLab.Size = new System.Drawing.Size(139, 17);
             this.LblEditNombrePruebaLab.TabIndex = 0;
@@ -106,7 +110,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             // TxtEditPruebaLab
             // 
             this.TxtEditPruebaLab.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TxtEditPruebaLab.Location = new System.Drawing.Point(3, 50);
+            this.TxtEditPruebaLab.Location = new System.Drawing.Point(3, 51);
             this.TxtEditPruebaLab.Name = "TxtEditPruebaLab";
             this.TxtEditPruebaLab.Size = new System.Drawing.Size(254, 20);
             this.TxtEditPruebaLab.TabIndex = 1;
@@ -117,12 +121,13 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.BtnEditPruebaLab.Font = new System.Drawing.Font("Gadugi", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEditPruebaLab.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnEditPruebaLab.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
-            this.BtnEditPruebaLab.Location = new System.Drawing.Point(62, 97);
+            this.BtnEditPruebaLab.Location = new System.Drawing.Point(62, 99);
             this.BtnEditPruebaLab.Name = "BtnEditPruebaLab";
             this.BtnEditPruebaLab.Size = new System.Drawing.Size(136, 27);
             this.BtnEditPruebaLab.TabIndex = 2;
             this.BtnEditPruebaLab.Text = "Editar Prueba";
             this.BtnEditPruebaLab.UseVisualStyleBackColor = true;
+            this.BtnEditPruebaLab.Click += new System.EventHandler(this.BtnEditPruebaLab_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -140,6 +145,35 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.tableLayoutPanel3.Size = new System.Drawing.Size(794, 46);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Controls.Add(this.BtnVolver, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(535, 153);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(262, 144);
+            this.tableLayoutPanel4.TabIndex = 3;
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnVolver.Location = new System.Drawing.Point(88, 3);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(86, 27);
+            this.BtnVolver.TabIndex = 0;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = true;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
+            // 
             // FrmEditarPruebaLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,6 +189,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -168,5 +203,7 @@ namespace Sistema_gestor_de_pacientes.forms.pruebas_de_laboratorio
         private System.Windows.Forms.TextBox TxtEditPruebaLab;
         private System.Windows.Forms.Button BtnEditPruebaLab;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button BtnVolver;
     }
 }
