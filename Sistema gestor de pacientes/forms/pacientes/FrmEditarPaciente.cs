@@ -18,6 +18,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
         public Editar iniciarServicio { get; set; }
         public SqlConnection connection { get; set; }
 
+        //terminar
 
         public FrmEditarPaciente()
         {

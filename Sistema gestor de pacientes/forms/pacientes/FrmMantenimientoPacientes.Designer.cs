@@ -37,10 +37,13 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.BtnEliminarPaciente = new System.Windows.Forms.Button();
             this.BtnEditarPaciente = new System.Windows.Forms.Button();
+            this.BtnVolver = new System.Windows.Forms.Button();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMantenimientoPaciente)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // LblMantenimientoPaciente
@@ -48,11 +51,11 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.LblMantenimientoPaciente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.LblMantenimientoPaciente.AutoSize = true;
-            this.LblMantenimientoPaciente.Font = new System.Drawing.Font("Neozoic Trial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMantenimientoPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMantenimientoPaciente.ForeColor = System.Drawing.Color.Teal;
-            this.LblMantenimientoPaciente.Location = new System.Drawing.Point(3, 18);
+            this.LblMantenimientoPaciente.Location = new System.Drawing.Point(3, 20);
             this.LblMantenimientoPaciente.Name = "LblMantenimientoPaciente";
-            this.LblMantenimientoPaciente.Size = new System.Drawing.Size(382, 35);
+            this.LblMantenimientoPaciente.Size = new System.Drawing.Size(382, 33);
             this.LblMantenimientoPaciente.TabIndex = 0;
             this.LblMantenimientoPaciente.Text = "Mantenimiento de Pacientes";
             this.LblMantenimientoPaciente.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -63,6 +66,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.75F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -102,6 +106,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.DgvMantenimientoPaciente.ReadOnly = true;
             this.DgvMantenimientoPaciente.Size = new System.Drawing.Size(382, 281);
             this.DgvMantenimientoPaciente.TabIndex = 1;
+            this.DgvMantenimientoPaciente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvMantenimientoPaciente_CellContentClick);
             // 
             // BtnCrearPaciente
             // 
@@ -113,6 +118,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.BtnCrearPaciente.TabIndex = 2;
             this.BtnCrearPaciente.Text = "Crear Nuevo Paciente";
             this.BtnCrearPaciente.UseVisualStyleBackColor = true;
+            this.BtnCrearPaciente.Click += new System.EventHandler(this.BtnCrearPaciente_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -141,6 +147,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.BtnEliminarPaciente.TabIndex = 1;
             this.BtnEliminarPaciente.Text = "Eliminar Paciente";
             this.BtnEliminarPaciente.UseVisualStyleBackColor = true;
+            this.BtnEliminarPaciente.Click += new System.EventHandler(this.BtnEliminarPaciente_Click);
             // 
             // BtnEditarPaciente
             // 
@@ -153,6 +160,36 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.BtnEditarPaciente.TabIndex = 0;
             this.BtnEditarPaciente.Text = "Editar Paciente";
             this.BtnEditarPaciente.UseVisualStyleBackColor = true;
+            this.BtnEditarPaciente.Click += new System.EventHandler(this.BtnEditarPaciente_Click);
+            // 
+            // BtnVolver
+            // 
+            this.BtnVolver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.BtnVolver.Font = new System.Drawing.Font("Gadugi", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVolver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnVolver.Image = global::Sistema_gestor_de_pacientes.Properties.Resources.Fondo_9_Gio;
+            this.BtnVolver.Location = new System.Drawing.Point(156, 18);
+            this.BtnVolver.Name = "BtnVolver";
+            this.BtnVolver.Size = new System.Drawing.Size(88, 29);
+            this.BtnVolver.TabIndex = 0;
+            this.BtnVolver.Text = "Volver";
+            this.BtnVolver.UseVisualStyleBackColor = true;
+            this.BtnVolver.Click += new System.EventHandler(this.BtnVolver_Click);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Controls.Add(this.BtnVolver, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(397, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(400, 100);
+            this.tableLayoutPanel4.TabIndex = 2;
             // 
             // FrmMantenimientoPacientes
             // 
@@ -169,6 +206,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMantenimientoPaciente)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -183,5 +221,7 @@ namespace Sistema_gestor_de_pacientes.forms.pacientes
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Button BtnEliminarPaciente;
         private System.Windows.Forms.Button BtnEditarPaciente;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button BtnVolver;
     }
 }

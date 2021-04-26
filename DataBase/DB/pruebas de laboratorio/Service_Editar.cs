@@ -23,8 +23,9 @@ namespace DataBase.DB.pruebas_de_laboratorio
             {
                 connection.Open();
 
-                SqlCommand query = new SqlCommand("UPDATE pruebas_laboratorio SET nombre = @nombre", connection);
+                SqlCommand query = new SqlCommand("UPDATE pruebas_laboratorio SET nombre = @nombre WHERE id = @id", connection);
                 query.Parameters.AddWithValue("@nombre", user.nombre);
+                query.Parameters.AddWithValue("@id", id);
 
                 query.ExecuteNonQuery();
                 connection.Close();

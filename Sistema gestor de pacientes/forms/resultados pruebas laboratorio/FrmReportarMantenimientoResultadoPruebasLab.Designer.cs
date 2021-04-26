@@ -115,6 +115,7 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.BtnFinalizar.Text = "Finalizar";
             this.BtnFinalizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.BtnFinalizar.UseVisualStyleBackColor = true;
+            this.BtnFinalizar.Click += new System.EventHandler(this.BtnFinalizar_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -136,11 +137,11 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             // 
             this.LblReportarMantenimientoResultadoPruebasLab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.LblReportarMantenimientoResultadoPruebasLab.AutoSize = true;
-            this.LblReportarMantenimientoResultadoPruebasLab.Font = new System.Drawing.Font("Neozoic Trial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblReportarMantenimientoResultadoPruebasLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblReportarMantenimientoResultadoPruebasLab.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblReportarMantenimientoResultadoPruebasLab.Location = new System.Drawing.Point(3, 9);
+            this.LblReportarMantenimientoResultadoPruebasLab.Location = new System.Drawing.Point(3, 10);
             this.LblReportarMantenimientoResultadoPruebasLab.Name = "LblReportarMantenimientoResultadoPruebasLab";
-            this.LblReportarMantenimientoResultadoPruebasLab.Size = new System.Drawing.Size(788, 33);
+            this.LblReportarMantenimientoResultadoPruebasLab.Size = new System.Drawing.Size(788, 31);
             this.LblReportarMantenimientoResultadoPruebasLab.TabIndex = 0;
             this.LblReportarMantenimientoResultadoPruebasLab.Text = "Reportar Resultados";
             this.LblReportarMantenimientoResultadoPruebasLab.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -153,7 +154,6 @@ namespace Sistema_gestor_de_pacientes.forms.resultados_pruebas_laboratorio
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmReportarMantenimientoResultadoPruebasLab";
             this.Text = "Reportar Resultados de Pruebas de Laboratorio";
-            this.Load += new System.EventHandler(this.FrmReportarMantenimientoResultadoPruebasLab_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

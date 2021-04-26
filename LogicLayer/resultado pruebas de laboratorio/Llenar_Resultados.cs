@@ -18,7 +18,7 @@ namespace LogicLayer.resultado_pruebas_de_laboratorio
             iniciarServicio = new Service_Llenar_resultados(connection);
         }
 
-        public bool editar(int id, string dataResultados)
+        public bool llenar(int id, string dataResultados)
         {
             bool fueExitoso = iniciarServicio.llenar(id, dataResultados);
             if (fueExitoso) return true;
