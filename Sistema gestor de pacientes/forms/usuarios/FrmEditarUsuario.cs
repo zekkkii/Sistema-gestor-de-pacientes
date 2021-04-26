@@ -53,7 +53,20 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
         private void BtnEditUsuario_Click(object sender, EventArgs e)
         {
-
+            if (TxtEditNombre.Text != "" && TxtEditApellidoUsuario.Text != "" &&
+               TxtEditNombreUsuario.Text != "" && TxtEditContraseña.Text != "" &&
+               TxtEditConfirmarContraseña.Text != "")
+            {
+                if (TxtEditContraseña.Text == TxtEditConfirmarContraseña.Text)
+                {
+                    editar();
+                }
+                else
+                {
+                    MessageBox.Show("Las Contraseñas no coinciden", "Notificacion");
+                }
+            }
+            else { MessageBox.Show("Debes rellenar Todos los campos", "Notificacion"); }
         }
         #endregion
 
@@ -85,7 +98,6 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
 
                         RepositorioForms.Instancia.IndexSeleccionado = -1;
                     }
-
             }
             else
             {

@@ -54,7 +54,7 @@ namespace Sistema_gestor_de_pacientes.forms.usuarios
         {
             if(TxtNewNombre.Text != "" && TxtNewApellidoUsuario.Text !="" && 
                TxtNewNombreUsuario.Text !="" && TxtNewContraseña.Text !="" && 
-               TxtNewConfirmarContraseña.Text !="" && CbxNewTipoUsuario.SelectedItem != null) 
+               TxtNewConfirmarContraseña.Text !="") 
             {
                 if (TxtNewContraseña.Text == TxtNewConfirmarContraseña.Text) 
                 {
