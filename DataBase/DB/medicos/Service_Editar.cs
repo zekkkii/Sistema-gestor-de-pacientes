@@ -23,8 +23,8 @@ namespace DataBase.DB.medicos
             {
                 connection.Open();
 
-                SqlCommand query = new SqlCommand("UPDATE medicos " +
-                    "SET nombre = @nombre, apellido = @apellido, correo = @correo, telefono = @telefono, cedula = @cedula, linkFoto = @linkFoto", connection);
+                SqlCommand query = new SqlCommand("UPDATE medicos SET nombre = @nombre, apellido = @apellido, correo = @correo, telefono = @telefono, cedula = @cedula, linkFoto = @linkFoto where id = @id", connection);
+                query.Parameters.AddWithValue("@id", id);
                 query.Parameters.AddWithValue("@nombre", user.nombre);
                 query.Parameters.AddWithValue("@apellido", user.apellido);
                 query.Parameters.AddWithValue("@correo", user.correo);
